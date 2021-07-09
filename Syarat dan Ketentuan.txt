@@ -1,0 +1,28 @@
+Syarat dan Ketentuan Pengelola Akun Laman Usaha(Pihak Kedua)
+1	.	Data yang dimasukkan benar adanya sesuai dengan kenyataan.
+2	.	Data yang dimasukkan pada laman usaha sepenuhnya menjadi tanggungjawab pengelola Laman Usaha kecuali sponsor pada format laman standard.
+3	.	Data yang dimasukkan tidak boleh melanggar SARA dan atau Norma Susila serta peraturan perundang-undangan yang berlaku.
+4	.	
+Dilarang memasukkan data yang menipu(termasuk data harga, spesifikasi barang, alamat usaha, tanggal berlaku diskon, stok dan lainnya) maka menjadi tanggungjawab pengelola Laman Usaha.
+5	.	
+Jika terdapat komplain karena data yang dimasukkan menipu(termasuk data harga, spesifikasi barang, alamat usaha, tanggal berlaku diskon, stok dan lainnya) maka menjadi tanggungjawab pengelola Laman Usaha.
+6	.	
+Data yang dimasukkan tidak boleh berisi mengenai usaha/produk rokok, alat kontrasepsi, pengobatan alternatif, obat kuat, alat bantu sex, minuman keras, narkotika, bahan peledak, senjata, agen tenaga kerja, ataupun produk usaha yang bertentangan dengan undang-undang yang berlaku.
+7	.	Produk yang ditawarkan dianjurkan memenuhi syarat kesehatan dan atau standar keselamatan konsumen sesuai SNI.
+8	.	Data yang dimasukkan tidak boleh menjelekkan(pembunuhan karakter dan atau citra) produk dari usaha lain.
+9	.	Data yang dimasukkan tidak boleh berisi mengenai usaha properti(jual/beli/sewa rumah, tanah dan atau bangunan).
+10	.	Data yang dimasukkan tidak boleh berisi iklan mengenai usaha pihak ketiga.
+11	.	Data yang dimasukkan pada laman usaha(laman usaha.php) menjadi konsumsi publik dan merupakan data yang bersifat umum, bukan data rahasia usaha.
+12	.	
+Data yang dimasukkan berupa gambar, besarnya tidak boleh melebihi 100kB per gambar, jika melebihi maka gambar tidak akan masuk data dan tidak muncul di laman. Pakai software/program komputer yang dapat me-resize besarnya file.
+13	.	
+Pengelola Laman Usaha diwajibkan untuk memperbaharui informasi alamat usaha, informasi produk jika memang ada perubahan ataupun spesifikasi.
+14	.	
+Username dan Password dapat digunakan untuk akses laman rumahidamanku.com bidang usaha properti, mobil dan motor di area kabupaten/kota yang sama..
+15	.	Kerahasiaan username dan password menjadi tanggung jawab pengelola laman usaha.
+16	.	
+Apabila terjadi penyalahgunaan username dan password oleh pihak yang tidak berhak maka tanggungjawab sepenuhnya milik pengelola laman usaha. Laporan penyalahgunaan ditujukan ke info@rumahidamanku.com atau sigit_bp2005@yahoo.co.id
+17	.	
+Masa berlaku laman Promosi Usaha adalah Gratis.
+18	.	
+Hak mengelola Laman Usaha Promo akan dicabut dan diblokir oleh administrator rumahidamanku.com jika pelanggaran syarat dan ketentuan terjadi dengan atau tanpa pemberitahuan.
