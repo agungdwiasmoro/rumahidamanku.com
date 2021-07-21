@@ -140,7 +140,7 @@
 						$selisih = $jd2 - $jd1;
 						$masa = $lama - abs($selisih);
 
-						if ($row_konekprofhome['keterangan'] = 'perkunjungan') { ?>
+						if ($row_konekprofhome['keterangan'] == 'perkunjungan') { ?>
 							<p>Batas Kunjungan Anda : <?= $row_konekprofhome['kontrakcounter']; ?>
 							<br>Total Kunjungan saat ini : <?= $row_konekprofhome['counter']; ?><br>
 							<?php $batas = $row_konekprofhome['kontrakcounter'] - $row_konekprofhome['counter'];
