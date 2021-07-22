@@ -259,42 +259,42 @@ $row_konekprofhome = mysql_fetch_assoc($konekprofhome);
 $totalRows_konekprofhome = mysql_num_rows($konekprofhome);
 
 
-$maxRows_konekwis = 3;
-$pageNum_konekwis = 0;
-if (isset($_GET['pageNum_konekwis'])) {
-  $pageNum_konekwis = $_GET['pageNum_konekwis'];
+$maxRows_konekwisataindonesia = 3;
+$pageNum_konekwisataindonesia = 0;
+if (isset($_GET['pageNum_konekwisataindonesia'])) {
+  $pageNum_konekwisataindonesia = $_GET['pageNum_konekwisataindonesia'];
 }
-$startRow_konekwis = $pageNum_konekwis * $maxRows_konekwis;
+$startRow_konekwisataindonesia = $pageNum_konekwisataindonesia * $maxRows_konekwisataindonesia;
 
 mysql_select_db($database_koneksi, $koneksi);
-$query_konekwis = "SELECT * FROM wisatadiy where provinsi = '$provinsi' and kabkota = '$kodkab' and jenis='photo' && status='on' && kategori='wisata indonesia' ORDER BY id_wisatadiy DESC";
-$query_limit_konekwis = sprintf("%s LIMIT %d, %d", $query_konekwis, $startRow_konekwis, $maxRows_konekwis);
-$konekwis = mysql_query($query_limit_konekwis, $koneksi) or die(mysql_error());
-$row_konekwis = mysql_fetch_assoc($konekwis);
+$query_konekwisataindonesia = "SELECT * FROM wisatadiy where provinsi = '$provinsi' and kabkota = '$kodkab' and jenis='photo' && status='on' && kategori='wisata indonesia' ORDER BY id_wisatadiy DESC";
+$query_limit_konekwisataindonesia = sprintf("%s LIMIT %d, %d", $query_konekwisataindonesia, $startRow_konekwisataindonesia, $maxRows_konekwisataindonesia);
+$konekwisataindonesia = mysql_query($query_limit_konekwisataindonesia, $koneksi) or die(mysql_error());
+$row_konekwisataindonesia = mysql_fetch_assoc($konekwisataindonesia);
 
-if (isset($_GET['totalRows_konekwis'])) {
-  $totalRows_konekwis = $_GET['totalRows_konekwis'];
+if (isset($_GET['totalRows_konekwisataindonesia'])) {
+  $totalRows_konekwisataindonesia = $_GET['totalRows_konekwisataindonesia'];
 } else {
-  $all_konekwis = mysql_query($query_konekwis);
-  $totalRows_konekwis = mysql_num_rows($all_konekwis);
+  $all_konekwisataindonesia = mysql_query($query_konekwisataindonesia);
+  $totalRows_konekwisataindonesia = mysql_num_rows($all_konekwisataindonesia);
 }
-$totalPages_konekwis = ceil($totalRows_konekwis/$maxRows_konekwis)-1;
+$totalPages_konekwisataindonesia = ceil($totalRows_konekwisataindonesia/$maxRows_konekwisataindonesia)-1;
 
-$queryString_konekwis = "";
+$queryString_konekwisataindonesia = "";
 if (!empty($_SERVER['QUERY_STRING'])) {
   $params = explode("&", $_SERVER['QUERY_STRING']);
   $newParams = array();
   foreach ($params as $param) {
-    if (stristr($param, "pageNum_konekwis") == false && 
-        stristr($param, "totalRows_konekwis") == false) {
+    if (stristr($param, "pageNum_konekwisataindonesia") == false && 
+        stristr($param, "totalRows_konekwisataindonesia") == false) {
       array_push($newParams, $param);
     }
   }
   if (count($newParams) != 0) {
-    $queryString_konekwis = "&" . htmlentities(implode("&", $newParams));
+    $queryString_konekwisataindonesia = "&" . htmlentities(implode("&", $newParams));
   }
 }
-$queryString_konekwis = sprintf("&totalRows_konekwis=%d%s", $totalRows_konekwis, $queryString_konekwis);
+$queryString_konekwisataindonesia = sprintf("&totalRows_konekwisataindonesia=%d%s", $totalRows_konekwisataindonesia, $queryString_konekwisataindonesia);
 
 
 $maxRows_konekwisvid = 3;
