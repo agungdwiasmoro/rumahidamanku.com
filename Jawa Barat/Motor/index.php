@@ -39,6 +39,7 @@
                   <li><a href="../Kabupaten Pangandaran/index.php"> Kab. Pangandaran</a></li>
                   <li><a href="../Kabupaten Purwakarta/index.php"> Kab. Purwakarta</a></li>
                   <li><a href="../Kabupaten Subang/Index.php"> Kab. Subang</a></li>
+                  <li><a href="../Kabupaten Sukabumi/index.php">Kab. Sukabumi</a></li>
                   <li><a href="../Kabupaten Sumedang/index.php"> Kab. Sumedang</a></li>
                   <li><a href="../Kabupaten Tasikmalaya/index.php"> Kab. Tasikmalaya</a></li>
                   <li><a href="../Kota Bandung/index.php"> Kota Bandung</a></li>

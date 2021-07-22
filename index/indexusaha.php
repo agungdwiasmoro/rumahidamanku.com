@@ -115,9 +115,9 @@
 				<div class="box-body">
 					<h3 align="center"><strong><?php echo $row_konekiventprodiy['judul']; ?></strong></h3>
 					<div class="col-md-12 col-xs-12">
-						<center><img src="../../../imageViewivent.php?image_id=<?php echo $row_konekiventprodiy['id_iventpromo']; ?>" loading="lazy" alt="<?php echo $row_konekiventprodiy['namaivent0']; ?> <?php echo $row_konekiventprodiy['namausaha']; ?> <?php echo $row_konekiventprodiy['bidangusaha']; ?> <?php echo $row_konekiventprodiy['kodkab']; ?> <?php echo $row_konekiventprodiy['provinsi']; ?> " title="<?php echo $row_konekiventprodiy['namaivent0']; ?> <?php echo $row_konekiventprodiy['namausaha']; ?> <?php echo $row_konekiventprodiy['bidangusaha']; ?> <?php echo $row_konekiventprodiy['kodkab']; ?> <?php echo $row_konekiventprodiy['provinsi']; ?> " class="img-fluid" style="width: 90%; " longdesc="<?php echo $row_konekiventprodiy['name']; ?>" /></center>
+						<center><img src="../../../imageViewivent.php?image_id=<?php echo $row_konekiventprodiy['id_iventpromo']; ?>" loading="lazy" alt="<?php echo $row_konekiventprodiy['namaivent0']; ?> <?php echo $row_konekiventprodiy['namausaha']; ?> <?php echo $row_konekiventprodiy['bidangusaha']; ?> <?php echo $row_konekiventprodiy['kodkab']; ?> <?php echo $row_konekiventprodiy['provinsi']; ?> " title="<?php echo $row_konekiventprodiy['namaivent0']; ?> <?php echo $row_konekiventprodiy['namausaha']; ?> <?php echo $row_konekiventprodiy['bidangusaha']; ?> <?php echo $row_konekiventprodiy['kodkab']; ?> <?php echo $row_konekiventprodiy['provinsi']; ?> " class="img-fluid" style="max-height: 250px; " longdesc="<?php echo $row_konekiventprodiy['name']; ?>" /></center>
 					</div>
-					<p><?php echo $row_konekiventprodiy['artikel']; ?> <?php echo $row_konekiventprodiy['penulis']; ?></p>
+					<p align="center"><?php echo $row_konekiventprodiy['artikel']; ?> <?php echo $row_konekiventprodiy['penulis']; ?></p>
 					
 					<?php } while ($row_konekiventprodiy = mysql_fetch_assoc($konekiventprodiy)); ?>
 					<table align="center">
@@ -178,7 +178,7 @@
 						</tr>
 						<tr>
 							<td rowspan="6" width="40%" align="center">
-								<img src="../../../imageViewpromo.php?image_id=<?php echo $row_konekdiskdiy['id_profilpromo']; ?>" loading="lazy" class="img-fluid" style="width: 90%; " alt="produk diskon <?php echo $row_konekdiskdiy['namaproduk']; ?><?php echo $row_konekdiskdiy['namausaha']; ?><?php echo $row_konekdiskdiy['kodkab']; ?><?php echo $row_konekdiskdiy['provinsi']; ?>" title="produk diskon <?php echo $row_konekdiskdiy['namaproduk']; ?><?php echo $row_konekdiskdiy['namausaha']; ?><?php echo $row_konekdiskdiy['kodkab']; ?><?php echo $row_konekdiskdiy['provinsi']; ?>" />
+								<img src="../../../imageViewpromo.php?image_id=<?php echo $row_konekdiskdiy['id_profilpromo']; ?>" loading="lazy" class="img-fluid" style="max-height:250px; " alt="produk diskon <?php echo $row_konekdiskdiy['namaproduk']; ?><?php echo $row_konekdiskdiy['namausaha']; ?><?php echo $row_konekdiskdiy['kodkab']; ?><?php echo $row_konekdiskdiy['provinsi']; ?>" title="produk diskon <?php echo $row_konekdiskdiy['namaproduk']; ?><?php echo $row_konekdiskdiy['namausaha']; ?><?php echo $row_konekdiskdiy['kodkab']; ?><?php echo $row_konekdiskdiy['provinsi']; ?>" />
 							</td>
 							<td colspan="2" width="60%" align="center">
 								<?php echo $row_konekdiskdiy['namaproduk']; ?>
@@ -248,7 +248,7 @@
 					</tr>
 					<tr>
 						<td rowspan="6" width="40%" align="center">
-							<img src="../../../imageViewprobaru.php?image_id=<?php echo $row_konekprodbarudiy['id_produkpromo']; ?>" loading="lazy" class="img-fluid" style="width: 90%" alt="produk baru <?php echo $row_konekprodbarudiy['namaproduk']; ?><?php echo $row_konekprodbarudiy['namausaha']; ?><?php echo $row_konekprodbarudiy['kodkab']; ?><?php echo $row_konekprodbarudiy['provinsi']; ?>" title="produk baru <?php echo $row_konekprodbarudiy['namaproduk']; ?><?php echo $row_konekprodbarudiy['namausaha']; ?><?php echo $row_konekprodbarudiy['kodkab']; ?><?php echo $row_konekprodbarudiy['provinsi']; ?>" />
+							<img src="../../../imageViewprobaru.php?image_id=<?php echo $row_konekprodbarudiy['id_produkpromo']; ?>" loading="lazy" class="img-fluid" style="max-height:250px;" alt="produk baru <?php echo $row_konekprodbarudiy['namaproduk']; ?><?php echo $row_konekprodbarudiy['namausaha']; ?><?php echo $row_konekprodbarudiy['kodkab']; ?><?php echo $row_konekprodbarudiy['provinsi']; ?>" title="produk baru <?php echo $row_konekprodbarudiy['namaproduk']; ?><?php echo $row_konekprodbarudiy['namausaha']; ?><?php echo $row_konekprodbarudiy['kodkab']; ?><?php echo $row_konekprodbarudiy['provinsi']; ?>" />
 						</td>
 						<td colspan="2" width="60%" align="center">
 							<?php echo $row_konekprodbarudiy['namaproduk']; ?>
@@ -320,7 +320,7 @@
 				</tr>
 				<tr>
 					<td rowspan="5" width="40%" align="center">
-						<img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" style="width: 90%; " class="img-fluid" alt="<?php echo $row_konekproddiy['namaproduk']; ?> , <?php echo $row_konekproddiy['namausaha']; ?> , <?php echo $row_konekproddiy['bidangusaha']; ?> , <?php echo $row_konekproddiy['kodkab']; ?> , <?php echo $row_konekproddiy['provinsi']; ?>" title="<?php echo $row_konekproddiy['namaproduk']; ?> , <?php echo $row_konekproddiy['namausaha']; ?> , <?php echo $row_konekproddiy['bidangusaha']; ?> , <?php echo $row_konekproddiy['kodkab']; ?> , <?php echo $row_konekproddiy['provinsi']; ?>" />
+						<img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" style="max-height:250px; " class="img-fluid" alt="<?php echo $row_konekproddiy['namaproduk']; ?> , <?php echo $row_konekproddiy['namausaha']; ?> , <?php echo $row_konekproddiy['bidangusaha']; ?> , <?php echo $row_konekproddiy['kodkab']; ?> , <?php echo $row_konekproddiy['provinsi']; ?>" title="<?php echo $row_konekproddiy['namaproduk']; ?> , <?php echo $row_konekproddiy['namausaha']; ?> , <?php echo $row_konekproddiy['bidangusaha']; ?> , <?php echo $row_konekproddiy['kodkab']; ?> , <?php echo $row_konekproddiy['provinsi']; ?>" />
 					</td>
 					<td colspan="2" width="60%" align="center">
 						<?php echo $row_konekproddiy['spec']; ?>

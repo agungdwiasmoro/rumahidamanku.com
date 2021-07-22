@@ -28,9 +28,7 @@ $totalRows_konekproddiy = mysql_num_rows($konekproddiy);
 
 include  ('templateuserusaha.php')
 ?>
-			<?php if ($masa <= 0 ) { ?>
-				<p align="center" style="margin-top:30px;">Akun anda sedang tidak aktif, <br>Segera hubungi <a href="https://api.whatsapp.com/send?phone=6285228757757" style="border-bottom: 1px solid;">Customer Service</a> atau email ke <a href="mailto:rumahidamanku.com@gmail.com" style="border-bottom: 1px solid;">rumahidamanku.com@gmail.com</a> untuk aktivasi laman.</p>
-			<?php } else if ($batas <= 0 ) { ?>
+			<?php if($row_konekprofhome['status'] === 'off') { ?>
 				<p align="center" style="margin-top:30px;">Akun anda sedang tidak aktif, <br>Segera hubungi <a href="https://api.whatsapp.com/send?phone=6285228757757" style="border-bottom: 1px solid;">Customer Service</a> atau email ke <a href="mailto:rumahidamanku.com@gmail.com" style="border-bottom: 1px solid;">rumahidamanku.com@gmail.com</a> untuk aktivasi laman.</p>
 			<?php } else { ?>
 			<section class="content">

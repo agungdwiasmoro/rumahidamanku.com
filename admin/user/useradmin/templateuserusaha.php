@@ -139,12 +139,12 @@
 						// hitung selisih hari kedua tanggal
 						$selisih = $jd2 - $jd1;
 						$masa = $lama - abs($selisih);
+						$batas = $row_konekprofhome['kontrakcounter'] - $row_konekprofhome['counter'];
 
 						if ($row_konekprofhome['keterangan'] == 'perkunjungan') { ?>
 							<p>Batas Kunjungan Anda : <?= $row_konekprofhome['kontrakcounter']; ?>
 							<br>Total Kunjungan saat ini : <?= $row_konekprofhome['counter']; ?><br>
-							<?php $batas = $row_konekprofhome['kontrakcounter'] - $row_konekprofhome['counter'];
-							if ( $batas <= 0 ) {
+							<?php if ( $batas <= 0 ) {
 								$id_profilpromo = $row_konekprofhome['id_profilpromo']; 
 								$query = "UPDATE profilpromo set status='off' ,bayar='berbayar' where id_profilpromo='$id_profilpromo'";
 								$hasil=mysql_query($query);
