@@ -53,10 +53,10 @@ if($_SESSION['level'] != "1"){
 					
 					<tr>
 						<td><?=$no++?>.</td>
-						<td align="center"><img src="../../imageViewivent.php?image_id=<?php echo $row_konekivent['id_ivent']; ?>" loading="lazy" class="img-fluid" style="width: 150px; "/></td>
+						<td align="center"><img src="../../imageViewivent.php?image_id=<?php echo $row_konekivent['id_iventpromo']; ?>" loading="lazy" class="img-fluid" style="width: 150px; "/></td>
 						<td align="center">
 							<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: 150px;" controls="controls" preload= "auto" loading="lazy">
-								<source src="../../imageViewivent.php?image_id=<?php echo $row_konekivent['id_ivent']; ?>" type="video/mp4" />
+								<source src="../../imageViewiventvid.php?image_id=<?php echo $row_konekivent['id_iventpromo']; ?>" type="video/mp4" />
 							</video>
 						</td>
 						<td><?php echo $row_konekivent['judul']; ?></td>
@@ -89,7 +89,7 @@ if($_SESSION['level'] != "1"){
 						<td class="text-center" width="160px">
 							
 							<button onclick ="return confirm('Apakah Anda Yakin?')"class ="btn btn-danger btn-xs">
-								<a  href="delete.php?id_ivent=<?php echo $row_konekivent['id_ivent']; ?>"><i class="fa fa-trash"></i>
+								<a  href="delete.php?id_iventpromo=<?php echo $row_konekivent['id_iventpromo']; ?>"><i class="fa fa-trash"></i>
 							</button>
 							
 						</td>

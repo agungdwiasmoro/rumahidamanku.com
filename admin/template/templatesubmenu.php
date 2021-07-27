@@ -109,7 +109,7 @@
 								<ul class="treeview-menu">
 									<li><a href="../usaha/index.php"><i class="fa fa-circle-o"></i>Daftar Usaha</a></li>
 									<li><a href="../produk/index.php"><i class="fa fa-circle-o"></i>Daftar Produk Usaha</a></li>
-									<li><a href="../iventusahaindex.php"><i class="fa fa-circle-o"></i>Daftar Ivent Usaha</a></li>
+									<li><a href="../iventusaha/index.php"><i class="fa fa-circle-o"></i>Daftar Ivent Usaha</a></li>
 								</ul>
 							</a>
 							</li>

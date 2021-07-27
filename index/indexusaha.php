@@ -5,17 +5,6 @@
 </div>	
 <?php } else {
 ?>
-	<div class="row">
-		<div class="col-md-12">
-			<div class="box">
-				<div class="box-body">
-					<h3><center><strong><a href="../../../<?php echo $row_konekprofkodkabdiy['provinsi']; ?>/index.php" target="__self"><?php echo $row_konekprofkodkabdiy['provinsi']; ?></a></strong></center></h3>
-					<h3 align="center"><strong><a href="../../../<?php echo $row_konekprofkodkabdiy['provinsi']; ?>/<?php echo $row_konekprofkodkabdiy['kodkab']; ?>/index.php" target="__self"><?php echo $row_konekprofkodkabdiy['kodkab']; ?></a></strong></h3>
-					<p align="center"><strong><img src="../../../imageView.php?image_id=<?php echo $row_konekprofkodkabdiy['id_profkabkod']; ?>" title="Lambang <?php echo $row_konekprofkodkabdiy['kodkab']; ?> , <?php echo $row_konekprofkodkabdiy['provinsi']; ?>" alt="Lambang <?php echo $row_konekprofkodkabdiy['kodkab']; ?> , <?php echo $row_konekprofkodkabdiy['provinsi']; ?>" style="width: 135px; "/></strong></p>
-				</div>
-			</div>
-		</div>
-	</div>
          
 	<div class="row">
 		<div class="col-md-12">
@@ -43,7 +32,7 @@
 					</div>
 					<table class= "col-md-12 col-xs-12 table-responsive" rules="none" border="1px">
 						<tr>
-							<td colspan="2" width="100%"><h3 align="center"><strong><?php echo $row_konekprofhome['namausaha']; ?></strong></h3></td>
+							<td colspan="2" width="100%"><h1 align="center" style="font-size: 24px;"><strong><?php echo $row_konekprofhome['namausaha']; ?></strong></h1></td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" align="center"><img src="../../../imageViewusaha.php?image_id=<?php echo $row_konekprofhome['id_profilpromo']; ?>" loading="lazy" class="img-fluid" title="<?php echo $row_konekprofhome['namausaha']; ?>,  <?php echo $row_konekprofhome['bidangusaha']; ?>,  <?php echo $row_konekprofhome['kodkab']; ?>, <?php echo $row_konekprofhome['provinsi']; ?>" alt="<?php echo $row_konekprofhome['namausaha']; ?>, <?php echo $row_konekprofhome['bidangusaha']; ?>, <?php echo $row_konekprofhome['kodkab']; ?>, <?php echo $row_konekprofhome['provinsi']; ?>" style="width: 90%; "/></td>
@@ -320,7 +309,7 @@
 				</tr>
 				<tr>
 					<td rowspan="5" width="40%" align="center">
-						<img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" style="max-height:250px; " class="img-fluid" alt="<?php echo $row_konekproddiy['namaproduk']; ?> , <?php echo $row_konekproddiy['namausaha']; ?> , <?php echo $row_konekproddiy['bidangusaha']; ?> , <?php echo $row_konekproddiy['kodkab']; ?> , <?php echo $row_konekproddiy['provinsi']; ?>" title="<?php echo $row_konekproddiy['namaproduk']; ?> , <?php echo $row_konekproddiy['namausaha']; ?> , <?php echo $row_konekproddiy['bidangusaha']; ?> , <?php echo $row_konekproddiy['kodkab']; ?> , <?php echo $row_konekproddiy['provinsi']; ?>" />
+						<img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" class="img-fluid" alt="<?php echo $row_konekproddiy['namaproduk']; ?> , <?php echo $row_konekproddiy['namausaha']; ?> , <?php echo $row_konekproddiy['bidangusaha']; ?> , <?php echo $row_konekproddiy['kodkab']; ?> , <?php echo $row_konekproddiy['provinsi']; ?>" title="<?php echo $row_konekproddiy['namaproduk']; ?> , <?php echo $row_konekproddiy['namausaha']; ?> , <?php echo $row_konekproddiy['bidangusaha']; ?> , <?php echo $row_konekproddiy['kodkab']; ?> , <?php echo $row_konekproddiy['provinsi']; ?>" />
 					</td>
 					<td colspan="2" width="60%" align="center">
 						<?php echo $row_konekproddiy['spec']; ?>

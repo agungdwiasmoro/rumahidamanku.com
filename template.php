@@ -3,10 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>One Stop Service for Living</title>
+	<title>RUMAHIDAMANKU.COM</title>
+	<meta name="keywords" content="rumahidamanku, promosi gratis, umkm, usaha kecil">
+	<meta name="description" content="Tempat Promosi Usaha Gratis dan Terpercaya">
 	<link rel="shortcut icon" href="/image/rumahidamanku.png">
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- Facebook share link -->
+	<meta property="og:url" content="https://rumahidamanku.com" />
+	<meta property="og:title" content="RUMAHIDAMANKU.COM" />
+	<meta property="og:description" content="Promosikan Usaha Anda Disini. GRATIS" />
+	<meta property="og:image" content="https://rumahidamanku.com/image/mainicon.jpg" />
 	<!-- Bootstrap 3.3.7 -->
 	<link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.css">
 	<!-- AdminLTE Skins. Choose a skin from the css/skins
