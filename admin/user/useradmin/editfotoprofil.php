@@ -30,9 +30,7 @@ include  ('templateuserusaha.php')
 ?>
 
 		
-		<?php if ($masa <= 0 ) { ?>
-			<p align="center" style="margin-top:30px;">Akun anda sedang tidak aktif, <br>Segera hubungi <a href="https://api.whatsapp.com/send?phone=6285228757757" style="border-bottom: 1px solid;">Customer Service</a> atau email ke <a href="mailto:rumahidamanku.com@gmail.com" style="border-bottom: 1px solid;">rumahidamanku.com@gmail.com</a> untuk aktivasi laman.</p>
-		<?php } else if ($batas <= 0 ) { ?>
+		<?php if($row_konekprofhome['status'] === 'off') { ?>
 			<p align="center" style="margin-top:30px;">Akun anda sedang tidak aktif, <br>Segera hubungi <a href="https://api.whatsapp.com/send?phone=6285228757757" style="border-bottom: 1px solid;">Customer Service</a> atau email ke <a href="mailto:rumahidamanku.com@gmail.com" style="border-bottom: 1px solid;">rumahidamanku.com@gmail.com</a> untuk aktivasi laman.</p>
 		<?php } else { ?>
 		<section class="content">
@@ -71,14 +69,15 @@ include  ('templateuserusaha.php')
 											<input name="namephoto0" type="text" value="" id="namephoto0" class="form-control" placeholder="Keterangan Foto" title="klik disini, tuliskan nama photo" alt="klik disini, tuliskan nama photo" />
 										</div>
 										
-										<input name="status" type="hidden" id="status" value="off" >
+										<input name="status" type="hidden" id="status" value="on" >
+										<input name="namausaha" type="hidden" id="namausaha" value="<?php echo $row_konekproddiy['namausaha']; ?>"/>
 										<input name="usernama" type="hidden" id="usernama" value="<?php echo $row_konekproddiy['usernama']; ?>"/>
 										<input name="klas" type="hidden" id="klas" value=""/>
 										<input name="laporan" type="hidden" id="laporan" value=""/>
 										<input name="aktifasi" type="hidden" id="aktifasi" value="on"/>
 										<input name="keterangan" type="hidden" id="keterangan" value="<?php echo $row_konekproddiy['keterangan']; ?>"/>
 										<input name="ip" type="hidden" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>"/>
-										<input name="tanggal" type="hidden" value="<?php date_default_timezone_set('Asia/Jakarta'); echo date('d-m-Y'); ?>"/>
+										<input name="tanggal" type="hidden" value="<?php $row_konekprofhome['tanggal'];?>"/>
 										<input name="jam" type="hidden" value="<?php echo date('G,i'); ?>"/>
 										<div class="form-group pull-left">
 										<table>

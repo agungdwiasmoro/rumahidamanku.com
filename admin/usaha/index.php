@@ -25,7 +25,43 @@ if($_SESSION['level'] != "1"){
 	<br>
 </section>
 <section class="content">
-	
+	<div class="box" style="background: #fff;">
+		<div class="box-header">
+			<h3 class="box-title">On Update</h3>
+		</div>
+		<div class="table-responsive">
+			<table class="table table-striped table-bordered">
+				<thead>
+					<tr>
+						<th>No</th>
+						<th>Gambar Utama</th>
+						<th>Nama Usaha</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+				
+					<?php $no = 1;
+					if ($totalRows_konekprof > 0) { // Show if recordset not empty ?>
+					<?php do { 
+					?>
+					<tr>
+						<td><?=$no++?>.</td>
+						<td align="center"><img src="../../imageViewusahaupdate.php?image_id=<?php echo $row_konekprof['id_profilpromomo']; ?>" loading="lazy" class="img-fluid" title="<?php echo $row_konekprof['namausaha']; ?>" alt="<?php echo $row_konekprof['namausaha']; ?>" style="width: 150px; height: 150px; "/></td>
+						<td><?php echo $row_konekprof['namausaha']; ?></td>
+						<td class="text-center" width="160px">
+							<a href ="persetujuan.php?id_profilpromo=<?php echo $row_konekprof['id_profilpromo']; ?>" class ="btn btn-primary btn-xs">
+								<i class="fa fa-pencil"></i> Update
+							</a>
+						</td>
+					</tr>
+					<?php } while ($row_konekprof = mysql_fetch_assoc($konekprof)); ?>
+					<?php } ?>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
 	<div class="box" style="background: #fff;">
 		<div class="box-header">
 			<h3 class="box-title">Data Usaha Terdaftar</h3>

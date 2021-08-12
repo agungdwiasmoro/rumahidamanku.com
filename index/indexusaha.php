@@ -297,6 +297,31 @@
   <!-- Produk -->
   <center><h3>DAFTAR PRODUK</h3></center>
   <div class="row">
+	<div class="col-md-12">
+		<div class="box">
+			<div class="box-body">
+				<?php if ($totalRows_konekproddiy > 0) { // Show if recordset not empty ?>
+				<?php do { ?>
+				<div class="box-body" style="background-color: white; border-radius: 5px; margin: 5px;">
+					<h2 style="font-size: 18px; margin-top: 5px; margin-bottom: 0px; text-transform: uppercase;" align="center"><?= $row_konekproddiy['namaproduk']; ?></h2><hr>
+					<div class="col-md-6 col-xs-6" align="center">
+						<img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" class="img-fluid" width="100%" style="max-width:200px; max-height:200px; border-radius: 3px; margin-top: auto; margin-bottom: auto;" title="<?=$row_konekproddiy['namaproduk']; ?>, <?= $row_konekproddiy['bidangusaha']; ?>, <?= $row_konekproddiy['kodkab']; ?>, <?= $row_konekproddiy['provinsi']; ?>" alt="<?php echo $row_konekproddiy['namaproduk']; ?>">
+					</div>
+					<div class="col-md-6 col-xs-6">
+						<p align="justify" style="font-size: 12px;"><?php echo $row_konekproddiy['spec']; ?><br>
+						<?= $row_konekproddiy['infoplus'] ?><br>
+						Stock : <?php echo $row_konekproddiy['stock']; ?> <br> </p><hr>
+						<h3 align="center">Rp <?php echo $row_konekproddiy['harganormal']; ?></h3>
+					</div>
+				</div>
+				<?php } while ($row_konekproddiy = mysql_fetch_assoc($konekproddiy)); ?>
+				<?php } // Show if recordset not empty ?>
+			</div>
+		</div>
+	</div>
+  </div>
+
+  <!-- <div class="row">
       <div class="col-md-12">
         <div class="box">
           <div class="box-body">
@@ -309,7 +334,7 @@
 				</tr>
 				<tr>
 					<td rowspan="5" width="40%" align="center">
-						<img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" class="img-fluid" alt="<?php echo $row_konekproddiy['namaproduk']; ?> , <?php echo $row_konekproddiy['namausaha']; ?> , <?php echo $row_konekproddiy['bidangusaha']; ?> , <?php echo $row_konekproddiy['kodkab']; ?> , <?php echo $row_konekproddiy['provinsi']; ?>" title="<?php echo $row_konekproddiy['namaproduk']; ?> , <?php echo $row_konekproddiy['namausaha']; ?> , <?php echo $row_konekproddiy['bidangusaha']; ?> , <?php echo $row_konekproddiy['kodkab']; ?> , <?php echo $row_konekproddiy['provinsi']; ?>" />
+						<img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" style="max-height: 200px;" width="90%" class="img-fluid" alt="<?php echo $row_konekproddiy['namaproduk']; ?> , <?php echo $row_konekproddiy['namausaha']; ?> , <?php echo $row_konekproddiy['bidangusaha']; ?> , <?php echo $row_konekproddiy['kodkab']; ?> , <?php echo $row_konekproddiy['provinsi']; ?>" title="<?php echo $row_konekproddiy['namaproduk']; ?> , <?php echo $row_konekproddiy['namausaha']; ?> , <?php echo $row_konekproddiy['bidangusaha']; ?> , <?php echo $row_konekproddiy['kodkab']; ?> , <?php echo $row_konekproddiy['provinsi']; ?>" />
 					</td>
 					<td colspan="2" width="60%" align="center">
 						<?php echo $row_konekproddiy['spec']; ?>
@@ -364,7 +389,7 @@
 		</div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <?php include ('../../../index/spaceiklan.php');?>
   <!-- Ends -->

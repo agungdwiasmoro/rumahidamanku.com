@@ -84,7 +84,7 @@ include  ('templateuserusaha.php')
 										</div>
 										<div class="form-group">
 											<label>Stock **</label>
-											<input type="text" name="stock" id="stock" value="" placeholder="Tuliskan Stock Produk Anda" class="form-control">
+											<input type="text" name="stock" id="stock" value="Tersedia" placeholder="Tuliskan Stock Produk Anda" class="form-control">
 										</div>
 										<div class="form-group">
 											<label>Expired *</label>
@@ -93,8 +93,7 @@ include  ('templateuserusaha.php')
 										<div class="form-group">
 											<label>Posisi Produk **</label>
 											<select title="pilih posisi produk, produk diskon, produk masa promosi baru atau produk harga normal" name="posisi" id="posisi" class="form-control">
-												<option selected="selected" value="selected" >pilih posisi produk</option>
-												<option value="normal">Produk Normal</option>
+												<option selected="selected" value="normal">Produk Normal</option>
 												<option value="diskon">Produk Diskon</option>
 												<option value="promo">Produk Promo</option>
 												<option value="promo">Produk Terbaru</option>
@@ -131,7 +130,7 @@ include  ('templateuserusaha.php')
 											<label>Informasi Tambahan Produk *</label>
 											<textarea type="text" name="infoplus" id="infoplus" value="" placeholder="Tuliskan Informasi Tambahan Tentang Produk Anda" class="form-control"></textarea>
 										</div>
-										<input name="statusjual" type="hidden" id="statusjual" value="Tersedia"/>
+										<input name="statusjual" type="hidden" id="statusjual" value=""/>
 										<input name="username" type="hidden" id="username" value="<?php echo $row_konekproddiy['usernama']; ?>"/>
 										<input name="status" type="hidden" id="status" value="off"/>
 										<input name="klas" type="hidden" id="klas" value=""/>

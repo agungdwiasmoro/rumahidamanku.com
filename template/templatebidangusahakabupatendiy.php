@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="../../../assets/bower_components/font-awesome/css/font-awesome.css">
 	<!-- AdminLTE Skins. Choose a skin from the css/skins
 	   folder instead of downloading all of them to reduce the load. -->
-	<link rel="stylesheet" href="../../../assets/dist/css/skins/skin-green.css"
+	<link rel="stylesheet" href="../../../assets/dist/css/skins/skin-green.css">
 	<!-- Google Font -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 	<!-- Theme style -->
@@ -33,7 +33,7 @@
 
  <header class="main-header">
 			<!-- Logo -->
-			<a href="" class="logo">
+			<a href="https://rumahidamanku.com" class="logo">
 			<!-- mini logo for sidebar mini 50x50 pixels -->
 				<span class="logo-mini"><b>R</b>I</span>
 				<!-- logo for regular state and mobile devices -->

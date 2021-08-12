@@ -14,7 +14,7 @@ $fileSize = $_FILES['userfile0']['size'];
 $fileType = $_FILES['userfile0']['type'];
 $namephoto = mysql_real_escape_string($_POST['namephoto0']);
 $id_profilpromo = mysql_real_escape_string($_POST['id_profilpromo']);
-// $namausaha = mysql_real_escape_string($_POST['namausaha']);
+$namausaha = mysql_real_escape_string($_POST['namausaha']);
 // $jamkerja = mysql_real_escape_string($_POST['jamkerja']);
 // $bidangusaha = mysql_real_escape_string($_POST['bidangusaha']);
 // $alamatuser = mysql_real_escape_string($_POST['alamatuser']);
@@ -66,11 +66,12 @@ function spam_scrubber($value){
 //$file_content = addslashes($content);
 // $file_content = addslashes($fileSize);
 
-$query = "INSERT INTO arsipprofilpromo (id_profilpromo, name, size, type, template, namephoto0, namausaha, jamkerja, bidangusaha, alamatuser, spec, handphone0, email, website, goomapping, goomapping1, goomapping2, goomapping3, goomapping4, goomapping5, file, ip, tanggal, jam, kodkab, provinsi, status, bayar, totaljeda, usernama, counter, tanggalaktivasi, masaberlak, kontrakcounter, keterangan, useradmint) SELECT id_profilpromo, name, size, type, template, namephoto0, namausaha, jamkerja, bidangusaha, alamatuser, spec, handphone0, email, website, goomapping, goomapping1, goomapping2, goomapping3, goomapping4, goomapping5, file, ip, tanggal, jam, kodkab, provinsi, status, bayar, totaljeda, usernama, counter, tanggalaktivasi, masaberlak, kontrakcounter, keterangan, useradmint FROM profilpromo where id_profilpromo='$id_profilpromo'";
-$query1 = "UPDATE profilpromo set name='$fileName', size='$fileSize', type='$fileType', template='$tmpName', namephoto0='$namephoto', ip='$ip', tanggal='$tanggal', jam='$jam', status='$status', usernama='$username', keterangan='$keterangan' where id_profilpromo='$id_profilpromo'";
+// $query = "INSERT INTO arsipprofilpromo (id_profilpromo, name, size, type, template, namephoto0, namausaha, jamkerja, bidangusaha, alamatuser, spec, handphone0, email, website, goomapping, goomapping1, goomapping2, goomapping3, goomapping4, goomapping5, file, ip, tanggal, jam, kodkab, provinsi, status, bayar, totaljeda, usernama, counter, tanggalaktivasi, masaberlak, kontrakcounter, keterangan, useradmint) SELECT id_profilpromo, name, size, type, template, namephoto0, namausaha, jamkerja, bidangusaha, alamatuser, spec, handphone0, email, website, goomapping, goomapping1, goomapping2, goomapping3, goomapping4, goomapping5, file, ip, tanggal, jam, kodkab, provinsi, status, bayar, totaljeda, usernama, counter, tanggalaktivasi, masaberlak, kontrakcounter, keterangan, useradmint FROM profilpromo where id_profilpromo='$id_profilpromo'";
+$query = "INSERT INTO profilpromomo (id_profilpromomo, id_profilpromo, name, size, type, template, namephoto0, namausaha,  ip, tanggal, jam, status, usernama, keterangan) VALUES ('', '$id_profilpromo' , '$fileName' , '$fileSize', '$fileType', '$tmpName', '$namephoto', '$namausaha', '$ip', '$tanggal', '$jam', '$status', '$username', '$keterangan')";
+// $query1 = "UPDATE profilpromo set name='$fileName', size='$fileSize', type='$fileType', template='$tmpName', namephoto0='$namephoto', ip='$ip', tanggal='$tanggal', jam='$jam', status='$status', usernama='$username', keterangan='$keterangan' where id_profilpromo='$id_profilpromo'";
 
 if(mysql_query($query) === TRUE) {
-	mysql_query($query1);
+	// mysql_query($query1);
 	echo "<script>alert ('Data berhasil disimpan'); document.location='index.php' </script>";
 } else {
 	echo "<script>alert ('Data Gagal'); document.location='index.php'</script>";

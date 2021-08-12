@@ -53,11 +53,17 @@ if($_SESSION['level'] != "1"){
 					
 					<tr>
 						<td><?=$no++?>.</td>
-						<td align="center"><img src="../../imageViewivent.php?image_id=<?php echo $row_konekivent['id_iventpromo']; ?>" loading="lazy" class="img-fluid" style="width: 150px; "/></td>
 						<td align="center">
+						<?php if ($row_konekivent['jenis']==='foto') { ?>
+							<img src="../../imageViewivent.php?image_id=<?php echo $row_konekivent['id_iventpromo']; ?>" loading="lazy" class="img-fluid" style="width: 150px; "/>
+						<?php } else {} ?>
+						</td> 
+						<td align="center">
+						<?php if ($row_konekivent['jenis']==='video') { ?>
 							<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: 150px;" controls="controls" preload= "auto" loading="lazy">
 								<source src="../../imageViewiventvid.php?image_id=<?php echo $row_konekivent['id_iventpromo']; ?>" type="video/mp4" />
 							</video>
+						<?php } else {} ?>
 						</td>
 						<td><?php echo $row_konekivent['judul']; ?></td>
 						<td><?php echo $row_konekivent['namausaha']; ?></td>

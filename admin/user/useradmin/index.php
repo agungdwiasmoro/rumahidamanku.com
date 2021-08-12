@@ -17,6 +17,14 @@ $row_konekprofhome = mysql_fetch_assoc($konekprofhome);
 $totalRows_konekprofhome = mysql_num_rows($konekprofhome);
 ?>
 <?php
+$username = $_SESSION['username']; 
+mysql_select_db($database_koneksi, $koneksi);
+$query = "SELECT * FROM profilpromomo WHERE usernama = '$username' ORDER BY id_profilpromomo";
+$konekprof = mysql_query($query, $koneksi) or die(mysql_error());
+$row_konekprof = mysql_fetch_assoc($konekprof);
+$totalRows_konekprof = mysql_num_rows($konekprof);
+?>
+<?php
 $username = $_SESSION['username'];
 mysql_select_db($database_koneksi, $koneksi);
 //mysql_select_db($database_konekprod, $konekprod);
@@ -48,6 +56,14 @@ include  ('templateuserusaha.php')
 										</a>
 								</td>
 							</tr>
+							<?php if ($row_konekprof['id_profilpromomo'] > 0 ) { ?>
+							<tr>
+								<td colspan="2" width="100%" align="center"><h4>On Update</h4></td>
+							</tr>
+							<tr>
+								<td colspan="2" width="100%" align="center"><img src="../../../imageViewusahaupdate.php?image_id=<?php echo $row_konekprof['id_profilpromomo']; ?>" class="img-fluid" title="<?php echo $row_konekprof['namausaha']; ?>" alt="<?php echo $row_konekprof['namausaha']; ?>" style="width: 90%; "/></td>
+							<tr>
+							<?php } else {} ?>
 							<tr>
 								<td width="20%">
 									<strong>Telepon</strong>

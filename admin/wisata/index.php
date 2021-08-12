@@ -66,11 +66,17 @@ if($_SESSION['level'] != "1"){
 					<?php do { ?>
 					<tr>
 						<td><?=$no++?>.</td>
-						<td align="center"><img src="../../imageViewwis.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" loading="lazy" class="img-fluid" style="width: 150px; height: 150px; " /></td>
 						<td align="center">
-							<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: 150px;" controls="controls" preload= "auto" loading="lazy">
-								<source src="../../imageViewwisvideo.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" type="video/mp4" />
-							</video>
+							<?php if ($row_konekwisjateng['jenis']==='photo') { ?>	
+								<img src="../../imageViewwis.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" loading="lazy" class="img-fluid" style="width: 150px; height: 150px; " />
+							<?php } else{} ?>
+						</td>
+						<td align="center">
+							<?php if ($row_konekwisjateng['jenis']==='video') { ?>
+								<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: 150px;" controls="controls" preload= "auto" loading="lazy">
+									<source src="../../imageViewwisvideo.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" type="video/mp4" />
+								</video>
+							<?php } else {} ?>
 						</td>
 						<td><?php echo $row_konekwisjateng['tempatwisata']; ?></td>
 						<td><?php echo $row_konekwisjateng['jeniswisata']; ?></td>
