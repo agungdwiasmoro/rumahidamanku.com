@@ -305,7 +305,13 @@
 				<div class="box-body" style="background-color: white; border-radius: 5px; margin: 5px;">
 					<h2 style="font-size: 18px; margin-top: 5px; margin-bottom: 0px; text-transform: uppercase;" align="center"><?= $row_konekproddiy['namaproduk']; ?></h2><hr>
 					<div class="col-md-6 col-xs-6" align="center">
-						<img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" class="img-fluid" width="100%" style="max-width:200px; max-height:200px; border-radius: 3px; margin-top: auto; margin-bottom: auto;" title="<?=$row_konekproddiy['namaproduk']; ?>, <?= $row_konekproddiy['bidangusaha']; ?>, <?= $row_konekproddiy['kodkab']; ?>, <?= $row_konekproddiy['provinsi']; ?>" alt="<?php echo $row_konekproddiy['namaproduk']; ?>">
+						<?php if ($row_konekproddiy['jenis'] === 'vidio') { ?>
+							<video id='video2' class='video-js vjs-default-skin' style="max-height: 300px; max-width: 100%; padding-top: 10px;" controls="controls" preload= "auto" loading="lazy">
+								<source src="../../../imageViewprodukvid.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" title="<?php echo $row_konekproddiy['namaproduk']; ?>" alt="<?php echo $row_konekproddiy['namaproduk']; ?>" type="video/mp4" />
+							</video>
+						<?php } else { ?>
+							<img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" class="img-fluid" width="100%" style="max-width:200px; max-height:200px; border-radius: 3px; margin-top: auto; margin-bottom: auto;" title="<?=$row_konekproddiy['namaproduk']; ?>, <?= $row_konekproddiy['bidangusaha']; ?>, <?= $row_konekproddiy['kodkab']; ?>, <?= $row_konekproddiy['provinsi']; ?>" alt="<?php echo $row_konekproddiy['namaproduk']; ?>">
+						<?php } ; ?>
 					</div>
 					<div class="col-md-6 col-xs-6">
 						<p align="justify" style="font-size: 12px;"><?php echo $row_konekproddiy['spec']; ?><br>
@@ -320,6 +326,7 @@
 		</div>
 	</div>
   </div>
+
 
   <!-- <div class="row">
       <div class="col-md-12">

@@ -126,7 +126,8 @@ include  ('templateuserusaha.php')
 							<thread>
 								<tr>
 									<th>No</th>
-									<th>Gambar Produk</th>
+									<th>Tampilan Produk</th>
+									<!-- <th>Vidio Produk</th> -->
 									<th>Nama Produk</th>
 									<th>Harga Normal</th>
 									<th>Harga Promo</th>
@@ -146,10 +147,23 @@ include  ('templateuserusaha.php')
 								
 								<tr>
 									<td><?=$no++?>.</td>
-									<td align="center"><img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" style="width: 90%; " class="img-fluid" alt="<?php echo $row_konekproddiy['namaproduk']; ?>" />
+									<!-- <td align="center"><img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" style="width: 90%; " class="img-fluid" alt="<?php echo $row_konekproddiy['namaproduk']; ?>" />
 									<br><a href ="editfotoproduk.php?id_produkpromo=<?php echo $row_konekproddiy['id_produkpromo']; ?>" class ="btn btn-primary btn-xs">
 											<i class="fa fa-pencil"></i> Ganti Gambar
-										</a></td>
+										</a>
+									</td> -->
+									<td align="center">
+										<?php if ($row_konekproddiy['jenis']==='vidio') { ?>
+										<video id='video2' class='video-js vjs-default-skin' style="width: 150px; height: 100px;" controls="controls" preload= "auto" loading="lazy">
+											<source src="../../../imageViewprodukvid.php?image_id=<?php echo $row_konekprodiy['id_produkpromo']; ?>" type="video/mp4" />
+										</video>
+										<?php } else { ?>
+											<img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" style="width: 90%; margin-bottom: 5px;" class="img-fluid" alt="<?php echo $row_konekproddiy['namaproduk']; ?>" />
+											<br><a href ="editfotoproduk.php?id_produkpromo=<?php echo $row_konekproddiy['id_produkpromo']; ?>" class ="btn btn-primary btn-xs">
+											<i class="fa fa-pencil"></i> Ganti Gambar
+											</a>
+										<?php } ; ?>
+									</td>
 									<td><?php echo $row_konekproddiy['namaproduk']; ?></td>
 									<td>Rp <?php echo $row_konekproddiy['harganormal']; ?></td>
 									<td>Rp <?php echo $row_konekproddiy['hargapromo']; ?></td>

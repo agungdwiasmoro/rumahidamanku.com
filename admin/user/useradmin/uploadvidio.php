@@ -70,14 +70,15 @@ include  ('templateuserusaha.php')
 											<label>Deskripsi Produk *</label>
 											<textarea type="text" name="spec" id="spec" value="" placeholder="Tuliskan Deskripsi Produk Anda" class="form-control"></textarea>
 										</div>
-										<div class="form-group">
-											<label>Foto Produk **</label>
-											<input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
-											<br><small>Pilih Gambar :
-											maksimal 2000 kb jika lebih tidak terkirim</small>
-											<br><img id="uploadPreview" style="width: 150px; "/><br />
-											<input type="file" name="userfileprod" id="userfileprod" title="pilih gambar produk, usahakan photo sesuai aslinya"  onchange="PreviewImage();"  />
-										</div>
+                                        <div class="form-group">
+                                            <label>Video Produk Anda **</label>
+                                            <input type="hidden" name="MAX_FILE_SIZE" value="100000000" >
+                                            <input type="file" name="userfileprod" accept="video/*" id="input-tag"/><br>
+                                            <video controls id="video-tag" style="width: 250px; height: 150px;" align="center">
+                                            <source id="video-source" src="splashVideo">
+                                            Your browser does not support the video tag.
+                                            </video>
+                                        </div>
 										<div class="form-group">
 											<label>Harga Produk **</label>
 											<input type="number" name="harganormal" id="harganormal" value="" placeholder="Harga Normal Produk Anda" class="form-control" required>
@@ -125,13 +126,15 @@ include  ('templateuserusaha.php')
 												</div>
 											</div>
 										</div>
-										
+										<div class="form-group">
+                                            <label for="gooyou">Link Vidio *</label>
+                                            <input type="text" name="gooyou" id="gooyou" placeholder="Tuliskan Link Vidio Anda" class="form-control">
+                                        </div>
 										<div class="form-group">
 											<label>Informasi Tambahan Produk *</label>
 											<textarea type="text" name="infoplus" id="infoplus" value="" placeholder="Tuliskan Informasi Tambahan Tentang Produk Anda" class="form-control"></textarea>
 										</div>
-										<input type="hidden" name="jenis" id="jenis" value="photo">
-										<input type="hidden" name="gooyou" id="gooyou" value="">
+                                        <input type="hidden" name="jenis" id="jenis" value="vidio">
 										<input name="statusjual" type="hidden" id="statusjual" value=""/>
 										<input name="username" type="hidden" id="username" value="<?php echo $row_konekproddiy['usernama']; ?>"/>
 										<input name="status" type="hidden" id="status" value="off"/>
@@ -204,6 +207,29 @@ oFReader.onload = function (oFREvent)
     document.getElementById("uploadPreview").src = oFREvent.target.result;
 };
 };
+</script>
+<script type="text/javascript">
+const videoSrc = document.querySelector("#video-source");
+const videoTag = document.querySelector("#video-tag");
+const inputTag = document.querySelector("#input-tag");
+
+inputTag.addEventListener('change',  readVideo)
+
+function readVideo(event) {
+  console.log(event.target.files)
+  if (event.target.files && event.target.files[0]) {
+    var reader = new FileReader();
+    
+    reader.onload = function(e) {
+      console.log('loaded')
+      videoSrc.src = e.target.result
+      videoTag.load()
+    }.bind(this)
+
+    reader.readAsDataURL(event.target.files[0]);
+  };
+};
+
 </script>
 </body>
 </html>

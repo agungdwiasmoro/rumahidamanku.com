@@ -67,6 +67,8 @@ $ip = mysql_real_escape_string($_POST['ip']);
 $tanggal = mysql_real_escape_string($_POST['tanggal']);
 //membaca jam user
 $jam = mysql_real_escape_string($_POST['jam']);
+$jenis = mysql_real_escape_string($_POST['jenis']);
+$gooyou = mysql_real_escape_string($_POST['gooyou']);
 //menampilkan id 
 //$id_proddiy = $_POST['id_proddiy']
 
@@ -90,10 +92,11 @@ function spam_scrubber($value){
 $file_content = addslashes($fileSize);
 //fclose($fp);
 
-$query="INSERT INTO produkpromo(id_produkpromo, name, size, type, template, namaproduk, spec, posisi, hargapromo, akhirpromo, iventdiskon, hargadiskon, mulaidiskon, akhirdiskon, harganormal, stock, expired, statusjual, infoplus, namausaha, usernama, kodkab, provinsi, bidangusaha, status, laporan, aktifasi, keterangan, klas, ip, tanggal, jam) VALUES('', '$fileName', '$fileSize', '$fileType', '$tmpName', '$namaproduk', '$spec', '$posisi', '$hargapromo', '$akhirpromo', '$iventdiskon', '$hargadiskon', '$mulaidiskon', '$akhirdiskon', '$harga', '$stock', '$expired', '$statusjual', '$infoplus', '$namausaha', '$username', '$kodkab', '$provinsi', '$bidangusaha', '$status', '$laporan', '$aktifasi', '$keterangan', '$klas', '$ip', '$tanggal', '$jam')";
+$query="INSERT INTO produkpromo(id_produkpromo, name, size, type, template, namaproduk, spec, posisi, hargapromo, akhirpromo, iventdiskon, hargadiskon, mulaidiskon, akhirdiskon, harganormal, stock, expired, statusjual, infoplus, namausaha, usernama, kodkab, provinsi, bidangusaha, status, laporan, aktifasi, keterangan, klas, ip, tanggal, jam, jenis, gooyou) VALUES('', '$fileName', '$fileSize', '$fileType', '$tmpName', '$namaproduk', '$spec', '$posisi', '$hargapromo', '$akhirpromo', '$iventdiskon', '$hargadiskon', '$mulaidiskon', '$akhirdiskon', '$harga', '$stock', '$expired', '$statusjual', '$infoplus', '$namausaha', '$username', '$kodkab', '$provinsi', '$bidangusaha', '$status', '$laporan', '$aktifasi', '$keterangan', '$klas', '$ip', '$tanggal', '$jam', '$jenis', '$gooyou')";
 //mysql_query($query);
-$hasil = mysql_query($query);
-
-// menggabungkan nama folder dan nama file
-echo "<script>alert ('Data berhasil ditambahkan'); document.location='index.php'</script>";          
+if(mysql_query($query) === TRUE) {
+	echo "<script>alert ('Data berhasil disimpan'); document.location='index.php' </script>";
+	} else {
+		echo "<script>alert ('Data Gagal, Coba Lagi'); </script>";
+	}
 ?>

@@ -87,7 +87,15 @@
 					<ul class="sidebar-menu" data-widget="tree">
 						<li class="header">MENU USER</li>
 						<li><a href="index.php"><i class="fa fa-home"></i> <span>Profil Usaha</span></a></li>
-						<li><a href="upload.php"><i class="fa fa-plus"></i> <span>Tambah Produk</span></a></li>
+						<li class="treeview">
+							<a href="#"><i class="fa fa-cutlery"></i> <span>Tambah Produk</span>
+								<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+							</a>
+								<ul class="treeview-menu">
+									<li><a href="upload.php"><i class="fa fa-circle-o"></i>Gambar Produk</a></li>
+									<li><a href="uploadvidio.php"><i class="fa fa-circle-o"></i>Vidio Produk</a></li>
+								</ul>
+						</li>
 						<li><a href="ivent.php"><i class="fa fa-info"></i> <span>Event Usaha</span></a></li>
 						<li><a href="loker.php"><i class="fa fa-sticky-note"></i> <span>Upload Loker</span></a></li>
 						<li><a href="transaksi.php"><i class="fa fa-dollar"></i> <span>Pembayaran</span></a></li>
@@ -110,7 +118,7 @@
 						<center><img src="../../../image/logobaru.jpg" class="img-fluid" style="max-width: 60%"></center>
 					</div>
 					<div class="col-md-4 col-xs-12">
-						<h3><center>
+						<h3 style="margin-top: 0px;"><center>
 							<strong>Selamat Datang</strong><br>
 							<small>one stop service for living</small>
 						</center></h3>
