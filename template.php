@@ -130,7 +130,7 @@
 							</a>
 							<ul class="treeview-menu">
 								<li><a href="Aceh/index.php"><i class="fa fa-circle-o"></i> N A D </a></li>
-								<li><a href="Sumatera Utara/index"><i class="fa fa-circle-o"></i> Sumatera Utara </a></li>
+								<li><a href="Sumatera Utara/index.php"><i class="fa fa-circle-o"></i> Sumatera Utara </a></li>
 								<li><a href="Sumatera Barat/index.php"><i class="fa fa-circle-o"></i> Sumatera Barat</a></li>
 								<li><a href="Riau/index.php"><i class="fa fa-circle-o"></i> Riau</a></li>
 								<li><a href="Kepulauan Riau/index.php"><i class="fa fa-circle-o"></i> Kepulauan Riau</a></li>

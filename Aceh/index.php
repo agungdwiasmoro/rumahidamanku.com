@@ -1,6 +1,6 @@
 <?php require_once('../masterweb/koneksi.php'); ?>
 <?php $posisi = "head"; ?>
-<?php $provinsi = "Aceh"; ?>
+<?php $provinsi = "Nanggroe Aceh Darussalam"; ?>
 <?php $kodkab = "none"; ?>
 <?php $status = "on"; ?>
 <?php include ('../query/queryprovinsi.php'); ?>

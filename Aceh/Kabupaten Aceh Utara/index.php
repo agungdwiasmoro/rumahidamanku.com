@@ -6,7 +6,7 @@
 <?php //require_once('../../Connections/konekinfo.php'); ?>
 <?php $posisi = "head"; ?>
 <?php //$posisi = "body"; ?>
-<?php $provinsi = "Aceh"; ?>
+<?php $provinsi = "Nanggroe Aceh Darussalam"; ?>
 <?php //$provin = "jawa tengah"; ?>
 <?php $kodkab = "Kabupaten Aceh Utara"; ?>
 <?php //require_once('../../masterweb/masterweb/koneksi.php'); ?>

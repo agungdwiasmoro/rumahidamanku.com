@@ -36,7 +36,7 @@
                   <li><a href="Kabupaten Paser/index.php">Kab. Paser</a></li>
                   <li><a href="Kabupaten Penajam Paser Utara/index.php">Kab. Penajam Paser Utara</a></li>
                   <li><a href="Kota Balikpapan/index.php">Kota Balikpapan</a></li>
-                  <li><a href="Kota Bontang/index.php"> Kota Bntang</a></li>
+                  <li><a href="Kota Bontang/index.php"> Kota Bontang</a></li>
                   <li><a href="Kota Samarinda/index.php"> Kota Samarinda</a></li>
                 </ul>
               </div>

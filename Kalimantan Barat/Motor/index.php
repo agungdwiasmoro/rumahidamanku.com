@@ -38,7 +38,7 @@
                   <li><a href="../Kabupaten Sintang/index.php">Kab. Sintang</a></li>
                   <li><a href="../Kota Pontianak/index.php">Kota Pontianak</a></li>
                   <li><a href="../Kota Singkawang/index.php"> Kota Singkawang</a></li>
-                  <li><a href="../Kota Sintang/index.php"> Kota Sintang</a></li>
+                  <!-- <li><a href="../Kota Sintang/index.php"> Kota Sintang</a></li> -->
                   
                 </ul>
               </div>

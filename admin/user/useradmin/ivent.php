@@ -49,7 +49,7 @@ include  ('templateuserusaha.php');
 			<h3 class="box-title">Data Event Usaha</h3>
 			<div class="pull-right">
 				<div class="btn-group">
-					<button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-plus"></i> Tambah Ivent
+					<button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown"><i class="fa fa-plus"></i> Tambah Ivent
 					  <span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu" style="min-width: 10px;">

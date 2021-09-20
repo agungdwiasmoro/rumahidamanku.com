@@ -127,6 +127,14 @@ include  ('templateuserusaha.php')
 											</div>
 										</div>
 										<div class="form-group">
+										<label>Link Lokasi<a href="#goomapping" class="btn" data-toggle="collapse" title="klik untuk menambahkan lokasi"><i class="fa fa-angle-down"></i></a></label>
+											<div id="goomapping" class="collapse">
+												<div class="form-group">
+													<input type="text" name="goomapping" id="goomapping" value="" placeholder="Link Lokasi" class="form-control">
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
                                             <label for="gooyou">Link Vidio *</label>
                                             <input type="text" name="gooyou" id="gooyou" placeholder="Tuliskan Link Vidio Anda" class="form-control">
                                         </div>

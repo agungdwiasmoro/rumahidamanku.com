@@ -69,6 +69,7 @@ $tanggal = mysql_real_escape_string($_POST['tanggal']);
 $jam = mysql_real_escape_string($_POST['jam']);
 $jenis = mysql_real_escape_string($_POST['jenis']);
 $gooyou = mysql_real_escape_string($_POST['gooyou']);
+$goomapping = mysql_real_escape_string($_POST['goomapping']);
 //menampilkan id 
 //$id_proddiy = $_POST['id_proddiy']
 
@@ -76,27 +77,27 @@ $gooyou = mysql_real_escape_string($_POST['gooyou']);
 // username ini sekaligus menyatakan informasi pemilik file
 //$username = $_SESSION['username'];
 
-function spam_scrubber($value){
-	$bad=array('to:', 'cc:', 'bcc:', 'content-type:', 'mime-version:', 'multipart-mixed:', 'content-transfer-encoding:');
-		foreach ($bad as $v)
-		{
-			if (stripos($value, $v) !== false) return '';
-		}
-	$value = str_replace(array("\r", "\n", "%0a", "%0d"), ' ', $value);
-	return trim($value);
-}
+// function spam_scrubber($value){
+// 	$bad=array('to:', 'cc:', 'bcc:', 'content-type:', 'mime-version:', 'multipart-mixed:', 'content-transfer-encoding:');
+// 		foreach ($bad as $v)
+// 		{
+// 			if (stripos($value, $v) !== false) return '';
+// 		}
+// 	$value = str_replace(array("\r", "\n", "%0a", "%0d"), ' ', $value);
+// 	return trim($value);
+// }
 	
-//$fp      = fopen($tmpName, 'r');
-//$content = fread($fp, filesize($tmpName));
-//$file_content = addslashes($content);
-$file_content = addslashes($fileSize);
+// //$fp      = fopen($tmpName, 'r');
+// //$content = fread($fp, filesize($tmpName));
+// //$file_content = addslashes($content);
+// $file_content = addslashes($fileSize);
 //fclose($fp);
 
-$query="INSERT INTO produkpromo(id_produkpromo, name, size, type, template, namaproduk, spec, posisi, hargapromo, akhirpromo, iventdiskon, hargadiskon, mulaidiskon, akhirdiskon, harganormal, stock, expired, statusjual, infoplus, namausaha, usernama, kodkab, provinsi, bidangusaha, status, laporan, aktifasi, keterangan, klas, ip, tanggal, jam, jenis, gooyou) VALUES('', '$fileName', '$fileSize', '$fileType', '$tmpName', '$namaproduk', '$spec', '$posisi', '$hargapromo', '$akhirpromo', '$iventdiskon', '$hargadiskon', '$mulaidiskon', '$akhirdiskon', '$harga', '$stock', '$expired', '$statusjual', '$infoplus', '$namausaha', '$username', '$kodkab', '$provinsi', '$bidangusaha', '$status', '$laporan', '$aktifasi', '$keterangan', '$klas', '$ip', '$tanggal', '$jam', '$jenis', '$gooyou')";
+$query="INSERT INTO produkpromo(id_produkpromo, name, size, type, template, namaproduk, spec, posisi, hargapromo, akhirpromo, iventdiskon, hargadiskon, mulaidiskon, akhirdiskon, harganormal, stock, expired, statusjual, infoplus, namausaha, usernama, kodkab, provinsi, bidangusaha, status, laporan, aktifasi, keterangan, klas, ip, tanggal, jam, jenis, gooyou, goomapping) VALUES('', '$fileName', '$fileSize', '$fileType', '$tmpName', '$namaproduk', '$spec', '$posisi', '$hargapromo', '$akhirpromo', '$iventdiskon', '$hargadiskon', '$mulaidiskon', '$akhirdiskon', '$harga', '$stock', '$expired', '$statusjual', '$infoplus', '$namausaha', '$username', '$kodkab', '$provinsi', '$bidangusaha', '$status', '$laporan', '$aktifasi', '$keterangan', '$klas', '$ip', '$tanggal', '$jam', '$jenis', '$gooyou', '$goomapping')";
 //mysql_query($query);
 if(mysql_query($query) === TRUE) {
 	echo "<script>alert ('Data berhasil disimpan'); document.location='index.php' </script>";
 	} else {
-		echo "<script>alert ('Data Gagal, Coba Lagi'); </script>";
+		echo "<script>alert ('Data Gagal, Coba Lagi'); document.location='index.php' </script>";
 	}
 ?>

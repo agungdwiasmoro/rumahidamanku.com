@@ -19,7 +19,7 @@
                   <li><a href="../Kabupaten Bengkulu Selatan/index.php"> Kab. Bengkulu Selatan</a></li>
                   <li><a href="../Kabupaten Bengkulu Tengah/index.php"> Kab. Bengkulu Tengah</a></li>
                   <li><a href="../Kabupaten Bengkulu Utara/index.php"> Kab. Bengkulu Utara</a></li>
-                  <li><a href="../Kabupaten Kapahiang/index.php"> Kab. Kapahiang</a></li>
+                  <li><a href="../Kabupaten Kepahiang/index.php"> Kab. Kepahiang</a></li>
                   <li><a href="../Kabupaten Kaur/index.php">Kab. Kaur</a></li>
                   <li><a href="../Kabupaten Lebong/index.php">Kab. Lebong</a></li>
                   <li><a href="../Kabupaten Mukomuko/index.php">Kab. Mukomuko</a></li>

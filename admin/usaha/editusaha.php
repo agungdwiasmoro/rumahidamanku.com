@@ -201,7 +201,6 @@ if($_SESSION['level'] != "1"){
 							<input name="jam" type="hidden" value="<?php echo date('G,i'); ?>"/>
 							<input name="counter" type="hidden" value="<?php echo $row_konekprofhome['counter']; ?>"/>
 							<input name="totaljeda" type="hidden" value="<?php echo $row_konekprofhome['totaljeda']; ?>"/>
-							<input name="kontrakcounter" type="hidden" value="<?php echo $row_konekprofhome['kontrakcounter']; ?>"/>
 							
 							
 							<div class="form-group pull-left">

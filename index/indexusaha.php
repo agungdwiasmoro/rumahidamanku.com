@@ -315,8 +315,13 @@
 					</div>
 					<div class="col-md-6 col-xs-6">
 						<p align="justify" style="font-size: 12px;"><?php echo $row_konekproddiy['spec']; ?><br>
-						<?= $row_konekproddiy['infoplus'] ?><br>
-						Stock : <?php echo $row_konekproddiy['stock']; ?> <br> </p><hr>
+						Stock : <?php echo $row_konekproddiy['stock']; ?> <br>
+						<?= $row_konekproddiy['infoplus'] ?><br></p>
+						<!-- jika data kosong tidak ditampilakn -->
+						<?php if ($row_konekproddiy['goomapping'] != null ) : ?>
+						<a href="<?= $row_konekproddiy['goomapping'];?>" style="font-style:italic; color: blue; ">Lihat Lokasi Disini.</a>
+						<?php endif; ?> 
+						<hr>
 						<h3 align="center">Rp <?php echo $row_konekproddiy['harganormal']; ?></h3>
 					</div>
 				</div>

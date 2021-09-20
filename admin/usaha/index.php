@@ -144,18 +144,20 @@ if($_SESSION['level'] != "1"){
 							$jd2 = GregorianToJD($month2, $date2, $year2);
 							// hitung selisih hari kedua tanggal
 							$selisih = $jd2 - $jd1;
-									
+							// masa berlaku
 							$masa = $lama - abs($selisih);
-							if ($masa <= 0){
-								$id_profilpromo = $row_konekprofhome['id_profilpromo']; 
-								$query = "UPDATE profilpromo set status='off' where id_profilpromo='$id_profilpromo'";
-								$hasil=mysql_query($query);
-								echo "<span style='color: red;'>".$masa." hari</span>"; 
-								} else if ($masa <= 6){
+							if ($row_konekprofhome['keterangan'] != 'perkunjungan') {
+								if ($masa <= 0){
+									$id_profilpromo = $row_konekprofhome['id_profilpromo']; 
+									$query = "UPDATE profilpromo set status='off' where id_profilpromo='$id_profilpromo'";
+									$hasil=mysql_query($query);
 									echo "<span style='color: red;'>".$masa." hari</span>"; 
-								} else {
-									echo $masa." hari<br>"; 
-								}
+									} else if ($masa <= 6){
+										echo "<span style='color: red;'>".$masa." hari</span>"; 
+									} else {
+										echo $masa." hari<br>"; 
+									}
+							} ;
 							?></td>
 						<td><?php echo $row_konekprofhome['kontrakcounter']; ?></td>
 						<td><?php echo $row_konekprofhome['counter']; ?></td>

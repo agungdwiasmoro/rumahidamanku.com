@@ -57,8 +57,8 @@ if($_SESSION['level'] != "1"){
 						<!-- <td align="center"><img src="../../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" style="width: 150px; height: 150px; " class="img-fluid" alt="<?php echo $row_konekproddiy['namaproduk']; ?>" /></td> -->
 						<td align="center">
 							<?php if ($row_konekproddiy['jenis'] ==='vidio') { ?>
-							<video id='video2' class='video-js vjs-default-skin' style="width: 150px; height: 100px;" controls="controls" preload= "auto" loading="lazy">
-								<source src="../../imageViewprodukvid.php?image_id=<?php echo $row_konekprodiy['id_produkpromo']; ?>" type="video/mp4" />
+							<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: auto;" controls="controls" preload= "auto" loading="lazy">
+								<source src="../../imageViewprodukvid.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" type="video/mp4" />
 							</video>
 							<?php } else { ?>
 								<img src="../../imageViewproduk.php?image_id=<?php echo $row_konekproddiy['id_produkpromo']; ?>" loading="lazy" style="width: 150px; height: 150px; " class="img-fluid" alt="<?php echo $row_konekproddiy['namaproduk']; ?>" />

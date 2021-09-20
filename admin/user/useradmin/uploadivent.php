@@ -53,8 +53,6 @@ include  ('templateuserusaha.php');
 					</div>
 					
 				</div>
-				<?php if($masa <= 0) { 
-				} else { ?>
 				<div class="box-body">
 					<form action="prosesuploadivent.php" method="post" enctype="multipart/form-data" target="_self">
 						<div class="col-md-6 col-md-offset-3 ">
@@ -130,13 +128,9 @@ include  ('templateuserusaha.php');
 					</div>
 				</form>
 			</div>
-			<?php } ?>
 		</div>
 	</div>
-</div>
-<?php if ($masa <= 0) { ?>
-	<p align="center" style="margin-top: 20px;">Maaf saat ini akun anda sedang tidak aktif, <br>Segera hubungi <a href="https://api.whatsapp.com/send?phone=6285228757757" style="border-bottom: 1px solid;">Customer Service</a> atau email ke <a href="mailto:rumahidamanku.com@gmail.com" style="border-bottom: 1px solid;">rumahidamanku.com@gmail.com</a> untuk aktivasi laman.</p>
-<?php } ?>		
+</div>		
 </section>
 	</div>
 	<footer class="main-footer">

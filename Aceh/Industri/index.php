@@ -1,5 +1,5 @@
 <?php require_once('../../masterweb/koneksi.php'); ?>
-<?php $provinsi = "Aceh"; ?>
+<?php $provinsi = "Nanggroe Aceh Darussalam"; ?>
 <?php $bidangusaha = "industri"; ?>
 <?php $status = "on"; ?>
 <?php include ('../../query/querybidangusahaprovinsi.php'); ?>

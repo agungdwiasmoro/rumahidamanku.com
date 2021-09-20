@@ -8,7 +8,7 @@
 <?php //$posisi = "body"; ?>
 <?php $provinsi = "Sumatera Selatan"; ?>
 <?php $bidangusaha = "elektronika"; ?>
-<?php $kodkab = "Kabupaten Ogan Komering Ulu selatan"; ?>
+<?php $kodkab = "Kabupaten Ogan Komering Ulu Selatan"; ?>
 <?php $status = "on"; ?>
 <?php //require_once('../../../masterweb/masterweb/koneksi.php'); ?>
 <?php //require_once('../../../Connections/konekprof.php'); ?>

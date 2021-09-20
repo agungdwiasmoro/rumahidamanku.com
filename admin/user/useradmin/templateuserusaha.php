@@ -99,7 +99,8 @@
 						<li><a href="ivent.php"><i class="fa fa-info"></i> <span>Event Usaha</span></a></li>
 						<li><a href="loker.php"><i class="fa fa-sticky-note"></i> <span>Upload Loker</span></a></li>
 						<li><a href="transaksi.php"><i class="fa fa-dollar"></i> <span>Pembayaran</span></a></li>
-						<li><a href="syaratdanketentuan.php"><i class="fa fa-question"></i> <span>Syarat & Ketentuan</span></a></li>
+						<li><a href="syaratdanketentuan.php"><i class="fa fa-book"></i> <span>Syarat & Ketentuan</span></a></li>
+						<li><a href="help.php"><i class="fa fa-question"></i><span>Help</span></a></li>
 						<li class="header"></li>
 							<li><a href="../../logout.php"><i class="fa fa-power-off"></i> <span>Keluar</span></a>
 						</li>
@@ -115,7 +116,7 @@
 			<section class="content-header">
 				<div class="row">
 					<div class="col-md-4 col-xs-12">
-						<center><img src="../../../image/logobaru.jpg" class="img-fluid" style="max-width: 60%"></center>
+						<center><img src="../../../image/logobaru.jpg" class="img-fluid" style="max-width: 60%; margin-bottom:5px;"></center>
 					</div>
 					<div class="col-md-4 col-xs-12">
 						<h3 style="margin-top: 0px;"><center>
@@ -147,6 +148,7 @@
 						// hitung selisih hari kedua tanggal
 						$selisih = $jd2 - $jd1;
 						$masa = $lama - abs($selisih);
+						// menghitung counter berakhir
 						$batas = $row_konekprofhome['kontrakcounter'] - $row_konekprofhome['counter'];
 
 						if ($row_konekprofhome['keterangan'] == 'perkunjungan') { ?>
