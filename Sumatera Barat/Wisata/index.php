@@ -37,7 +37,8 @@
                   <li><a href="../Kabupaten Solok Selatan/index.php">Kab. Solok Selatan</a></li>
                   <li><a href="../Kabupaten Tanah Datar/index.php">Kab. Tanah Datar</a></li>
                   <li><a href="../Kota Bukittinggi/index.php"> Kota Bukittinggi</a></li>
-                  <li><a href="../Kota Padangpanjang/index.php"> Kota Padangpanjang</a></li>
+                  <li><a href="../Kota Padang/index.php">Kota Padang</a></li>
+                  <li><a href="../Kota Padangpanjang/index.php">Kota Padang Panjang</a></li>
                   <li><a href="../Kota Pariaman/index.php">Kota Pariaman</a></li>
                   <li><a href="../Kota Payakumbuh/index.php">Kota Payakumbuh</a></li>
                   <li><a href="../Kota Sawahlunto/index.php">Kota Sawahlunto</a></li>

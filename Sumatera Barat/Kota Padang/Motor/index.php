@@ -6,9 +6,9 @@
 <?php //require_once('../../../Connections/konekinfo.php'); ?>
 <?php //$posisi = "head"; ?>
 <?php //$posisi = "body"; ?>
-<?php $provinsi = "Sumatera Utara"; ?>
-<?php $bidangusaha = "industri"; ?>
-<?php $kodkab = "Kota Gunung Sitoli"; ?>
+<?php $provinsi = "Sumatera Barat"; ?>
+<?php $bidangusaha = "motor"; ?>
+<?php $kodkab = "Kota Padang"; ?>
 <?php $status = "on"; ?>
 <?php //require_once('../../../masterweb/masterweb/koneksi.php'); ?>
 <?php //require_once('../../../Connections/konekprof.php'); ?>
@@ -29,14 +29,14 @@
           <div class="box">
             <div class="box-header col-md-10 col-md-offset-1">
               <?php include ('../../daftarkabupatenbidangusaha.php'); ?>
-				  <td>
+              <td>
                     <div class="btn-group">
                       <a href="../Properti/index.php" class ="btn btn-default btn-xs"> Properti</a>
                       <a href="../Mobil/index.php" class ="btn btn-default btn-xs"> Mobil</a>
-                      <a href="../Motor/index.php" class ="btn btn-default btn-xs"> Motor</a>
+                      <a href="../Motor/index.php" class ="btn btn-default btn-xs active"> Motor</a>
                       <a href="../Komputer/index.php" class ="btn btn-default btn-xs"> Komputer</a>
-                      <a href="../Industri/index.php" class ="btn btn-default btn-xs active"> Industri</a>
-                      <a href="../Elektronika/index.php" class ="btn btn-default btn-xs"> Elektronika</a>
+                      <a href="../Industri/index.php" class ="btn btn-default btn-xs"> Industri</a>
+                      <a href="../Elektronika/index.php" class ="btn btn-default btn-xs "> Elektronika</a>
                       <a href="../Wisata/index.php" class ="btn btn-default btn-xs"> Wisata</a>
                     </div>
                   </td>

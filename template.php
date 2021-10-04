@@ -124,7 +124,7 @@
 						<li class="header">	INFO LOKASI</li>
 						<li class="treeview">
 							<a href="#">
-								<i class="fa fa-map-marker"></i> <span>Pilih Lokasi</span>
+								<i class="fa fa-map-marker"></i> <span>Pilih Provinsi</span>
 								<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i>
 								</span>
 							</a>

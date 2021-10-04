@@ -8,7 +8,7 @@
 <?php //$posisi = "body"; ?>
 <?php $provinsi = "Sumatera Utara"; ?>
 <?php $bidangusaha = "komputer"; ?>
-<?php $kodkab = "Kota Gunungsitoli"; ?>
+<?php $kodkab = "Kota Gunung Sitoli"; ?>
 <?php $status = "on"; ?>
 <?php //require_once('../../../masterweb/masterweb/koneksi.php'); ?>
 <?php //require_once('../../../Connections/konekprof.php'); ?>

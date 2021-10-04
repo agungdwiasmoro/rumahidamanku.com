@@ -43,7 +43,7 @@
                   <li><a href="Kabupaten Nias Barat/index.php">Kab. Nias Barat</a></li>
                   <li><a href="Kabupaten Nias Selatan/index.php">Kab. Nias Selatan</a></li>
                   <li><a href="Kabupaten Nias Utara.index.php">Kab. Nias Utara</a></li>
-                  <li><a href="Kabupaten Padanag Lawas/index.php">Kab. Padang Lawas</a></li>
+                  <li><a href="Kabupaten Padang Lawas/index.php">Kab. Padang Lawas</a></li>
                   <li><a href="Kabupaten Padang Lawas Utara/index.php">Kab. Padang Lawas Utara</a></li>
                   <li><a href="Kabupaten Pakpak Bharat">Kab. Pakpak Bharat</a></li>
                   <li><a href="Kabupaten Samosir/index.php">Kab. Samosir</a></li>
@@ -54,10 +54,12 @@
                   <li><a href="Kabupaten Tapanuli Utara/index.php">Kab. Tapanuli Utara</a></li>
                   <li><a href="Kabupaten Toba/index.php">Kab. Toba</a></li>
                   <li><a href="Kota Binjai/index.php"> Kota Binjai</a></li>
+                  <li><a href="Kota Gunungsitoli/index.php">Kota Gunung Sitoli</a></li>
+                  <li><a href="Kota Medan/index.php">Kota Medan</a></li>
                   <li><a href="Kota Padangsidempuan/index.php"> Kota Padangsidempuan</a></li>
                   <li><a href="Kota Pematangsiantar/index.php">Kota Pematangsiantar</a></li>
                   <li><a href="Kota Sibolga/index.php">Kota Sibolga</a></li>
-                  <li><a href="Kota Tanjungbalai/index.php">Kota Tanjungbalai</a></li>
+                  <li><a href="Kota Tanjungbalai/index.php">Kota Tanjung Balai</a></li>
                   <li><a href="Kota Tebing Tinggi/index.php">Kota Tebing Tinggi</a></li>
                 </ul>
               </div>

@@ -8,7 +8,7 @@
 <?php //$posisi = "body"; ?>
 <?php $provinsi = "Kalimantan Tengah"; ?>
 <?php $bidangusaha = "elektronika"; ?>
-<?php $kodkab = "Kabupaten Pulang Pisang"; ?>
+<?php $kodkab = "Kabupaten Pulang Pisau"; ?>
 <?php $status = "on"; ?>
 <?php //require_once('../../../masterweb/masterweb/koneksi.php'); ?>
 <?php //require_once('../../../Connections/konekprof.php'); ?>

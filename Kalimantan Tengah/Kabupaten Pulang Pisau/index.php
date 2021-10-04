@@ -8,7 +8,7 @@
 <?php //$posisi = "body"; ?>
 <?php $provinsi = "Kalimantan Tengah"; ?>
 <?php //$provin = "jawa tengah"; ?>
-<?php $kodkab = "Kabupaten Pulang Pisang"; ?>
+<?php $kodkab = "Kabupaten Pulang Pisau"; ?>
 <?php //require_once('../../masterweb/masterweb/koneksi.php'); ?>
 <?php //require_once('../../Connections/konekprof.php'); ?>
 <?php //require_once('../../Connections/konekdprprov.php'); ?>

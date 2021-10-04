@@ -6,9 +6,9 @@
 <?php //require_once('../../Connections/konekinfo.php'); ?>
 <?php $posisi = "head"; ?>
 <?php //$posisi = "body"; ?>
-<?php $provinsi = "Sumatera Utara"; ?>
+<?php $provinsi = "Sumatera Barat"; ?>
 <?php //$provin = "jawa tengah"; ?>
-<?php $kodkab = "Kota Gunung Sitoli"; ?>
+<?php $kodkab = "Kota Padang"; ?>
 <?php //require_once('../../masterweb/masterweb/koneksi.php'); ?>
 <?php //require_once('../../Connections/konekprof.php'); ?>
 <?php //require_once('../../Connections/konekdprprov.php'); ?>

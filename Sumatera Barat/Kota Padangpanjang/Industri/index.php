@@ -8,7 +8,7 @@
 <?php //$posisi = "body"; ?>
 <?php $provinsi = "Sumatera Barat"; ?>
 <?php $bidangusaha = "industri"; ?>
-<?php $kodkab = "Kota Padangpanjang"; ?>
+<?php $kodkab = "Kota Padang Panjang"; ?>
 <?php $status = "on"; ?>
 <?php //require_once('../../../masterweb/masterweb/koneksi.php'); ?>
 <?php //require_once('../../../Connections/konekprof.php'); ?>

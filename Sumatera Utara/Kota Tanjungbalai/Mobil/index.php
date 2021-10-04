@@ -8,7 +8,7 @@
 <?php //$posisi = "body"; ?>
 <?php $provinsi = "Sumatera Utara"; ?>
 <?php $bidangusaha = "mobil"; ?>
-<?php $kodkab = "Kota Tanjungbalai"; ?>
+<?php $kodkab = "Kota Tanjung Balai"; ?>
 <?php $status = "on"; ?>
 <?php //require_once('../../../masterweb/masterweb/koneksi.php'); ?>
 <?php //require_once('../../../Connections/konekprof.php'); ?>
