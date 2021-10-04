@@ -42,13 +42,13 @@
                   <li><a href="Kabupaten Bener Meriah/index.php">Kab. Bener Meriah</a></li>
                   <li><a href="Kabupaten Bireuen/index.php">Kab. Bireuen</a></li>
                   <li><a href="Kabupaten Gayo Lues/index.php">Kab. Gayo Lues</a></li>
-                  <li><a href="Kabupaten Nagan raya/index.php">Kab. Nagan Raya</a></li>
+                  <li><a href="Kabupaten Nagan Raya/index.php">Kab. Nagan Raya</a></li>
                   <li><a href="Kabupaten Pidie/index.php">Kab. Pidie</a></li>
                   <li><a href="kabupaten Pidie Jaya/index.php">Kab. Pidie Jaya</a></li>
                   <li><a href="Kabupaten Simeulue/index.php">Kab. Simeuleu</a></li>
                   <li><a href="Kota Banda Aceh/index.php">Kota Banda Aceh</a></li>
                   <li><a href="Kota Langsa/index.php">Kota Langsa</a></li>
-                  <li><a href="Kota Lhoksumawe/index.php">Kota Lhoksumawe</a></li>
+                  <li><a href="Kota Lhokseumawe/index.php">Kota Lhoksumawe</a></li>
                   <li><a href="Kota Sabang">Kota Sabang</a></li>
                   <li><a href="Kota Subulussalam/index.php">Kota Subulussalam</a></li>
                   

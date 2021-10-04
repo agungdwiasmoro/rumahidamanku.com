@@ -8,7 +8,7 @@
 <?php //$posisi = "body"; ?>
 <?php $provinsi = "Sumatera Selatan"; ?>
 <?php $bidangusaha = "wisata"; ?>
-<?php $kodkab = "Kabupaten Penukai Abab Lematang Ilir"; ?>
+<?php $kodkab = "Kabupaten Penukal Abab Lematang Ilir"; ?>
 <?php $status = "on"; ?>
 <?php //require_once('../../../masterweb/masterweb/koneksi.php'); ?>
 <?php //require_once('../../../Connections/konekprof.php'); ?>

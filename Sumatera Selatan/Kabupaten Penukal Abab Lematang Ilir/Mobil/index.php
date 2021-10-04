@@ -7,8 +7,8 @@
 <?php //$posisi = "head"; ?>
 <?php //$posisi = "body"; ?>
 <?php $provinsi = "Sumatera Selatan"; ?>
-<?php $bidangusaha = "properti"; ?>
-<?php $kodkab = "Kabupaten Penukai Abab Lematang Ilir"; ?>
+<?php $bidangusaha = "mobil"; ?>
+<?php $kodkab = "Kabupaten Penukal Abab Lematang Ilir"; ?>
 <?php $status = "on"; ?>
 <?php //require_once('../../../masterweb/masterweb/koneksi.php'); ?>
 <?php //require_once('../../../Connections/konekprof.php'); ?>
@@ -31,12 +31,12 @@
               <?php include ('../../daftarkabupatenbidangusaha.php'); ?>
               <td>
                     <div class="btn-group">
-                      <a href="../Properti/index.php" class ="btn btn-default btn-xs active"> Properti</a>
-                      <a href="../Mobil/index.php" class ="btn btn-default btn-xs"> Mobil</a>
+                      <a href="../Properti/index.php" class ="btn btn-default btn-xs"> Properti</a>
+                      <a href="../Mobil/index.php" class ="btn btn-default btn-xs active"> Mobil</a>
                       <a href="../Motor/index.php" class ="btn btn-default btn-xs"> Motor</a>
                       <a href="../Komputer/index.php" class ="btn btn-default btn-xs"> Komputer</a>
                       <a href="../Industri/index.php" class ="btn btn-default btn-xs"> Industri</a>
-                      <a href="../Elektronika/index.php" class ="btn btn-default btn-xs"> Elektronika</a>
+                      <a href="../Elektronika/index.php" class ="btn btn-default btn-xs "> Elektronika</a>
                       <a href="../Wisata/index.php" class ="btn btn-default btn-xs"> Wisata</a>
                     </div>
                   </td>

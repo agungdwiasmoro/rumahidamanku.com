@@ -30,7 +30,7 @@
                   <li><a href="../Kabupaten Nias/index.php">Kab. Nias</a></li>
                   <li><a href="../Kabupaten Nias Barat/index.php">Kab. Nias Barat</a></li>
                   <li><a href="../Kabupaten Nias Selatan/index.php">Kab. Nias Selatan</a></li>
-                  <li><a href="../Kabupaten Nias Utara.index.php">Kab. Nias Utara</a></li>
+                  <li><a href="../Kabupaten Nias Utara/index.php">Kab. Nias Utara</a></li>
                   <li><a href="../Kabupaten Padang Lawas/index.php">Kab. Padang Lawas</a></li>
                   <li><a href="../Kabupaten Padang Lawas Utara/index.php">Kab. Padang Lawas Utara</a></li>
                   <li><a href="../Kabupaten Pakpak Bharat">Kab. Pakpak Bharat</a></li>

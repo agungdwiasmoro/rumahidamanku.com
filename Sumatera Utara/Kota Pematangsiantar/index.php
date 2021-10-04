@@ -8,7 +8,7 @@
 <?php //$posisi = "body"; ?>
 <?php $provinsi = "Sumatera Utara"; ?>
 <?php //$provin = "jawa tengah"; ?>
-<?php $kodkab = "Kota Pematangsiantar"; ?>
+<?php $kodkab = "Kota Pematang Siantar"; ?>
 <?php //require_once('../../masterweb/masterweb/koneksi.php'); ?>
 <?php //require_once('../../Connections/konekprof.php'); ?>
 <?php //require_once('../../Connections/konekdprprov.php'); ?>
