@@ -1,9 +1,6 @@
 <div align="center" style="margin-top: -20px !important; margin-bottom: 5px; ">
 		<?php
-			//	  $pemakai = "ruh5758";
-			//	  $password = "ruh065758idaman";
-			//	  $database = "rumah06_rumah065758";
-			//	  $id_MySQL=MySQL_connect("localhost",$pemakai,$password);
+		
 				   
 			//	  if (!$id_MySQL)die ("MySQL database cant open!");
 				  if (!$koneksi)die ("MySQL database cant open!");

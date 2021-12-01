@@ -8,83 +8,83 @@
       <?php 
       if ($totalRows_konekwisataindonesia == 0 ) {
       } else { ?>
-	  	<div class="row">
+	  <div class="row">
         <div class="col-md-12">
           <div class="box">
-						<div class="box-header with-border col-md-10 col-md-offset-1">
-						  <h3 align="center">Wisata Indonesia</h3>
-						  <marquee><h6>Explore Indonesia Dengan Semua Keindahannya</h6></marquee>
-						</div>
-						<div class="box-body">
-						<?php if ($totalRows_konekwis > 0) { // Show if recordset not empty ?>
-						<?php do { ?>
-						<!-- Wisata Foto -->
-						<table class="col-md-10 col-md-offset-1 col-xs-12">
-							<tr>
-							<td width="50%"><div align="left"><?php echo $row_konekwis['hari']; ?> ,<?php echo $row_konekwis['tanggal']; ?></div></td>
-							<td width="50%"><div align="right"><?php echo $row_konekwis['kabkota']; ?></div></td>
-							</tr>
-							<tr>
-								<th colspan="2" width="100%"><h3><strong><center><?php echo $row_konekwis['tempatwisata']; ?></center></strong></h3></th>
-							</tr>
-							<tr>
-								<td  width="50%"><div align="center"><img src="imageViewwis.php?image_id=<?php echo $row_konekwis['id_wisatadiy']; ?>" class="img-fluid" loading="lazy" title="<?php echo $row_konekwis['infogambar']; ?> , <?php echo $row_konekwis['kabkota']; ?>" , <?php echo $row_konekwis['provinsi']; ?> alt="gambar <?php echo $row_konekwis['infogambar']; ?>"  style="width: 90%; " /></div></td>
-								<td width="50%" title="hidupkan GPS, klik peta untuk panduan dengan google maps" alt="hidupkan GPS, klik peta untuk panduan dengan google maps"><div><iframe src="<?php echo $row_konekwis['goomapping']; ?>" loading="lazy" width="100%" frameborder="0" style="border:0"  allowfullscreen="allowfullscreen"></iframe></div></td>
-							</tr>
-							<tr>
-								<td colspan="2" width="100%" align="center"><strong><?php echo $row_konekwis['judul']; ?></strong></h3></td>
-								</tr>
-								
-								<tr>
-								<td colspan="2" width="100%"><p align="justify"><?php echo $row_konekwis['artikel']; ?>(<?php echo $row_konekwis['penulis']; ?>)</p><td>
-							</tr>
-						</table>
-						<?php } while ($row_konekwis = mysql_fetch_assoc($konekwis)); ?>
-						<table align="center">
-						  <tr>
-								<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwis=%d%s", $currentPage, 0, $queryString_konekwis); ?>"  target="_self">Awal</a></strong></td>
-								<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwis=%d%s", $currentPage, max(0, $pageNum_konekwis - 1), $queryString_konekwis); ?>" target="_self">Sebelumnya</a></strong></td>
-								<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwis=%d%s", $currentPage, min($totalPages_konekwis, $pageNum_konekwis + 1), $queryString_konekwis); ?>" target="_self">Berikutnya</a></strong></td>
-								<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwis=%d%s", $currentPage, $totalPages_konekwis, $queryString_konekwis); ?>"  target="_self">Akhir</a></strong></td>
-						  </tr>
-						</table><hr>
-						<!-- End -->
-						<?php } // Show if recordset not empty ?>
-						<?php if ($totalRows_konekwisvid > 0) { // Show if recordset not empty ?>
-						<?php do { ?>
-						<!-- Wisata Vidio -->
-						<table class="col-md-10 col-md-offset-1 col-xs-12">
-							<tr>
-								<td width="50%"><div align="left"><?php echo $row_konekwisvid['hari']; ?> <?php echo $row_konekwisvid['tanggal']; ?></div></td>
-								<td width="50%"><div align="right"><?php echo $row_konekwisvid['kabkota']; ?></div></td>
-							</tr>
-							<tr>
-								<td colspan="2" width="100%"><h3><strong><center><?php echo $row_konekwisvid['tempatwisata']; ?></center></strong></h3></td>
-							<tr>
-								<td width="50%"><div align="center"><video id='video2' class='video-js vjs-default-skin' style="width: 90%;" controls="controls" preload= "auto" loading="lazy">
-								<source src="./imageViewwisvideo.php?image_id=<?php echo $row_konekwisvid['id_wisatadiy']; ?>" title="<?php echo $row_konekwisvid['infogambar']; ?> , <?php echo $row_konekwisvid['kabkota']; ?> , <?php echo $row_konekwisvid['provinsi']; ?>" alt="<?php echo $row_konekwisvid['infogambar']; ?> , <?php echo $row_konekwisvid['kabkota']; ?> , <?php echo $row_konekwisvid['provinsi']; ?>" type="video/mp4" />
-								</video><marquee align="middle" behavior="alternate" direction="left" scrollamount="1" scrolldelay="3" title="Klik di sini untuk video di youtube"><h3><a href="<?php echo $row_konekwisvid['gooyou']; ?>" title="klik disini untuk video <?php echo $row_konekwisvid['judul']; ?>" alt="klik disini untuk video <?php echo $row_konekwisvid['judul']; ?>" target="_self"><?php echo $row_konekwisvid['gooyou']; ?></a></h3></marquee></div>
-								</td>
-								<td width="50%" title="hidupkan GPS, klik peta untuk panduan dengan google maps" alt="hidupkan GPS, klik peta untuk panduan dengan google maps"><div><iframe src="<?php echo $row_konekwisvid['goomapping']; ?>" width="100%" frameborder="0" style="border:0"  allowfullscreen="allowfullscreen"></iframe></div></td>
-							</tr>
-							<tr>
-								<td colspan="2" width="100%"><strong><center><?php echo $row_konekwisvid['judul']; ?></center></strong></h3></td>
-							</tr>
-							<tr>
-								<td colspan="2" width="100%"><p align="justify"><?php echo $row_konekwisvid['artikel']; ?>(<?php echo $row_konekwisvid['penulis']; ?>)</p></td>
-							</tr>
-						</table>
-							<?php } while ($row_konekwisvid = mysql_fetch_assoc($konekwisvid)); ?>
-						<table align="center">
-							<tr>
-								<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwisvid=%d%s", $currentPage, 0, $queryString_konekwisvid); ?>"  target="_self">Awal</a></strong></td>
-								<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwisvid=%d%s", $currentPage, max(0, $pageNum_konekwisvid - 1), $queryString_konekwisvid); ?>" target="_self">Sebelumnya</a></strong></td>
-								<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwisvid=%d%s", $currentPage, min($totalPages_konekwisvid, $pageNum_konekwisvid + 1), $queryString_konekwisvid); ?>" target="_self">Berikutnya</a></strong></td>
-								<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwisvid=%d%s", $currentPage, $totalPages_konekwisvid, $queryString_konekwisvid); ?>"  target="_self">Akhir</a></strong></td>
-							</tr>
-						</table>
-						<!-- End -->
-						<?php } // Show if recordset not empty ?>
+				<div class="box-header with-border col-md-10 col-md-offset-1">
+					<h3 align="center">Wisata Indonesia</h3>
+					<marquee><h6>Explore Indonesia Dengan Semua Keindahannya</h6></marquee>
+				</div>
+				<div class="box-body">
+				<?php if ($totalRows_konekwis > 0) { // Show if recordset not empty ?>
+				<?php do { ?>
+				<!-- Wisata Foto -->
+				<table class="col-md-10 col-md-offset-1 col-xs-12">
+					<tr>
+					<td width="50%"><div align="left"><?php echo $row_konekwis['hari']; ?> ,<?php echo $row_konekwis['tanggal']; ?></div></td>
+					<td width="50%"><div align="right"><?php echo $row_konekwis['kabkota']; ?></div></td>
+					</tr>
+					<tr>
+						<th colspan="2" width="100%"><h3><strong><center><?php echo $row_konekwis['tempatwisata']; ?></center></strong></h3></th>
+					</tr>
+					<tr>
+						<td  width="50%"><div align="center"><img src="imageViewwis.php?image_id=<?php echo $row_konekwis['id_wisatadiy']; ?>" class="img-fluid" loading="lazy" title="<?php echo $row_konekwis['infogambar']; ?> , <?php echo $row_konekwis['kabkota']; ?>" , <?php echo $row_konekwis['provinsi']; ?> alt="gambar <?php echo $row_konekwis['infogambar']; ?>"  style="width: 90%; " /></div></td>
+						<td width="50%" title="hidupkan GPS, klik peta untuk panduan dengan google maps" alt="hidupkan GPS, klik peta untuk panduan dengan google maps"><div><iframe src="<?php echo $row_konekwis['goomapping']; ?>" loading="lazy" width="100%" frameborder="0" style="border:0"  allowfullscreen="allowfullscreen"></iframe></div></td>
+					</tr>
+					<tr>
+						<td colspan="2" width="100%" align="center"><strong><?php echo $row_konekwis['judul']; ?></strong></h3></td>
+						</tr>
+						
+						<tr>
+						<td colspan="2" width="100%"><p align="justify"><?php echo $row_konekwis['artikel']; ?>(<?php echo $row_konekwis['penulis']; ?>)</p><td>
+					</tr>
+				</table>
+				<?php } while ($row_konekwis = mysql_fetch_assoc($konekwis)); ?>
+				<table align="center">
+					<tr>
+						<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwis=%d%s", $currentPage, 0, $queryString_konekwis); ?>"  target="_self">Awal</a></strong></td>
+						<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwis=%d%s", $currentPage, max(0, $pageNum_konekwis - 1), $queryString_konekwis); ?>" target="_self">Sebelumnya</a></strong></td>
+						<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwis=%d%s", $currentPage, min($totalPages_konekwis, $pageNum_konekwis + 1), $queryString_konekwis); ?>" target="_self">Berikutnya</a></strong></td>
+						<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwis=%d%s", $currentPage, $totalPages_konekwis, $queryString_konekwis); ?>"  target="_self">Akhir</a></strong></td>
+					</tr>
+				</table><hr>
+				<!-- End -->
+				<?php } // Show if recordset not empty ?>
+				<?php if ($totalRows_konekwisvid > 0) { // Show if recordset not empty ?>
+				<?php do { ?>
+				<!-- Wisata Vidio -->
+				<table class="col-md-10 col-md-offset-1 col-xs-12">
+					<tr>
+						<td width="50%"><div align="left"><?php echo $row_konekwisvid['hari']; ?> <?php echo $row_konekwisvid['tanggal']; ?></div></td>
+						<td width="50%"><div align="right"><?php echo $row_konekwisvid['kabkota']; ?></div></td>
+					</tr>
+					<tr>
+						<td colspan="2" width="100%"><h3><strong><center><?php echo $row_konekwisvid['tempatwisata']; ?></center></strong></h3></td>
+					<tr>
+						<td width="50%"><div align="center"><video id='video2' class='video-js vjs-default-skin' style="width: 90%;" controls="controls" preload= "auto" loading="lazy">
+						<source src="./imageViewwisvideo.php?image_id=<?php echo $row_konekwisvid['id_wisatadiy']; ?>" title="<?php echo $row_konekwisvid['infogambar']; ?> , <?php echo $row_konekwisvid['kabkota']; ?> , <?php echo $row_konekwisvid['provinsi']; ?>" alt="<?php echo $row_konekwisvid['infogambar']; ?> , <?php echo $row_konekwisvid['kabkota']; ?> , <?php echo $row_konekwisvid['provinsi']; ?>" type="video/mp4" />
+						</video><marquee align="middle" behavior="alternate" direction="left" scrollamount="1" scrolldelay="3" title="Klik di sini untuk video di youtube"><h3><a href="<?php echo $row_konekwisvid['gooyou']; ?>" title="klik disini untuk video <?php echo $row_konekwisvid['judul']; ?>" alt="klik disini untuk video <?php echo $row_konekwisvid['judul']; ?>" target="_self"><?php echo $row_konekwisvid['gooyou']; ?></a></h3></marquee></div>
+						</td>
+						<td width="50%" title="hidupkan GPS, klik peta untuk panduan dengan google maps" alt="hidupkan GPS, klik peta untuk panduan dengan google maps"><div><iframe src="<?php echo $row_konekwisvid['goomapping']; ?>" width="100%" frameborder="0" style="border:0"  allowfullscreen="allowfullscreen"></iframe></div></td>
+					</tr>
+					<tr>
+						<td colspan="2" width="100%"><strong><center><?php echo $row_konekwisvid['judul']; ?></center></strong></h3></td>
+					</tr>
+					<tr>
+						<td colspan="2" width="100%"><p align="justify"><?php echo $row_konekwisvid['artikel']; ?>(<?php echo $row_konekwisvid['penulis']; ?>)</p></td>
+					</tr>
+				</table>
+					<?php } while ($row_konekwisvid = mysql_fetch_assoc($konekwisvid)); ?>
+				<table align="center">
+					<tr>
+						<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwisvid=%d%s", $currentPage, 0, $queryString_konekwisvid); ?>"  target="_self">Awal</a></strong></td>
+						<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwisvid=%d%s", $currentPage, max(0, $pageNum_konekwisvid - 1), $queryString_konekwisvid); ?>" target="_self">Sebelumnya</a></strong></td>
+						<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwisvid=%d%s", $currentPage, min($totalPages_konekwisvid, $pageNum_konekwisvid + 1), $queryString_konekwisvid); ?>" target="_self">Berikutnya</a></strong></td>
+						<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwisvid=%d%s", $currentPage, $totalPages_konekwisvid, $queryString_konekwisvid); ?>"  target="_self">Akhir</a></strong></td>
+					</tr>
+				</table>
+				<!-- End -->
+				<?php } // Show if recordset not empty ?>
              </div>
           </div>
         </div>
@@ -279,9 +279,8 @@
 						<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwisjatengvid=%d%s", $currentPage, min($totalPages_konekwisjatengvid, $pageNum_konekwisjatengvid + 1), $queryString_konekwisjatengvid); ?>" target="_self">Berikutnya</a></strong></td>			
 						<td style="padding: 2px;"><button type="button" class="btn btn-block btn-default btn-xs" align="center"><strong><a href="<?php printf("%s?pageNum_konekwisjatengvid=%d%s", $currentPage, $totalPages_konekwisjatengvid, $queryString_konekwisjatengvid); ?>" target="_self">Akhir</a></strong></td>
 				  </tr>
-        </table>
-        
-        <?php } // Show if recordset not empty ?>
+        		</table>
+        		<?php } // Show if recordset not empty ?>
         
 			  </div>
             

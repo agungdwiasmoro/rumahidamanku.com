@@ -49,8 +49,8 @@ if($_SESSION['level'] != "1"){
 				<thead>
 					<tr>
 						<th>No</th>
-						<th>Gambar Utama</th>
-						<th>Video</th>
+						<th>Tampilan Media</th>
+						<!-- <th>Video</th> -->
 						<th>Objek</th>
 						<th>Jenis</th>
 						<th>Kategori </th>
@@ -67,17 +67,21 @@ if($_SESSION['level'] != "1"){
 					<tr>
 						<td><?=$no++?>.</td>
 						<td align="center">
-							<?php if ($row_konekwisjateng['jenis']==='photo') { ?>	
+							<?php if ($row_konekwisjateng['jenis'] ==='video') { ?>
+								<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: auto;" controls="controls" preload= "auto" loading="lazy">
+									<source src="../../imageViewwisvideo.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" type="video/mp4" />
+								</video>
+							<?php } else { ?>
 								<img src="../../imageViewwis.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" loading="lazy" class="img-fluid" style="width: 150px; height: 150px; " />
-							<?php } else{} ?>
+							<?php } ; ?>
 						</td>
-						<td align="center">
+						<!-- <td align="center">
 							<?php if ($row_konekwisjateng['jenis']==='video') { ?>
 								<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: 150px;" controls="controls" preload= "auto" loading="lazy">
 									<source src="../../imageViewwisvideo.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" type="video/mp4" />
 								</video>
 							<?php } else {} ?>
-						</td>
+						</td> -->
 						<td><?php echo $row_konekwisjateng['tempatwisata']; ?></td>
 						<td><?php echo $row_konekwisjateng['jeniswisata']; ?></td>
 						<td><?php echo $row_konekwisjateng['kategori']; ?></td>

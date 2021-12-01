@@ -53,44 +53,47 @@ $konekprofpapua = mysql_query($query_konekprofpapua, $koneksi) or die(mysql_erro
 $row_konekprofpapua = mysql_fetch_assoc($konekprofpapua);
 $totalRows_konekprofpapua = mysql_num_rows($konekprofpapua);
 
-
-
-$maxRows_konekinformasi = 3;
-$pageNum_konekinformasi = 0;
-if (isset($_GET['pageNum_konekinformasi'])) {
-  $pageNum_konekinformasi = $_GET['pageNum_konekinformasi'];
-}
-$startRow_konekinformasi = $pageNum_konekinformasi * $maxRows_konekinformasi;
-
-
-$query_konekinformasi = "SELECT * FROM info WHERE jenis= 'photo' ORDER BY id_info DESC";
-$query_limit_konekinformasi = sprintf("%s LIMIT %d, %d", $query_konekinformasi, $startRow_konekinformasi, $maxRows_konekinformasi);
-$konekinformasi = mysql_query($query_limit_konekinformasi, $koneksi) or die(mysql_error());
+$query_konekinformasi = "SELECT * FROM info  ORDER BY id_info DESC";
+$konekinformasi = mysql_query($query_konekinformasi, $koneksi) or die(mysql_error());
 $row_konekinformasi = mysql_fetch_assoc($konekinformasi);
+$totalRows_konekinformasi = mysql_num_rows($konekinformasi);
 
-if (isset($_GET['totalRows_konekinformasi'])) {
-  $totalRows_konekinformasi = $_GET['totalRows_konekinformasi'];
-} else {
-  $all_konekinformasi = mysql_query($query_konekinformasi);
-  $totalRows_konekinformasi = mysql_num_rows($all_konekinformasi);
-}
-$totalPages_konekinformasi = ceil($totalRows_konekinformasi/$maxRows_konekinformasi)-1;
+// $maxRows_konekinformasi = 3;
+// $pageNum_konekinformasi = 0;
+// if (isset($_GET['pageNum_konekinformasi'])) {
+//   $pageNum_konekinformasi = $_GET['pageNum_konekinformasi'];
+// }
+// $startRow_konekinformasi = $pageNum_konekinformasi * $maxRows_konekinformasi;
 
-$queryString_konekinformasi = "";
-if (!empty($_SERVER['QUERY_STRING'])) {
-  $params = explode("&", $_SERVER['QUERY_STRING']);
-  $newParams = array();
-  foreach ($params as $param) {
-    if (stristr($param, "pageNum_konekinformasi") == false && 
-        stristr($param, "totalRows_konekinformasi") == false) {
-      array_push($newParams, $param);
-    }
-  }
-  if (count($newParams) != 0) {
-    $queryString_konekinformasi = "&" . htmlentities(implode("&", $newParams));
-  }
-}
-$queryString_konekinformasi = sprintf("&totalRows_konekinformasi=%d%s", $totalRows_konekinformasi, $queryString_konekinformasi);
+
+// $query_konekinformasi = "SELECT * FROM info ORDER BY id_info DESC";
+// $query_limit_konekinformasi = sprintf("%s LIMIT %d, %d", $query_konekinformasi, $startRow_konekinformasi, $maxRows_konekinformasi);
+// $konekinformasi = mysql_query($query_limit_konekinformasi, $koneksi) or die(mysql_error());
+// $row_konekinformasi = mysql_fetch_assoc($konekinformasi);
+
+// if (isset($_GET['totalRows_konekinformasi'])) {
+//   $totalRows_konekinformasi = $_GET['totalRows_konekinformasi'];
+// } else {
+//   $all_konekinformasi = mysql_query($query_konekinformasi);
+//   $totalRows_konekinformasi = mysql_num_rows($all_konekinformasi);
+// }
+// $totalPages_konekinformasi = ceil($totalRows_konekinformasi/$maxRows_konekinformasi)-1;
+
+// $queryString_konekinformasi = "";
+// if (!empty($_SERVER['QUERY_STRING'])) {
+//   $params = explode("&", $_SERVER['QUERY_STRING']);
+//   $newParams = array();
+//   foreach ($params as $param) {
+//     if (stristr($param, "pageNum_konekinformasi") == false && 
+//         stristr($param, "totalRows_konekinformasi") == false) {
+//       array_push($newParams, $param);
+//     }
+//   }
+//   if (count($newParams) != 0) {
+//     $queryString_konekinformasi = "&" . htmlentities(implode("&", $newParams));
+//   }
+// }
+// $queryString_konekinformasi = sprintf("&totalRows_konekinformasi=%d%s", $totalRows_konekinformasi, $queryString_konekinformasi);
 
 
 $maxRows_konekinformasivid = 1;
@@ -138,6 +141,42 @@ $konekprofhome = mysql_query($query_konekprofhome, $koneksi) or die(mysql_error(
 $row_konekprofhome = mysql_fetch_assoc($konekprofhome);
 $totalRows_konekprofhome = mysql_num_rows($konekprofhome);
 
+$query_konekproperti = "SELECT * FROM profilpromo WHERE status= 'on' and bidangusaha= 'properti' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekproperti = mysql_query($query_konekproperti, $koneksi) or die(mysql_error());
+$row_konekproperti = mysql_fetch_assoc($konekproperti);
+$totalRows_konekproperti = mysql_num_rows($konekproperti);
+
+$query_konekwisata = "SELECT * FROM profilpromo WHERE status= 'on' and bidangusaha= 'wisata' and bayar= 'berbayar'  ORDER BY id_profilpromo DESC";
+$konekwisata = mysql_query($query_konekwisata, $koneksi) or die(mysql_error());
+$row_konekwisata = mysql_fetch_assoc($konekwisata);
+$totalRows_konekwisata = mysql_num_rows($konekwisata);
+
+
+$query_konekkomputer = "SELECT * FROM profilpromo WHERE status= 'on' and bidangusaha= 'komputer' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekkomputer = mysql_query($query_konekkomputer, $koneksi) or die(mysql_error());
+$row_konekkomputer = mysql_fetch_assoc($konekkomputer);
+$totalRows_konekkomputer = mysql_num_rows($konekkomputer);
+
+$query_konekindustri = "SELECT * FROM profilpromo WHERE status= 'on' and bidangusaha= 'industri' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekindustri = mysql_query($query_konekindustri, $koneksi) or die(mysql_error());
+$row_konekindustri = mysql_fetch_assoc($konekindustri);
+$totalRows_konekindustri = mysql_num_rows($konekindustri);
+
+$query_konekmotor = "SELECT * FROM profilpromo WHERE status= 'on' and bidangusaha= 'motor' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekmotor = mysql_query($query_konekmotor, $koneksi) or die(mysql_error());
+$row_konekmotor = mysql_fetch_assoc($konekmotor);
+$totalRows_konekmotor = mysql_num_rows($konekmotor);
+
+$query_konekmobil = "SELECT * FROM profilpromo WHERE status= 'on' and bidangusaha= 'mobil' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekmobil = mysql_query($query_konekmobil, $koneksi) or die(mysql_error());
+$row_konekmobil = mysql_fetch_assoc($konekmobil);
+$totalRows_konekmobil = mysql_num_rows($konekmobil);
+
+$query_konekelektronika = "SELECT * FROM profilpromo WHERE status= 'on' and bidangusaha= 'elektronika' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekelektronika = mysql_query($query_konekelektronika, $koneksi) or die(mysql_error());
+$row_konekelektronika = mysql_fetch_assoc($konekelektronika);
+$totalRows_konekelektronika = mysql_num_rows($konekelektronika);
+
 
 $query_konekwisataindonesia = "SELECT * FROM wisatadiy where status='on' && kategori='wisata indonesia' ORDER BY id_wisatadiy DESC";
 // $query_limit_konekwisataindonesia = sprintf("%s LIMIT %d, %d", $query_konekwisataindonesia, $startRow_konekwisataindonesia, $maxRows_konekwisataindonesia);
@@ -153,7 +192,7 @@ if (isset($_GET['pageNum_konekwis'])) {
 $startRow_konekwis = $pageNum_konekwis * $maxRows_konekwis;
 
 
-$query_konekwis = "SELECT * FROM wisatadiy where jenis='photo' && status='on' && kategori='wisata indonesia' ORDER BY id_wisatadiy DESC";
+$query_konekwis = "SELECT * FROM wisatadiy where status='on' && kategori='wisata indonesia' ORDER BY id_wisatadiy DESC";
 $query_limit_konekwis = sprintf("%s LIMIT %d, %d", $query_konekwis, $startRow_konekwis, $maxRows_konekwis);
 $konekwis = mysql_query($query_limit_konekwis, $koneksi) or die(mysql_error());
 $row_konekwis = mysql_fetch_assoc($konekwis);
@@ -229,7 +268,7 @@ if (isset($_GET['pageNum_konekwisjateng'])) {
 $startRow_konekwisjateng = $pageNum_konekwisjateng * $maxRows_konekwisjateng;
 
 
-$query_konekwisjateng = "SELECT * FROM wisatadiy where jenis='photo' && kategori='jelajah wisata' ORDER BY id_wisatadiy DESC";
+$query_konekwisjateng = "SELECT * FROM wisatadiy where kategori='jelajah wisata' ORDER BY id_wisatadiy DESC";
 $query_limit_konekwisjateng = sprintf("%s LIMIT %d, %d", $query_konekwisjateng, $startRow_konekwisjateng, $maxRows_konekwisjateng);
 $konekwisjateng = mysql_query($query_limit_konekwisjateng, $koneksi) or die(mysql_error());
 $row_konekwisjateng = mysql_fetch_assoc($konekwisjateng);

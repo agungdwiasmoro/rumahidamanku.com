@@ -35,8 +35,8 @@ if($_SESSION['level'] != "1"){
 				<thead>
 					<tr>
 						<th>No</th>
-						<th>Gambar</th>
-						<th>Vidio</th>
+						<th>Media</th>
+						<!-- <th>Vidio</th> -->
 						<th>Judul Ivent</th>
 						<th>Nama Usaha</th>
 						<th>Provinsi</th>
@@ -53,17 +53,19 @@ if($_SESSION['level'] != "1"){
 					
 					<tr>
 						<td><?=$no++?>.</td>
-						<td align="center">
+						<!-- <td align="center">
 						<?php if ($row_konekivent['jenis']==='foto') { ?>
 							<img src="../../imageViewivent.php?image_id=<?php echo $row_konekivent['id_iventpromo']; ?>" loading="lazy" class="img-fluid" style="width: 150px; "/>
 						<?php } else {} ?>
-						</td> 
+						</td>  -->
 						<td align="center">
 						<?php if ($row_konekivent['jenis']==='video') { ?>
-							<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: 150px;" controls="controls" preload= "auto" loading="lazy">
+							<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: auto;" controls="controls" preload= "auto" loading="lazy">
 								<source src="../../imageViewiventvid.php?image_id=<?php echo $row_konekivent['id_iventpromo']; ?>" type="video/mp4" />
 							</video>
-						<?php } else {} ?>
+						<?php } else { ?>
+							<img src="../../imageViewivent.php?image_id=<?php echo $row_konekivent['id_iventpromo']; ?>" loading="lazy" class="img-fluid" style="width: 150px; "/>
+						<?php } ; ?>
 						</td>
 						<td><?php echo $row_konekivent['judul']; ?></td>
 						<td><?php echo $row_konekivent['namausaha']; ?></td>

@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="assets/dist/css/skins/skin-green.css">
 	<!-- Theme style -->
 	<link rel="stylesheet" href="assets/dist/css/AdminLTE.css">
+	<link rel="stylesheet" href="mycss.css">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="assets/bower_components/font-awesome/css/font-awesome.min.css">
 	<!-- Google Font -->
@@ -31,7 +32,7 @@
 	<script data-ad-client="ca-pub-3274780598043223" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- SlimScroll -->
 	<script async src="assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-
+	
 </head>
 
 <body class="hold-transition skin-green fixed sidebar-mini">
@@ -50,16 +51,12 @@
 			<nav class="navbar navbar-static-top">
 				<!-- Sidebar toggle button-->
 				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-					<span class="sr-only">Toggle navigation</span>
+					<span class="sr-only">Toggle navigation</span>MENU
 				</a>
 				<div align="middle"><span class="">TERIMAKASIH ATAS KUNJUNGAN ANDA <br>PENGUNJUNG
 				
 				<?php
-				//	  $pemakai = "ruh5758";
-				//	  $password = "ruh065758idaman";
-				//	  $database = "rumah06_rumah065758";
-				//	  $id_MySQL=MySQL_connect("localhost",$pemakai,$password);
-						
+			
 				//	  if (!$id_MySQL)die ("MySQL database cant open!");
 						if (!$koneksi)die ("MySQL database cant open!");
 				//	  $hasil=MySQL_db_query($database,"LOCK TABLE counter WRITE", $id_MySQL);

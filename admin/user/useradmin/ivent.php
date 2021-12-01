@@ -65,8 +65,8 @@ include  ('templateuserusaha.php');
 				<thread>
 					<tr>
 						<th>No</th>
-						<th><center>Foto</center></th>
-						<th><center>Video</center></th>
+						<!-- <th><center>Foto</center></th> -->
+						<th><center>Media</center></th>
 						<th>Judul Kegiatan</th>
 						<th>Artikel</th>
 						<th>Penulis</th>
@@ -80,11 +80,15 @@ include  ('templateuserusaha.php');
 					
 					<tr>
 						<td><?=$no++?>.</td>
-						<td><center><img src="../../../imageViewivent.php?image_id=<?php echo $row_konekiventprodiy['id_iventpromo']; ?>" loading="lazy" alt="<?php echo $row_konekiventprodiy['namaivent0']; ?> <?php echo $row_konekiventprodiy['namausaha']; ?> <?php echo $row_konekiventprodiy['bidangusaha']; ?> <?php echo $row_konekiventprodiy['kodkab']; ?> <?php echo $row_konekiventprodiy['provinsi']; ?> " title="<?php echo $row_konekiventprodiy['namaivent0']; ?> <?php echo $row_konekiventprodiy['namausaha']; ?> <?php echo $row_konekiventprodiy['bidangusaha']; ?> <?php echo $row_konekiventprodiy['kodkab']; ?> <?php echo $row_konekiventprodiy['provinsi']; ?> " class="img-fluid" style="width: 90%; " longdesc="<?php echo $row_konekiventprodiy['name']; ?>" /></center></td>
+						<!-- <td><center><img src="../../../imageViewivent.php?image_id=<?php echo $row_konekiventprodiy['id_iventpromo']; ?>" loading="lazy" alt="<?php echo $row_konekiventprodiy['namaivent0']; ?> <?php echo $row_konekiventprodiy['namausaha']; ?> <?php echo $row_konekiventprodiy['bidangusaha']; ?> <?php echo $row_konekiventprodiy['kodkab']; ?> <?php echo $row_konekiventprodiy['provinsi']; ?> " title="<?php echo $row_konekiventprodiy['namaivent0']; ?> <?php echo $row_konekiventprodiy['namausaha']; ?> <?php echo $row_konekiventprodiy['bidangusaha']; ?> <?php echo $row_konekiventprodiy['kodkab']; ?> <?php echo $row_konekiventprodiy['provinsi']; ?> " class="img-fluid" style="width: 90%; " longdesc="<?php echo $row_konekiventprodiy['name']; ?>" /></center></td> -->
 						<td align="center">
-							<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: 150px;" controls="controls" preload= "auto" loading="lazy">
-								<source src="../../../imageViewiventvid.php?image_id=<?php echo $row_konekiventprodiy['id_iventpromo']; ?>" type="video/mp4" />
-							</video>
+							<?php if ($row_konekiventprodiy['jenis']==='vidio') { ?>
+								<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: 150px;" controls="controls" preload= "auto" loading="lazy">
+									<source src="../../../imageViewiventvid.php?image_id=<?php echo $row_konekiventprodiy['id_iventpromo']; ?>" type="video/mp4" />
+								</video>
+							<?php } else { ?>
+								<img src="../../../imageViewivent.php?image_id=<?php echo $row_konekiventprodiy['id_iventpromo']; ?>" loading="lazy" alt="<?php echo $row_konekiventprodiy['namaivent0']; ?> " title="<?php echo $row_konekiventprodiy['namaivent0']; ?>  " class="img-fluid" style="width: 90%; " longdesc="<?php echo $row_konekiventprodiy['name']; ?>" />
+							<?php }; ?>
 						</td>
 						<td><?php echo $row_konekiventprodiy['judul']; ?></td>
 						<td><?php echo $row_konekiventprodiy['artikel']; ?></td>

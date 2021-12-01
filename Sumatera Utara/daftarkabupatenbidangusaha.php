@@ -32,8 +32,8 @@
                   <li><a href="../../Kota Binjai/index.php"> Kota Binjai</a></li>
                   <li><a href="../../Kota Gunungsitoli/index.php">Kota Gunung Sitoli</a></li>
                   <li><a href="../../Kota Medan/index.php">Kota Medan</a></li>
-                  <li><a href="../../Kota Padangsidempuan/index.php"> Kota Padangsidempuan</a></li>
-                  <li><a href="../../Kota Pematangsiantar/index.php">Kota Pematangsiantar</a></li>
+                  <li><a href="../../Kota Padangsidempuan/index.php"> Kota Padang Sidempuan</a></li>
+                  <li><a href="../../Kota Pematangsiantar/index.php">Kota Pematang Siantar</a></li>
                   <li><a href="../../Kota Sibolga/index.php">Kota Sibolga</a></li>
                   <li><a href="../../Kota Tanjungbalai/index.php">Kota Tanjung Balai</a></li>
                   <li><a href="../../Kota Tebing Tinggi/index.php">Kota Tebing Tinggi</a></li>

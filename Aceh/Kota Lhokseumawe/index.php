@@ -8,7 +8,7 @@
 <?php //$posisi = "body"; ?>
 <?php $provinsi = "Nanggroe Aceh Darussalam"; ?>
 <?php //$provin = "jawa tengah"; ?>
-<?php $kodkab = "Kota Lhoksumawe"; ?>
+<?php $kodkab = "Kota Lhokseumawe"; ?>
 <?php //require_once('../../masterweb/masterweb/koneksi.php'); ?>
 <?php //require_once('../../Connections/konekprof.php'); ?>
 <?php //require_once('../../Connections/konekdprprov.php'); ?>

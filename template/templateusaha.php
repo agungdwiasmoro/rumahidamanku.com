@@ -7,6 +7,14 @@
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<link rel="shortcut icon" href="../../../image/rumahidamanku.png">
+	<meta name="keywords" content="rumahidamanku, promosi gratis, umkm, usaha kecil">
+	<meta name="description" content="Tempat Promosi Usaha Gratis dan Terpercaya">
+	
+	<!-- Facebook share link -->
+	<meta property="og:url" content="https://rumahidamanku.com" />
+	<meta property="og:title" content="RUMAHIDAMANKU.COM" />
+	<meta property="og:description" content="Promosikan Usaha Anda Disini. GRATIS" />
+	<meta property="og:image" content="https://rumahidamanku.com/image/mainicon.jpg" />
 	<!-- Bootstrap 3.3.7 -->
 	<link rel="stylesheet" href="../../../assets/bower_components/bootstrap/dist/css/bootstrap.css">
 	<!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -43,16 +51,13 @@
 			<nav class="navbar navbar-static-top">
 				<!-- Sidebar toggle button-->
 				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-					<span class="sr-only">Toggle navigation</span>
+					<span class="sr-only">Toggle navigation</span>MENU
 				</a>
 				
 				<td ><div align="middle"><span class="">TERIMAKASIH ATAS KUNJUNGAN ANDA, <br>
 			 
 			  <?php
-				//	  $pemakai = "ruh5758";
-				//	  $password = "ruh065758idaman";
-				//	  $database = "rumah06_rumah065758";
-				//	  $id_MySQL=MySQL_connect("localhost",$pemakai,$password);
+				
 						
 				//	  if (!$id_MySQL)die ("MySQL database cant open!");
 						if (!$koneksi)die ("MySQL database cant open!");
