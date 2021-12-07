@@ -82,37 +82,44 @@ $jeniswisata =mysql_real_escape_string($_POST['jeniswisata']);
 //kabupaten kota
 $artikel =mysql_real_escape_string($_POST['artikel']);
 //input file akses
-$file = $_POST['file'];
+
+$rand = rand();
 //sponsor pertama
-// $sponsor1 =mysql_real_escape_string($_POST['sponsor1']);
+$sponsor1 =mysql_real_escape_string($_POST['sponsor1']);
 // // membaca nama file yang diupload
-// $fileName6 = addslashes($_FILES['userfile6']['name']);     
+$fileName6 = addslashes($_FILES['filesponsor1']['name']);  
+$namasponsor1 = $rand.'_'.$fileName6;   
 // // nama file temporary yang akan disimpan di server
-// $tmpName6 = addslashes(file_get_contents($_FILES['userfile6']['tmp_name']));
+// $tmpName6 = addslashes(file_get_contents($_FILES['filesponsor1']['tmp_name']));
 // // membaca ukuran file yang diupload
-// $fileSize6 = $_FILES['userfile6']['size'];
+$fileSize6 = $_FILES['filesponsor1']['size'];
+move_uploaded_file($_FILES['filesponsor1']['tmp_name'], "../../sponsor/".$rand.'_'.$fileName6);
 // // membaca jenis file yang diupload
-// $fileType6 = $_FILES['userfile6']['type'];
+// $fileType6 = $_FILES['filesponsor1']['type'];
 // //sponsor kedua
-// $sponsor2 =mysql_real_escape_string($_POST['sponsor2']);
+$sponsor2 =mysql_real_escape_string($_POST['sponsor2']);
 // // membaca nama file yang diupload
-// $fileName7 = addslashes($_FILES['userfile7']['name']);     
+$fileName7 = addslashes($_FILES['filesponsor2']['name']); 
+$namasponsor2 = $rand.'_'.$fileName7;    
 // // nama file temporary yang akan disimpan di server
-// $tmpName7 = addslashes(file_get_contents($_FILES['userfile7']['tmp_name']));
+// $tmpName7 = addslashes(file_get_contents($_FILES['filesponsor2']['tmp_name']));
 // // membaca ukuran file yang diupload
-// $fileSize7 = $_FILES['userfile7']['size'];
+$fileSize7 = $_FILES['filesponsor2']['size'];
+move_uploaded_file($_FILES['filesponsor2']['tmp_name'], "../../sponsor/".$rand.'_'.$fileName7);
 // // membaca jenis file yang diupload
-// $fileType7 = $_FILES['userfile7']['type'];
+// $fileType7 = $_FILES['filesponsor2']['type'];
 // //sponsor ketiga
-// $sponsor3 =mysql_real_escape_string($_POST['sponsor3']);
+$sponsor3 =mysql_real_escape_string($_POST['sponsor3']);
 // // membaca nama file yang diupload
-// $fileName8 = addslashes($_FILES['userfile8']['name']);     
+$fileName8 = addslashes($_FILES['filesponsor3']['name']); 
+$namasponsor3 = $rand.'_'.$fileName8;        
 // // nama file temporary yang akan disimpan di server
-// $tmpName8 = addslashes(file_get_contents($_FILES['userfile8']['tmp_name']));
+// $tmpName8 = addslashes(file_get_contents($_FILES['filesponsor3']['tmp_name']));
 // // membaca ukuran file yang diupload
-// $fileSize8 = $_FILES['userfile8']['size'];
+$fileSize8 = $_FILES['filesponsor3']['size'];
+move_uploaded_file($_FILES['filesponsor3']['tmp_name'], "../../sponsor/".$rand.'_'.$fileName8);
 // // membaca jenis file yang diupload
-// $fileType8 = $_FILES['userfile8']['type'];
+// $fileType8 = $_FILES['filesponsor3']['type'];
 //membaca data spesifikasi ip user yang diupload
 $ip = mysql_real_escape_string($_POST['ip']);
 //membaca jam user
@@ -144,7 +151,7 @@ $useradmint = mysql_real_escape_string($_POST['useradmint']);
 //fclose($fp);
 
 
-$query = "INSERT INTO wisatadiy (id_wisatadiy, hari, tanggaltul, penulis, judul, name, size, type, template, infogambar, tempatwisata, provinsi, kabkota, jeniswisata, artikel, file, counter, ip, tanggal, jam, usernama, status, jenis, goomapping, gooyou, kategori) VALUES ('', '$hari', '$tanggaltul', '$penulis', '$judul', '$fileName', '$fileSize', '$fileType', '$tmpName', '$infogambar0', '$tempatwisata', '$provinsi', '$kabkota', '$jeniswisata', '$artikel', '$file', '$counter', '$ip', '$tanggal', '$jam', '$useradmint', '$status', '$jenis', '$goomapping', '$gooyou', '$kategori')";
+$query = "INSERT INTO wisatadiy (id_wisatadiy, hari, tanggaltul, penulis, judul, name, size, type, template, infogambar, tempatwisata, provinsi, kabkota, jeniswisata, artikel, sponsor1, name6, sponsor2, name7, sponsor3, name8, counter, ip, tanggal, jam, usernama, status, jenis, goomapping, gooyou, kategori) VALUES ('', '$hari', '$tanggaltul', '$penulis', '$judul', '$fileName', '$fileSize', '$fileType', '$tmpName', '$infogambar0', '$tempatwisata', '$provinsi', '$kabkota', '$jeniswisata', '$artikel', '$sponsor1', '$namasponsor1', '$sponsor2', '$namasponsor2', '$sponsor3', '$namasponsor3', '$counter', '$ip', '$tanggal', '$jam', '$useradmint', '$status', '$jenis', '$goomapping', '$gooyou', '$kategori')";
 //mysql_query($query);
 if(mysql_query($query) === TRUE) {
 	echo "<script>alert ('Data berhasil disimpan'); document.location='index.php'</script>";

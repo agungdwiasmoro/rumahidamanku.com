@@ -140,15 +140,6 @@ if($_SESSION['level'] != "1"){
 								<input name="infogambar0" type="text" id="infogambar0" class="form-control" placeholder="Info Gambar">
 							</div>
 							<div class="form-group">
-								<label>Jenis File</label>
-								<select name="jenis" id="jenis" class="form-control">
-									<option selected="selected" value="">pilih jenis file wisata</option>
-									<option>video</option>
-									<option>photo</option>
-									
-								 </select>
-							</div>
-							<div class="form-group">
 								<label>gooyou</label>
 								<input type="text" name="gooyou" id="gooyou" value="" class="form-control">
 							</div>
@@ -156,13 +147,32 @@ if($_SESSION['level'] != "1"){
 								<label>goomaping</label>
 								<input type="text" name="goomapping" id="goomapping" value="" class="form-control">
 							</div>
+							<div class="form-group">
+								<label for="sponsor1">Sponsor 1</label>
+								<input type="text" name="sponsor1" id="sponsor1" class="form-control">
+								<img id="uploadPreview1" style="width: 360px; ">
+								<input type="file" name="filesponsor1" id="filesponsor1" onchange="PreviewImage1();"/>
+							</div>
+							<div class="form-group">
+								<label for="sponsor2">Sponsor 2</label>
+								<input type="text" name="sponsor2" id="sponsor2" class="form-control">
+								<img id="uploadPreview2" style="width: 360px; ">
+								<input type="file" name="filesponsor2" id="filesponsor2" onchange="PreviewImage2();"/>
+							</div>
+							<div class="form-group">
+								<label for="sponsor3">Sponsor 3</label>
+								<input type="text" name="sponsor3" id="sponsor3" class="form-control">
+								<img id="uploadPreview3" style="width: 360px; ">
+								<input type="file" name="filesponsor3" id="filesponsor3" onchange="PreviewImage3();"/>
+							</div>
+							<input type="hidden" name="jenis" id="jenis" value="photo">
 							<input name="ip" type="hidden" id="ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>"/>
-						  <input name="tanggal" type="hidden" id="tanggal" value="<?php date_default_timezone_set('Asia/Jakarta'); echo date('Y-m-d G:i'); ?>"/>
-						  <input name="jam" type="hidden" id="jam" value="<?php echo date('G,i'); ?>"/>
-						  <input name="status" type="hidden" id="status" value="off"/>
-						  <input name="counter" type="hidden" id="counter" value="0"/>
-						  <input type="hidden" name="file" id="file" value="index.php">
-						  <input type="hidden" name="useradmint" id="useradmint" value="admin">
+							<input name="tanggal" type="hidden" id="tanggal" value="<?php date_default_timezone_set('Asia/Jakarta'); echo date('Y-m-d G:i'); ?>"/>
+							<input name="jam" type="hidden" id="jam" value="<?php echo date('G,i'); ?>"/>
+							<input name="status" type="hidden" id="status" value="off"/>
+							<input name="counter" type="hidden" id="counter" value="0"/>
+							<input type="hidden" name="file" id="file" value="index.php">
+							<input type="hidden" name="useradmint" id="useradmint" value="admin">
 							<div class="form-group">
 								<button name="upload" type="submit" class="btn btn-primary btn-flat">
 									<i class="fa fa-paper-plane"></i> Kirim Gambar dan Data
@@ -277,6 +287,36 @@ oFReader.readAsDataURL(document.getElementById("userfile0").files[0]);
 oFReader.onload = function (oFREvent)
  {
     document.getElementById("uploadPreview").src = oFREvent.target.result;
+};
+};
+</script>
+<script type="text/javascript">
+function PreviewImage1() {
+var oFReader = new FileReader();
+oFReader.readAsDataURL(document.getElementById("filesponsor1").files[0]);
+oFReader.onload = function (oFREvent)
+ {
+    document.getElementById("uploadPreview1").src = oFREvent.target.result;
+};
+};
+</script>
+<script type="text/javascript">
+function PreviewImage2() {
+var oFReader = new FileReader();
+oFReader.readAsDataURL(document.getElementById("filesponsor2").files[0]);
+oFReader.onload = function (oFREvent)
+ {
+    document.getElementById("uploadPreview2").src = oFREvent.target.result;
+};
+};
+</script>
+<script type="text/javascript">
+function PreviewImage3() {
+var oFReader = new FileReader();
+oFReader.readAsDataURL(document.getElementById("filesponsor3").files[0]);
+oFReader.onload = function (oFREvent)
+ {
+    document.getElementById("uploadPreview3").src = oFREvent.target.result;
 };
 };
 </script>

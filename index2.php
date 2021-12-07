@@ -349,7 +349,7 @@
                   <?php echo $row_konekwis['kabkota'].', '.date('d F Y', strtotime($row_konekwis['tanggal'])); ?>
                 </small>
                 <p>
-                  <strong><?php echo $row_konekwis['tempatwisata']; ?></strong>, <?php echo substr($row_konekwis['artikel'],0,50); ?>... <a href="">selengkapnya</a><br>
+                  <strong><?php echo $row_konekwis['tempatwisata']; ?></strong>, <?php echo substr($row_konekwis['artikel'],0,50); ?>... <a href="wisatadetail.php?id_wisatadiy=<?=$row_konekwis['id_wisatadiy'];?>">selengkapnya</a><br>
                   <a href="<?php echo $row_konekwis['gooyou']; ?>" title="klik disini untuk video <?php echo $row_konekwis['judul']; ?>" alt="klik disini untuk video <?php echo $row_konekwis['judul']; ?>" target="_self"><?php echo $row_konekwis['gooyou']; ?></a>
                 </p>
             </div>
@@ -396,7 +396,9 @@
             <a href="newsdetail.php?id_info=<?=$row_konekinformasi['id_info']; ?>">
               <div class="card2">
                 <?php if ($row_konekinformasi['jenis'] !== 'photo') { ?>
-                <img src="image/no-image.png" class="pull-left" alt="">
+                  <video id='video1' class='video-js vjs-default-skin' controls="controls" preload= "auto" loading="lazy">
+                	<source src="imageViewvideoinfo.php?image_id=<?php echo $row_konekinformasivid['id_info']; ?>" title="<?php echo $row_konekinformasivid['namephoto0']; ?> , <?php echo $row_konekinformasivid['infogambar']; ?> , <?php echo $row_konekinformasivid['kodkab']; ?> , <?php echo $row_konekinformasivid['provinsi']; ?>" alt="<?php echo $row_konekinformasivid['infogambar']; ?> , <?php echo $row_konekinformasivid['kodkab']; ?> , <?php echo $row_konekinformasivid['provinsi']; ?>" />
+                </video>
                 <?php } else { ?>
                 <img src="../imageViewinfo.php?image_id=<?php echo $row_konekinformasi['id_info']; ?>" loading="lazy" class="pull-left" title="<?php echo $row_konekinformasi['infogambar']; ?> , <?php echo $row_konekinformasi['kodkab']; ?> , <?php echo $row_konekinformasi['provinsi']; ?>" alt="<?php echo $row_konekinformasi['infogambar']; ?> , <?php echo $row_konekinformasi['kodkab']; ?> , <?php echo $row_konekinformasi['provinsi']; ?>" />
                 <?php } ; ?>
@@ -421,7 +423,9 @@
             <?php do { ?>
             <a href="wisatadetail.php?id_wisatadiy=<?=$row_konekwisjateng['id_wisatadiy'];?>"><div class="card2">
             <?php if ($row_konekwisjateng['jenis'] !== 'photo') { ?>
-              <img src="image/no-image.png" class="pull-left" alt="">
+              <video id='video2' class='video-js vjs-default-skin pull-left' style="width: 60px; height: 60px;" controls="controls" preload= "auto" loading="lazy">
+									<source src="imageViewwisvideo.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" type="video/mp4" />
+								</video>
               <?php } else { ?>
               <img src="imageViewwis.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" class="pull-left" loading="lazy" title="<?php echo $row_konekwisjateng['infogambar']; ?> , <?php echo $row_konekwisjateng['kabkota']; ?>" , <?php echo $row_konekwisjateng['provinsi']; ?> alt="gambar <?php echo $row_konekwisjateng['infogambar']; ?>"/>
               <?php };?>

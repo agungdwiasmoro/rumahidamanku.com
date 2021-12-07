@@ -25,21 +25,52 @@ $row = mysql_fetch_assoc($konekwisata);?>
                     <small><?= date('d M Y', strtotime($row['tanggal'])).', '.$row['provinsi'].', '.$row['kabkota']; ?></small>
                 </div>
                 <div class="box-body">
-                <?php if($row['jenis'] === 'photo') { ?>
-                    <img src="imageViewwis.php?image_id=<?php echo $row['id_wisatadiy']; ?>" loading="lazy" align="center" class="center" title="<?php echo $row['infogambar']; ?> , <?php echo $row['kabkota']; ?> , <?php echo $row['provinsi']; ?>" alt="gambar <?php echo $row['infogambar']; ?> , <?php echo $row['kabkota']; ?> , <?php echo $row['provinsi']; ?>"/>
-                    <figcaption align="center"><?php echo $row['infogambar']; ?></figcaption>
-                <?php }else{ ?>
-                    <video id='video1' class='video-js vjs-default-skin' style="width: 90%; max-height: 250px;" controls="controls" preload= "auto" loading="lazy">
-                    <source src="imageViewwisvidio.php?image_id=<?php echo $row['id_wisatadiy']; ?>" title="<?php echo $row['infogambar']; ?> , <?php echo $row['kabkota']; ?> , <?php echo $row['provinsi']; ?>" alt="<?php echo $row['infogambar']; ?> , <?php echo $row['kabkota']; ?> , <?php echo $row['provinsi']; ?>" />
-                    </video>
-                <?php }; ?>
-                <p>
-                    <strong><?php echo $row['judul']; ?></strong>, <?php echo $row['artikel'].', '. $row['penulis'];?>
-                </p>
-                <hr>
-                <iframe src="<?php echo $row['goomapping']; ?>" loading="lazy" width="100%" frameborder="0" style="border:0"  allowfullscreen="allowfullscreen"></iframe>
+                    <?php if($row['jenis'] === 'photo') { ?>
+                        <img src="imageViewwis.php?image_id=<?php echo $row['id_wisatadiy']; ?>" loading="lazy" align="center" class="center" title="<?php echo $row['infogambar']; ?> , <?php echo $row['kabkota']; ?> , <?php echo $row['provinsi']; ?>" alt="gambar <?php echo $row['infogambar']; ?> , <?php echo $row['kabkota']; ?> , <?php echo $row['provinsi']; ?>"/>
+                        <figcaption align="center"><?php echo $row['infogambar']; ?></figcaption>
+                    <?php }else{ ?>
+                        <video id='video2' class='video-js vjs-default-skin' style="width: 100%; height: auto;" controls="controls" preload= "auto" loading="lazy">
+                        <source src="imageViewwisvideo.php?image_id=<?php echo $row['id_wisatadiy']; ?>" type="video/mp4" /></video>
+                    <?php }; ?>
+                    <p>
+                        <strong><?php echo $row['judul']; ?></strong>, <?php echo $row['artikel'].', '. $row['penulis'];?>
+                    </p>
+                    <hr>
+                    <iframe src="<?php echo $row['goomapping']; ?>" loading="lazy" width="100%" frameborder="0" style="border:0"  allowfullscreen="allowfullscreen"></iframe>
+               
                 </div> 
             </div>
+            <?php if ($row['sponsor1'] != null) { ?>
+            <div class="box">
+                <div class="box-header">
+                    <h4>Disponsori Oleh</h4>
+                </div>
+                <div class="box-body">
+                    <div class="col-md-4 sponsor">
+						<img src="sponsor/<?= $row['name6'];?>" title="<?= $row['sponsor1'];?>" width="100%" alt="<?= $row['sponsor1'];?>">
+                        <div class="title">
+                            <h5 align="center"><?= $row['sponsor1'];?></h5>
+                        </div>
+                    </div>
+                    <?php if($row['sponsor2']!= null){ ?>
+                    <div class="col-md-4 sponsor">
+						<img src="sponsor/<?= $row['name7'];?>" title="<?= $row['sponsor2'];?>" width="100%" alt="<?= $row['sponsor2'];?>">
+                        <div class="title">
+                            <h5 align="center"><?= $row['sponsor2'];?></h5>
+                        </div>
+                    </div>
+                    <?php }else{}; 
+                    if($row['sponsor3']!= null) {?>
+                    <div class="col-md-4 sponsor">
+						<img src="sponsor/<?= $row['name8'];?>" title="<?= $row['sponsor3'];?>" width="100%" alt="<?= $row['sponsor3'];?>">
+                        <div class="title">
+                            <h5 align="center"><?= $row['sponsor3'];?></h5>
+                        </div>
+                    </div>
+                    <?php }else{};?>
+                </div>
+            </div>
+            <?php }else{};?>
         </div>
 
         <div class="col-md-4">
@@ -53,7 +84,9 @@ $row = mysql_fetch_assoc($konekwisata);?>
                 <?php do { ?>
                 <a href="wisatadetail.php?id_wisatadiy=<?=$row_konekwis['id_wisatadiy'];?>"><div class="card2">
                 <?php if ($row_konekwis['jenis'] !== 'photo') { ?>
-                    <img src="image/no-image.png" class="pull-left" alt="">
+                    <video id='video2' class='video-js vjs-default-skin pull-left' style="width: 60px; height: 60px;" controls="controls" preload= "auto" loading="lazy">
+                    <source src="imageViewwisvideo.php?image_id=<?php echo $row_konekwis['id_wisatadiy']; ?>" type="video/mp4" />
+                    </video>
                     <?php } else { ?>
                     <img src="imageViewwis.php?image_id=<?php echo $row_konekwis['id_wisatadiy']; ?>" class="pull-left" loading="lazy" title="<?php echo $row_konekwis['infogambar']; ?> , <?php echo $row_konekwis['kabkota']; ?>" , <?php echo $row_konekwis['provinsi']; ?> alt="gambar <?php echo $row_konekwis['infogambar']; ?>"/>
                     <?php };?>
@@ -80,7 +113,9 @@ $row = mysql_fetch_assoc($konekwisata);?>
                 <?php do { ?>
                 <a href="wisatadetail.php?id_wisatadiy=<?=$row_konekwisjateng['id_wisatadiy'];?>"><div class="card2">
                 <?php if ($row_konekwisjateng['jenis'] !== 'photo') { ?>
-                    <img src="image/no-image.png" class="pull-left" alt="">
+                    <video id='video2' class='video-js vjs-default-skin pull-left' style="width: 60px; height: 60px;" controls="controls" preload= "auto" loading="lazy">
+                        <source src="imageViewwisvideo.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" type="video/mp4" />
+                    </video>
                     <?php } else { ?>
                     <img src="imageViewwis.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" class="pull-left" loading="lazy" title="<?php echo $row_konekwisjateng['infogambar']; ?> , <?php echo $row_konekwisjateng['kabkota']; ?>" , <?php echo $row_konekwisjateng['provinsi']; ?> alt="gambar <?php echo $row_konekwisjateng['infogambar']; ?>"/>
                     <?php };?>

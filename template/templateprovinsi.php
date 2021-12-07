@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="../assets/bower_components/font-awesome/css/font-awesome.min.css">
 	<!-- Theme style -->
 	<link rel="stylesheet" href="../assets/dist/css/AdminLTE.css">
+	<link rel="stylesheet" href="../mycss.css">
 	<!-- jQuery 3 -->
 	<script src="../assets/bower_components/jquery/dist/jquery.min.js"></script>
 	<!-- AdminLTE App -->
@@ -34,9 +35,8 @@
 </head>
 <body class="hold-transition skin-green fixed sidebar-mini">
 <!-- Site wrapper -->
-<div class="wrapper">
-
- <header class="main-header">
+	<div class="wrapper">
+ 		<header class="main-header">
 			<!-- Logo -->
 			<a href="https://rumahidamanku.com" class="logo">
 			<!-- mini logo for sidebar mini 50x50 pixels -->
@@ -53,116 +53,107 @@
 				
 				<td ><div align="middle"><span class="">TERIMAKASIH ATAS KUNJUNGAN ANDA, <br>PENGUNJUNG
 			 
-			  <?php
-			
+				<?php
+				
+							
+					//	  if (!$id_MySQL)die ("MySQL database cant open!");
+							if (!$koneksi)die ("MySQL database cant open!");
+					//	  $hasil=MySQL_db_query($database,"LOCK TABLE counter WRITE", $id_MySQL);
+							$hasil=MySQL_db_query($database_koneksi,"LOCK TABLE counter WRITE", $koneksi);
+					//	  if(!$hasil)die("Your request is Failed");
+							if(!$hasil)die("Your request is Failed"); 
+					//	  $hasil=MySQL_db_query($database,"SELECT * FROM counter", $id_MySQL);
+							$hasil=MySQL_db_query($database_koneksi,"SELECT * FROM counter", $koneksi);
+					//	  $data=MySQL_fetch_row($hasil);
+							$data=MySQL_fetch_row($hasil);
+					//	  $pencacah=$data[0];
+							$pencacah=$data[0];
 						
-				//	  if (!$id_MySQL)die ("MySQL database cant open!");
-						if (!$koneksi)die ("MySQL database cant open!");
-				//	  $hasil=MySQL_db_query($database,"LOCK TABLE counter WRITE", $id_MySQL);
-						$hasil=MySQL_db_query($database_koneksi,"LOCK TABLE counter WRITE", $koneksi);
-				//	  if(!$hasil)die("Your request is Failed");
-						if(!$hasil)die("Your request is Failed"); 
-				//	  $hasil=MySQL_db_query($database,"SELECT * FROM counter", $id_MySQL);
-						$hasil=MySQL_db_query($database_koneksi,"SELECT * FROM counter", $koneksi);
-				//	  $data=MySQL_fetch_row($hasil);
-						$data=MySQL_fetch_row($hasil);
-				//	  $pencacah=$data[0];
-						$pencacah=$data[0];
-					 
-				//	  print("</font>Total :  $pencacah");
-			  print("</font>Total :  $pencacah");
-			  ?>
-			  
-	  </div>
+					//	  print("</font>Total :  $pencacah");
+				print("</font>Total :  $pencacah");
+				?>
+	  			</div></td>
             
 			</nav>
      
-  </header>
-
-  <!-- =============================================== -->
-
-  <!-- Left side column. contains the sidebar -->
-  <aside class="main-sidebar">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      
-      <!-- search form -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
-        </div>
-      </form>
-      <!-- /.search form -->
-      <!-- sidebar menu: : style can be found in sidebar.less -->
-     <ul class="sidebar-menu" data-widget="tree">
-		<li class="header">MENU UTAMA</li>
-		<li>
-			<a href="../index.php"><i class="fa fa-home"></i> <span>Home</span></a>
-		</li>                         
-	
-			
-		<li>
-			<a href="../about.php"><i class="fa fa-info"></i> <span>Tentang Kami</span></a>
-		</li>
-	
-	
-		<li>
-			<a href="../callme.php"><i class="fa fa-phone"></i> <span>Hubungi Kami</span></a>
-		</li>
-        <li class="header">	INFO LOKASI</li>
-			<li class="treeview">
-					<a href="#">
-						<i class="fa fa-map-marker"></i> <span>Pilih Provinsi</span>
-						<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i>
+  		</header>
+		<!-- Left side column. contains the sidebar -->
+		<aside class="main-sidebar">
+			<!-- sidebar: style can be found in sidebar.less -->
+			<section class="sidebar">
+				<!-- search form -->
+				<form action="#" method="get" class="sidebar-form">
+					<div class="input-group">
+					<input type="text" name="q" class="form-control" placeholder="Search...">
+					<span class="input-group-btn">
+							<button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+							</button>
 						</span>
-					</a>
-					<ul class="treeview-menu">
-						<li><a href="../Aceh/index.php"><i class="fa fa-circle-o"></i> N A D </a></li>
-						<li><a href="../Sumatera Utara/index.php"><i class="fa fa-circle-o"></i> Sumatera Utara </a></li>
-						<li><a href="../Sumatera Barat/index.php"><i class="fa fa-circle-o"></i> Sumatera Barat</a></li>
-						<li><a href="../Riau/index.php"><i class="fa fa-circle-o"></i> Riau</a></li>
-						<li><a href="../Kepulauan Riau/index.php"><i class="fa fa-circle-o"></i> Kepulauan Riau</a></li>
-						<li><a href="../Jambi/index.php"><i class="fa fa-circle-o"></i> Jambi</a>	</li>
-						<li><a href="../Bengkulu/index.php"><i class="fa fa-circle-o"></i> Bengkulu</a></li>
-						<li><a href="../Sumatera Selatan/index.php"><i class="fa fa-circle-o"></i> Sumatera Selatan</a></li>
-						<li><a href="../Kepulauan Bangka Belitung/index.php"><i class="fa fa-circle-o"></i> Kp Bangka Belitung</a></li>
-						<li><a href="../Lampung/index.php"><i class="fa fa-circle-o"></i> Lampung</a></li>
-						<li><a href="../Banten/index.php"><i class="fa fa-circle-o"></i> Banten</a></li>
-						<!--<li><a href="../jakarta/jakarta.php"><i class="fa fa-circle-o"></i> DKI Jakarta</a></li> -->
-						<li><a href="../Jawa Barat/index.php"><i class="fa fa-circle-o"></i> Jawa Barat</a></li>
-						<li><a href="../Jawa Tengah/index.php"><i class="fa fa-circle-o"></i> Jawa Tengah</a></li>
-						<li><a href="../Jawa Timur/index.php"><i class="fa fa-circle-o"></i> Jawa Timur</a></li>
-						<li><a href="../Daerah Istimewa Yogyakarta/index.php"><i class="fa fa-circle-o"></i> DI Yogyakarta</a></li>
-						<li><a href="../Bali/index.php"><i class="fa fa-circle-o"></i> Bali</a></li>
-						<li><a href="../Nusa Tenggara Barat/index.php"><i class="fa fa-circle-o"></i> NTB</a></li>
-						<li><a href="../Nusa Tenggara Timur/index.php"><i class="fa fa-circle-o"></i> NTT</a></li>
-						<li><a href="../Kalimantan Barat/index.php"><i class="fa fa-circle-o"></i> Kalimantan Barat</a></li>
-						<li><a href="../Kalimantan Selatan/index.php"><i class="fa fa-circle-o"></i> Kalimantan Selatan</a></li>
-						<li><a href="../Kalimantan Tengah/index.php"><i class="fa fa-circle-o"></i> Kalimantan Tengah</a></li>
-						<li><a href="../Kalimantan Timur/index.php"><i class="fa fa-circle-o"></i> Kalimantan Timur</a></li>
-						<li><a href="../Kalimantan Utara/index.php"><i class="fa fa-circle-o"></i> Kalimantan Utara</a></li>
-						<li><a href="../Gorontalo/index.php"><i class="fa fa-circle-o"></i> Gorontalo</a></li>
-						<li><a href="../Sulawesi Barat/index.php"><i class="fa fa-circle-o"></i> Sulawesi Barat</a></li>
-						<li><a href="../Sulawesi Selatan/index.php"><i class="fa fa-circle-o"></i> Sulawesi Selatan</a></li>
-						<li><a href="../Sulawesi Tenggara/index.php"><i class="fa fa-circle-o"></i> Sulawesi Tenggara</a></li>
-						<li><a href="../Sulawesi Tengah/index.php"><i class="fa fa-circle-o"></i> Sulawesi Tengah</a></li>
-						<li><a href="../Sulawesi Utara/index.php"><i class="fa fa-circle-o"></i> Sulawesi Utara</a></li>
-						<li><a href="../Maluku/index.php"><i class="fa fa-circle-o"></i> Maluku</a></li>
-						<li><a href="../Maluku Utara/index.php"><i class="fa fa-circle-o"></i> Maluku Utara</a></li>
-						<li><a href="../Papua/index.php"><i class="fa fa-circle-o"></i> Papua</a></li>
-						<li><a href="../Papua Barat/index.php"><i class="fa fa-circle-o"></i> Papua Barat</a></li>
-					</ul>
-			</li>
-      </ul>
-    </section>
-    <!-- /.sidebar -->
-  </aside>
-  <!-- Content Wrapper. Contains page content -->
-	<div class="content-wrapper">
+					</div>
+				</form>
+				<!-- /.search form -->
+				<!-- sidebar menu: : style can be found in sidebar.less -->
+				<ul class="sidebar-menu" data-widget="tree">
+					<li class="header">MENU UTAMA</li>
+					<li>
+						<a href="../index.php"><i class="fa fa-home"></i> <span>Home</span></a>
+					</li>
+					<li>
+						<a href="../about.php"><i class="fa fa-info"></i> <span>Tentang Kami</span></a>
+					</li>
+					<li>
+						<a href="../callme.php"><i class="fa fa-phone"></i> <span>Hubungi Kami</span></a>
+					</li>
+					<li class="header">	INFO LOKASI</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-map-marker"></i> <span>Pilih Provinsi</span>
+							<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="../Aceh/index.php"><i class="fa fa-circle-o"></i> N A D </a></li>
+							<li><a href="../Sumatera Utara/index.php"><i class="fa fa-circle-o"></i> Sumatera Utara </a></li>
+							<li><a href="../Sumatera Barat/index.php"><i class="fa fa-circle-o"></i> Sumatera Barat</a></li>
+							<li><a href="../Riau/index.php"><i class="fa fa-circle-o"></i> Riau</a></li>
+							<li><a href="../Kepulauan Riau/index.php"><i class="fa fa-circle-o"></i> Kepulauan Riau</a></li>
+							<li><a href="../Jambi/index.php"><i class="fa fa-circle-o"></i> Jambi</a>	</li>
+							<li><a href="../Bengkulu/index.php"><i class="fa fa-circle-o"></i> Bengkulu</a></li>
+							<li><a href="../Sumatera Selatan/index.php"><i class="fa fa-circle-o"></i> Sumatera Selatan</a></li>
+							<li><a href="../Kepulauan Bangka Belitung/index.php"><i class="fa fa-circle-o"></i> Kp Bangka Belitung</a></li>
+							<li><a href="../Lampung/index.php"><i class="fa fa-circle-o"></i> Lampung</a></li>
+							<li><a href="../Banten/index.php"><i class="fa fa-circle-o"></i> Banten</a></li>
+							<!--<li><a href="../jakarta/jakarta.php"><i class="fa fa-circle-o"></i> DKI Jakarta</a></li> -->
+							<li><a href="../Jawa Barat/index.php"><i class="fa fa-circle-o"></i> Jawa Barat</a></li>
+							<li><a href="../Jawa Tengah/index.php"><i class="fa fa-circle-o"></i> Jawa Tengah</a></li>
+							<li><a href="../Jawa Timur/index.php"><i class="fa fa-circle-o"></i> Jawa Timur</a></li>
+							<li><a href="../Daerah Istimewa Yogyakarta/index.php"><i class="fa fa-circle-o"></i> DI Yogyakarta</a></li>
+							<li><a href="../Bali/index.php"><i class="fa fa-circle-o"></i> Bali</a></li>
+							<li><a href="../Nusa Tenggara Barat/index.php"><i class="fa fa-circle-o"></i> NTB</a></li>
+							<li><a href="../Nusa Tenggara Timur/index.php"><i class="fa fa-circle-o"></i> NTT</a></li>
+							<li><a href="../Kalimantan Barat/index.php"><i class="fa fa-circle-o"></i> Kalimantan Barat</a></li>
+							<li><a href="../Kalimantan Selatan/index.php"><i class="fa fa-circle-o"></i> Kalimantan Selatan</a></li>
+							<li><a href="../Kalimantan Tengah/index.php"><i class="fa fa-circle-o"></i> Kalimantan Tengah</a></li>
+							<li><a href="../Kalimantan Timur/index.php"><i class="fa fa-circle-o"></i> Kalimantan Timur</a></li>
+							<li><a href="../Kalimantan Utara/index.php"><i class="fa fa-circle-o"></i> Kalimantan Utara</a></li>
+							<li><a href="../Gorontalo/index.php"><i class="fa fa-circle-o"></i> Gorontalo</a></li>
+							<li><a href="../Sulawesi Barat/index.php"><i class="fa fa-circle-o"></i> Sulawesi Barat</a></li>
+							<li><a href="../Sulawesi Selatan/index.php"><i class="fa fa-circle-o"></i> Sulawesi Selatan</a></li>
+							<li><a href="../Sulawesi Tenggara/index.php"><i class="fa fa-circle-o"></i> Sulawesi Tenggara</a></li>
+							<li><a href="../Sulawesi Tengah/index.php"><i class="fa fa-circle-o"></i> Sulawesi Tengah</a></li>
+							<li><a href="../Sulawesi Utara/index.php"><i class="fa fa-circle-o"></i> Sulawesi Utara</a></li>
+							<li><a href="../Maluku/index.php"><i class="fa fa-circle-o"></i> Maluku</a></li>
+							<li><a href="../Maluku Utara/index.php"><i class="fa fa-circle-o"></i> Maluku Utara</a></li>
+							<li><a href="../Papua/index.php"><i class="fa fa-circle-o"></i> Papua</a></li>
+							<li><a href="../Papua Barat/index.php"><i class="fa fa-circle-o"></i> Papua Barat</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<!-- /.sidebar -->
+		</aside>
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
 		<!-- Content Header (Page header) -->
 		<section class="content-header">
 
@@ -267,13 +258,8 @@
 			</div>
 		</div>
 		<?php include ('../index/spaceiklan.php');?>
-		<div align="center" style="margin-top: 20px; margin-bottom: -25px;">
+		<div align="center" style="margin-top: 20px;">
 				<?php
-				//	  $pemakai = "ruh5758";
-				//	  $password = "ruh065758idaman";
-				//	  $database = "rumah06_rumah065758";
-				//	  $id_MySQL=MySQL_connect("localhost",$pemakai,$password);
-					   
 				//	  if (!$id_MySQL)die ("MySQL database cant open!");
 					  if (!$koneksi)die ("MySQL database cant open!");
 				//	  $hasil=MySQL_db_query($database,"LOCK TABLE counter WRITE", $id_MySQL);

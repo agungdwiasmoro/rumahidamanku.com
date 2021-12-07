@@ -32,26 +32,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 
 $currentPage = $_SERVER["PHP_SELF"];
 
-$query_konekprofkalteng = "SELECT * FROM profilkabkod WHERE provinsi = 'Kalimantan Tengah' ORDER BY id_profkabkod DESC";
-$konekprofkalteng = mysql_query($query_konekprofkalteng, $koneksi) or die(mysql_error());
-$row_konekprofkalteng = mysql_fetch_assoc($konekprofkalteng);
-$totalRows_konekprofkalteng = mysql_num_rows($konekprofkalteng);
 
-
-$query_konekprofkalbar = "SELECT * FROM profilkabkod WHERE provinsi = 'Kalimantan Barat' ORDER BY id_profkabkod DESC";
-$konekprofkalbar = mysql_query($query_konekprofkalbar, $koneksi) or die(mysql_error());
-$row_konekprofkalbar = mysql_fetch_assoc($konekprofkalbar);
-$totalRows_konekprofkalbar = mysql_num_rows($konekprofkalbar);
-
-$colname_konekprofpapua = "-1";
-if (isset($_GET['papua'])) {
-  $colname_konekprofpapua = $_GET['papua'];
-}
-
-$query_konekprofpapua = sprintf("SELECT * FROM profilkabkod WHERE provinsi = 'Papua' ORDER BY id_profkabkod DESC", GetSQLValueString($colname_konekprofpapua, "text"));
-$konekprofpapua = mysql_query($query_konekprofpapua, $koneksi) or die(mysql_error());
-$row_konekprofpapua = mysql_fetch_assoc($konekprofpapua);
-$totalRows_konekprofpapua = mysql_num_rows($konekprofpapua);
 
 $query_konekinformasi = "SELECT * FROM info  ORDER BY id_info DESC";
 $konekinformasi = mysql_query($query_konekinformasi, $koneksi) or die(mysql_error());
