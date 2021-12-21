@@ -26,7 +26,7 @@ $row = mysql_fetch_assoc($konekwisata);?>
                 </div>
                 <div class="box-body">
                     <?php if($row['jenis'] === 'photo') { ?>
-                        <img src="imageViewwis.php?image_id=<?php echo $row['id_wisatadiy']; ?>" loading="lazy" align="center" class="center" title="<?php echo $row['infogambar']; ?> , <?php echo $row['kabkota']; ?> , <?php echo $row['provinsi']; ?>" alt="gambar <?php echo $row['infogambar']; ?> , <?php echo $row['kabkota']; ?> , <?php echo $row['provinsi']; ?>"/>
+                        <img src="imageViewwis.php?image_id=<?php echo $row['id_wisatadiy']; ?>" loading="lazy" align="center" class="center detail" title="<?php echo $row['infogambar']; ?> , <?php echo $row['kabkota']; ?> , <?php echo $row['provinsi']; ?>" alt="gambar <?php echo $row['infogambar']; ?> , <?php echo $row['kabkota']; ?> , <?php echo $row['provinsi']; ?>"/>
                         <figcaption align="center"><?php echo $row['infogambar']; ?></figcaption>
                     <?php }else{ ?>
                         <video id='video2' class='video-js vjs-default-skin' style="width: 100%; height: auto;" controls="controls" preload= "auto" loading="lazy">

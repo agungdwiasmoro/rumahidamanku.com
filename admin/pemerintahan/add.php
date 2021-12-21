@@ -112,7 +112,7 @@ $totalRows_konekwisjateng = mysql_num_rows($konekwisjateng);
 						</div>
 						<div class="form-group">
 							<label>Penulis</label>
-							<input type="text" name="penulis" id="penulis" value="" placeholder="Nama Penulis" class="form-control">
+							<input type="text" name="penulis" id="penulis" value="<?=$row_konekuser['nama']; ?> " readonly="readonly" placeholder="Nama Penulis" class="form-control">
 						</div>
 						<div class="form-group">
 							<label>Gambar Utama</label>

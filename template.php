@@ -53,7 +53,7 @@
 				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
 					<span class="sr-only">Toggle navigation</span>MENU
 				</a>
-				<div align="middle"><span class="">TERIMAKASIH ATAS KUNJUNGAN ANDA <br>PENGUNJUNG
+				<div align="middle"><span class=""><h5>TERIMAKASIH ATAS KUNJUNGAN ANDA <br>PENGUNJUNG
 				
 				<?php
 			
@@ -82,6 +82,7 @@
 				//	  print("</font>Total :  $pencacah");
 				print("</font>Total :  $pencacah");
 				?>
+				</h5></span>
 				</div>
 			</nav>
 				

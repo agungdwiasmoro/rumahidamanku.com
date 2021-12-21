@@ -82,7 +82,7 @@ include  ('templateuserusaha.php');
 						<td><?=$no++?>.</td>
 						<!-- <td><center><img src="../../../imageViewivent.php?image_id=<?php echo $row_konekiventprodiy['id_iventpromo']; ?>" loading="lazy" alt="<?php echo $row_konekiventprodiy['namaivent0']; ?> <?php echo $row_konekiventprodiy['namausaha']; ?> <?php echo $row_konekiventprodiy['bidangusaha']; ?> <?php echo $row_konekiventprodiy['kodkab']; ?> <?php echo $row_konekiventprodiy['provinsi']; ?> " title="<?php echo $row_konekiventprodiy['namaivent0']; ?> <?php echo $row_konekiventprodiy['namausaha']; ?> <?php echo $row_konekiventprodiy['bidangusaha']; ?> <?php echo $row_konekiventprodiy['kodkab']; ?> <?php echo $row_konekiventprodiy['provinsi']; ?> " class="img-fluid" style="width: 90%; " longdesc="<?php echo $row_konekiventprodiy['name']; ?>" /></center></td> -->
 						<td align="center">
-							<?php if ($row_konekiventprodiy['jenis']==='vidio') { ?>
+							<?php if ($row_konekiventprodiy['jenis'] === 'video') { ?>
 								<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: 150px;" controls="controls" preload= "auto" loading="lazy">
 									<source src="../../../imageViewiventvid.php?image_id=<?php echo $row_konekiventprodiy['id_iventpromo']; ?>" type="video/mp4" />
 								</video>

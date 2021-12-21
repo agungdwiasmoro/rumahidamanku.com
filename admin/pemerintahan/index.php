@@ -26,7 +26,7 @@ $totalRows_konekwisjateng = mysql_num_rows($konekwisjateng);
 <section class="content-header">
 	<div class="row">
 		<div class="col-md-3 col-xs-12">
-			<img src="../../image/logobaru.jpg" class="img-fluid" style="max-width: 80%">
+			<center><img src="../../image/logobaru.jpg" class="img-fluid" style="max-width: 80%"></center>
 		</div>
 		<div class="col-md-6 col-xs-12">
 			<h3><center>

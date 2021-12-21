@@ -286,13 +286,11 @@
 											<input name="ip" type="hidden" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>"/>
 											<input name="tanggal" type="hidden" value="<?php date_default_timezone_set('Asia/Jakarta'); echo date('Y-m-d G,i'); ?>"/>
 											<input name="jam" type="hidden" value="<?php echo date('G,i'); ?>"/>
-											<input name="status" type="hidden" value="off"/>
 											<input name="counter" type="hidden" value="0"/>
 											<input name="totaljeda" type="hidden" value="0"/>
 											<input name="kontrakcounter" type="hidden" value="120"/>
 											<input name="keterangan" type="hidden" value="tidak ada"/>
 											<input name="useradmint" type="hidden" id="useradmint" value="admin"/>
-											<input name="level" type="hidden" id="level" value="3"/>
 											
 											<div class="form-group pull-left">
 											<table>

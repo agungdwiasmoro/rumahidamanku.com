@@ -26,7 +26,7 @@ $row = mysql_fetch_assoc($konekinformasi);?>
           </div>
           <div class="box-body">
             <?php if($row['jenis'] === 'photo') { ?>
-              <img src="../imageViewinfo.php?image_id=<?php echo $row['id_info']; ?>" loading="lazy" align="center" class="img-fluid" title="<?php echo $row['infogambar']; ?> , <?php echo $row['kodkab']; ?> , <?php echo $row['provinsi']; ?>" alt="gambar <?php echo $row['infogambar']; ?> , <?php echo $row['kodkab']; ?> , <?php echo $row['provinsi']; ?>"/>
+              <img src="../imageViewinfo.php?image_id=<?php echo $row['id_info']; ?>" loading="lazy" align="center" class="img-fluid detail" title="<?php echo $row['infogambar']; ?> , <?php echo $row['kodkab']; ?> , <?php echo $row['provinsi']; ?>" alt="gambar <?php echo $row['infogambar']; ?> , <?php echo $row['kodkab']; ?> , <?php echo $row['provinsi']; ?>"/>
               <figcaption align="center"><?php echo $row['infogambar']; ?></figcaption>
             <?php }else{ ?>
               <video id='video1' class='video-js vjs-default-skin' style="width: 90%; max-height: 250px;" controls="controls" preload= "auto" loading="lazy">
@@ -52,7 +52,9 @@ $row = mysql_fetch_assoc($konekinformasi);?>
               <a href="newsdetail.php?id_info=<?=$row_konekinformasi['id_info']; ?>">
                 <div class="card2 news">
                   <?php if ($row_konekinformasi['jenis'] !== 'photo') { ?>
-                  <img src="image/no-image.png" class="pull-left" alt="">
+                    <video id='video1' class='video-js vjs-default-skin pull-left' controls="controls" style="width: 80px; height: 80px;" preload= "auto" loading="lazy">
+                	    <source src="imageViewvideoinfo.php?image_id=<?php echo $row_konekinformasivid['id_info']; ?>" title="<?php echo $row_konekinformasivid['namephoto0']; ?> , <?php echo $row_konekinformasivid['infogambar']; ?> , <?php echo $row_konekinformasivid['kodkab']; ?> , <?php echo $row_konekinformasivid['provinsi']; ?>" alt="<?php echo $row_konekinformasivid['infogambar']; ?> , <?php echo $row_konekinformasivid['kodkab']; ?> , <?php echo $row_konekinformasivid['provinsi']; ?>" />
+                    </video>
                   <?php } else { ?>
                   <img src="../imageViewinfo.php?image_id=<?php echo $row_konekinformasi['id_info']; ?>" loading="lazy" class="pull-left" title="<?php echo $row_konekinformasi['infogambar']; ?> , <?php echo $row_konekinformasi['kodkab']; ?> , <?php echo $row_konekinformasi['provinsi']; ?>" alt="<?php echo $row_konekinformasi['infogambar']; ?> , <?php echo $row_konekinformasi['kodkab']; ?> , <?php echo $row_konekinformasi['provinsi']; ?>" />
                   <?php } ; ?>

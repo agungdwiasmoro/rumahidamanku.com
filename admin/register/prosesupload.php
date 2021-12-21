@@ -8,7 +8,7 @@ $telepon = mysql_real_escape_string(strip_tags($_POST['handphone0']));
 $provinsi = mysql_real_escape_string(strip_tags($_POST['provinsi']));
 $kodkab = mysql_real_escape_string(strip_tags($_POST['kodkab']));
 $namausaha = mysql_real_escape_string(strip_tags($_POST['namausaha']));
-$level = mysql_real_escape_string(strip_tags($_POST['level']));
+$level = '3';
 $useradmint = mysql_real_escape_string(strip_tags($_POST['useradmint']));
 // setting nama folder tempat upload
 //$uploaddir = 'imageprof/';
@@ -36,7 +36,7 @@ $file = strip_tags($_POST['file']);
 $ip = $_POST['ip'];
 $tanggal = $_POST['tanggal'];
 $jam = $_POST['jam'];
-$status = mysql_real_escape_string($_POST['status']);
+$status = 'off';
 $bayar = mysql_real_escape_string($_POST['bayar']);
 // $rupiah = mysql_real_escape_string($_POST['rupiah']);
 // $jeda = mysql_real_escape_string($_POST['jeda']);
