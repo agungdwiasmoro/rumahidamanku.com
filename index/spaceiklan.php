@@ -5,7 +5,7 @@
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- Homepage Leaderboard -->
 		<ins class="adsbygoogle"
-		style="display:none;width:auto;height:auto"
+		style="display:block;width:auto;height:auto"
 		data-ad-client="ca-pub-3274780598043223"
 		data-ad-slot="6387549260"></ins>
 		<script>
