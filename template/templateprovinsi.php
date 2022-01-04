@@ -25,6 +25,7 @@
 	<!-- Theme style -->
 	<link rel="stylesheet" href="../assets/dist/css/AdminLTE.css">
 	<link rel="stylesheet" href="../mycss.css">
+	<script data-ad-client="ca-pub-3274780598043223" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- jQuery 3 -->
 	<script src="../assets/bower_components/jquery/dist/jquery.min.js"></script>
 	<!-- AdminLTE App -->

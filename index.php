@@ -210,7 +210,7 @@
         <?php } // Show if recordset not empty ?>
 
         
-        <?php include ('index/spaceiklan2.php');?>
+        <?php include ('index/spaceiklan.php');?>
         
         <?php if ($totalRows_konekmotor > 0) { // Show if recordset not empty ?>
         <div class="box">
@@ -421,6 +421,7 @@
               </a>
             <?php } while ($row_konekprofhome = mysql_fetch_assoc($konekprofhome)); ?>
             <?php } // Show if recordset not empty ?>
+            <?php include ('index/unitiklanusaha.php');?>
             </div>
         </div>
 
@@ -452,6 +453,7 @@
             </a>
             <?php } while ($row_konekinformasi = mysql_fetch_assoc($konekinformasi)); ?>
             <?php } // Show if recordset not empty ?>
+            <?php include ('index/unitiklannews.php');?>
           </div>
         </div>
 
@@ -478,9 +480,10 @@
                 <?php echo $row_konekwisjateng['tanggal']; ?>
                 </p>
               </div>
-            </div>
+            </div></a>
             <?php } while ($row_konekwisjateng = mysql_fetch_assoc($konekwisjateng)); ?>
-          </div></a>
+            <?php include ('index/unitiklanwisata.php');?>
+          </div>
         </div>
         <?php };?>
     </div>

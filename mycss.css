@@ -41,6 +41,7 @@ video {
     max-height: 150px !important;
     border-radius: 5px;
 }
+.card .col-md-6 
 .box-body .card2 {
     background: #ffff;
     border-radius: 3px;
@@ -67,6 +68,9 @@ video {
     margin-right: 10px;
     display: flex;
     align-items: center;
+}
+h4 {
+    text-transform: capitalize;
 }
 .card2 h4 {
     margin: 0px;
@@ -103,12 +107,33 @@ figcaption {
     margin: 2px !important;
     font-weight: bold;
 }
+.ads {
+    margin-bottom: 15px;
+}
 
 @media (min-width: 992px) {
 
     .sponsor {
         width: 31.48% !important;
     }
+}
+
+@media (max-width: 767px) {
+    .ads {
+        width: 100%;
+        max-height: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 15px;
+        background-color: white;
+    }
+
+    .box-body {
+        padding: 5px;
+    }
+
+  
 }
 /* .main-footer {
     min-height: 100px;
