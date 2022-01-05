@@ -120,7 +120,7 @@
 							</a>
 							<ul class="treeview-menu">
 								<li><a href="Aceh/index.php"><i class="fa fa-circle-o"></i> N A D </a></li>
-								<li><a href="Sumatera Utara/index"><i class="fa fa-circle-o"></i> Sumatera Utara </a></li>
+								<li><a href="Sumatera Utara/index.php"><i class="fa fa-circle-o"></i> Sumatera Utara </a></li>
 								<li><a href="Sumatera Barat/index.php"><i class="fa fa-circle-o"></i> Sumatera Barat</a></li>
 								<li><a href="Riau/index.php"><i class="fa fa-circle-o"></i> Riau</a></li>
 								<li><a href="Kepulauan Riau/index.php"><i class="fa fa-circle-o"></i> Kepulauan Riau</a></li>
@@ -138,22 +138,21 @@
 								<li><a href="Bali/index.php"><i class="fa fa-circle-o"></i> Bali</a></li>
 								<li><a href="Nusa Tenggara Barat/index.php"><i class="fa fa-circle-o"></i> NTB</a></li>
 								<li><a href="Nusa Tenggara Timur/index.php"><i class="fa fa-circle-o"></i> NTT</a></li>
-								<!--
-								<li><a href="kalbar/kalbar.php"><i class="fa fa-circle-o"></i> Kalimantan Barat</a></li>
-								<li><a href="kalsel/kalsel.php"><i class="fa fa-circle-o"></i> Kalimantan Selatan</a></li>
-								<li><a href="kalteng/kalteng.php"><i class="fa fa-circle-o"></i> Kalimantan Tengah</a></li>
-								<li><a href="kaltim/kaltim.php"><i class="fa fa-circle-o"></i> Kalimantan Timur</a></li>
-								<li><a href="kalut/kalut.php"><i class="fa fa-circle-o"></i> Kalimantan Utara</a></li>
-								<li><a href="gorontalo/gorontalo.php"><i class="fa fa-circle-o"></i> Gorontalo</a></li>
-								<li><a href="sulbar/sulbar.php"><i class="fa fa-circle-o"></i> Sulawesi Barat</a></li>
-								<li><a href="sulsel/sulsel.php"><i class="fa fa-circle-o"></i> Sulawesi Selatan</a></li>
-								<li><a href="sultengg/sultengg.php"><i class="fa fa-circle-o"></i> Sulawesi Tenggara</a></li>
-								<li><a href="sulteng/sulteng.php"><i class="fa fa-circle-o"></i> Sulawesi Tengah</a></li>
-								<li><a href="sulut/sulut.php"><i class="fa fa-circle-o"></i> Sulawesi Utara</a></li>
-								<li><a href="maluku/maluku.php"><i class="fa fa-circle-o"></i> Maluku</a></li>
-								<li><a href="malukuutara/malukuutara.php"><i class="fa fa-circle-o"></i> Maluku Utara</a></li>
-								<li><a href="papua/papua.php"><i class="fa fa-circle-o"></i> Papua</a></li>
-								<li><a href="papuabarat/papuabarat.php"><i class="fa fa-circle-o"></i> Papua Barat</a></li> -->
+								<li><a href="Kalimantan Barat/index.php"><i class="fa fa-circle-o"></i> Kalimantan Barat</a></li>
+								<li><a href="Kalimantan Selatan/index.php"><i class="fa fa-circle-o"></i> Kalimantan Selatan</a></li>
+								<li><a href="Kalimantan Tengah/index.php"><i class="fa fa-circle-o"></i> Kalimantan Tengah</a></li>
+								<li><a href="Kalimantan Timur/index.php"><i class="fa fa-circle-o"></i> Kalimantan Timur</a></li>
+								<li><a href="Kalimantan Utara/index.php"><i class="fa fa-circle-o"></i> Kalimantan Utara</a></li>
+								<li><a href="Gorontalo/index.php"><i class="fa fa-circle-o"></i> Gorontalo</a></li>
+								<li><a href="Sulawesi Barat/index.php"><i class="fa fa-circle-o"></i> Sulawesi Barat</a></li>
+								<li><a href="Sulawesi Selatan/index.php"><i class="fa fa-circle-o"></i> Sulawesi Selatan</a></li>
+								<li><a href="Sulawesi Tenggara/index.php"><i class="fa fa-circle-o"></i> Sulawesi Tenggara</a></li>
+								<li><a href="Sulawesi Tengah/index.php"><i class="fa fa-circle-o"></i> Sulawesi Tengah</a></li>
+								<li><a href="Sulawesi Utara/index.php"><i class="fa fa-circle-o"></i> Sulawesi Utara</a></li>
+								<li><a href="Maluku/index.php"><i class="fa fa-circle-o"></i> Maluku</a></li>
+								<li><a href="Maluku Utara/index.php"><i class="fa fa-circle-o"></i> Maluku Utara</a></li>
+								<li><a href="Papua/index.php"><i class="fa fa-circle-o"></i> Papua</a></li>
+								<li><a href="Papua Barat/index.php"><i class="fa fa-circle-o"></i> Papua Barat</a></li>
 							</ul>
 						</li>
 					</ul>

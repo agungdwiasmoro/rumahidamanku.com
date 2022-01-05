@@ -5,9 +5,6 @@
 <?php $status = "on"; ?>
 <?php include ('../query/queryprovinsi.php'); ?>
 <?php include ('../template/templateprovinsi.php'); ?>
-  <!-- =============================================== -->
-
-  
 		
 	
       <!-- Default box -->

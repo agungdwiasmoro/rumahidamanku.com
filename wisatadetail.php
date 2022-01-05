@@ -71,6 +71,7 @@ $row = mysql_fetch_assoc($konekwisata);?>
                 </div>
             </div>
             <?php }else{};?>
+            <?php include ('index/spaceiklan.php'); ?>
         </div>
 
         <div class="col-md-4">
@@ -102,6 +103,9 @@ $row = mysql_fetch_assoc($konekwisata);?>
                 </div></a>
             </div>
             <?php };?>
+
+            <!-- iklan -->
+            <?php  include ('index/spaceiklan.php');?>
         
         <!-- Jelajah Wisata -->
             <?php if ($totalRows_konekwisjateng > 0) { // Show if recordset not empty ?>
@@ -135,6 +139,8 @@ $row = mysql_fetch_assoc($konekwisata);?>
 
     </div>
     <!-- end row -->
+    <!-- iklan -->
+    <?php include ('index/spaceiklan.php') ;?>
 </div>
   <!-- /.content-wrapper -->
 

@@ -156,134 +156,134 @@
 		<!-- Content Wrapper. Contains page content -->
 		<div class="content-wrapper">
 		<!-- Content Header (Page header) -->
-		<section class="content-header">
+			<section class="content-header">
 
-			<h1>
-			<strong>Selamat Datang</strong><br>
-			<marquee><small>one stop service for living</small></marquee>
-			</h1>
-			<ol class="breadcrumb" align="center">
-				<a href="../admin/login.php"><button class="btn btn-block btn-primary btn-sm" >Masuk</button></a>
-				</ol>
-			<br>
-		</section>
-		<div class="row" >
-			<div class="col-md-3 col-xs-3">
-				<!-- small box -->
-				<div class="small-box bg-ta">
-					<a href="../properti.php" title="properti di rumahidamanku.com" target="_blank"><img src="../image/Background main frame.JPG" alt="Properti di Rumah, Rumah Idaman, Rumah Idamanku" title="Properti di Rumah, Rumah Idaman, Rumah Idamanku" class="img-fluid" width="100%"></a>
-					<a href="../properti.php" title="properti di rumahidamanku.com" target="_blank" class="small-box-footer">Properti</a>
-				</div>
-			</div>
-			<!-- ./col -->
-			<div class="col-md-3 col-xs-3">
-				<!-- small box -->
-				<div class="small-box bg-ta">
-					<a href="../mobil.php" title="mobil di rumahidamanku.com" target="_blank"><img src="../image/audi_locus_concept_car.jpg" alt="Mobil di Rumah, Rumah Idaman, Rumah Idamanku punya mobil" title="Mobil di Rumah, Rumah Idaman, Rumah Idamanku punya mobil" class="img-fluid" width="100%"></a>
-					<a href="../mobil.php" title="mobil di rumahidamanku.com" target="_blank" class="small-box-footer">Mobil</a>
-				</div>
-			</div>
-			<!-- ./col -->
-			<div class="col-md-3 col-xs-3">
-				<!-- small box -->
-				<div class="small-box bg-ta">
-					<a href="../motor.php" title="motor di rumahidamanku.com" target="_blank"><img src="../image/big_kawasaki_ninja_zx.jpg" alt="Motor di Rumah, Rumah Idaman, Rumah Idamanku punya motor" title="Motor di Rumah, Rumah Idaman, Rumah Idamanku punya motor" class="img-fluid" width="100%"></a>
-					<a href="../motor.php" title="motor di rumahidamanku.com" target="_blank" class="small-box-footer">Motor</a>
-				</div>
-			</div>
-			<!-- ./col -->
-			<div class="col-md-3 col-xs-3">
-				<!-- small box -->
-				<div class="small-box bg-ta">
-					<a href="../elektronika.php" title="Elektonik di rumahidamanku.com" target="_blank"><img src="../image/elektronika.JPG" alt="Elektronika di Rumah, Rumah Idaman, Rumah Idamanku punya elektronika" title="Elektronika di Rumah, Rumah Idaman, Rumah Idamanku punya elektronika" class="img-fluid" width="100%" ></a>
-					<a href="../elektronika.php" title="Elektonik di rumahidamanku.com" target="_blank" class="small-box-footer">Elektronika</a>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3 col-xs-3">
-				<!-- small box -->
-				<div class="small-box bg-ta">
-					<a href="../komputer.php" title="komputer di rumahidamanku.com" target="_blank"><img src="../image/komputer.GIF" alt="Komputer di Rumah, Rumah Idaman, Rumah Idamanku punya komputer" title="Komputer di Rumah, Rumah Idaman, Rumah Idamanku punya komputer" class="img-fluid" width="100%" ></a>
-					<a href="../komputer.php" title="komputer di rumahidamanku.com" target="_blank" class="small-box-footer">Komputer</a>
-				</div>
-			</div>
-			<!-- ./col -->
-			<div class="col-md-3 col-xs-3">
-			<!-- small box -->
-				<div class="small-box bg-ta">
-					<a href="../industri.php" title="industri di rumahidamanku.com" target="_blank"><img src="../image/Telur Asin Bebek 5.JPG" alt="Industri di Rumah, Rumah Idaman, Rumah Idamanku" title="Industri di Rumah, Rumah Idaman, Rumah Idamanku" class="img-fluid" width="100%" ></a>
-					<a href="../industri.php" title="industri di rumahidamanku.com" target="_blank" class="small-box-footer">Industri </i></a>
-				</div>
-			</div>
-			<!-- ./col -->
-			<div class="col-md-3 col-xs-3">
-				<!-- small box -->
-				<div class="small-box bg-ta">
-					<a href="../wisata.php" title="wisata di rumahidamanku.com" target="_blank"><img src="../image/traveling.jpg" alt="Wisata di Rumah, Rumah Idaman, Rumah Idamanku" title="Wisata di Rumah, Rumah Idaman, Rumah Idamanku" class="img-fluid" width="100%" ></a>
-					<a href="../wisata.php" title="wisata di rumahidamanku.com" target="_blank" class="small-box-footer">Wisata </a>
-				</div>
-			</div>
-											
-		</div>
-			
-		<div class="col-md-12">
-			<div class="col-md-6">
-				<div class="box box-solid">
-					<!-- /.box-header -->
-					<div class="box-body">
-						<blockquote>
-						<h6>Waktu berlalu dan tak akan pernah kembali, &quot;Do the Best What We Can Do"
-						<?php //echo date("D,d-F-Y"); ?>
-						</h6>
-						<br>
-						<small>Rumahidamanku.com</cite></small>
-						</blockquote>
+				<h1>
+				<strong>Selamat Datang</strong><br>
+				<marquee><small>one stop service for living</small></marquee>
+				</h1>
+				<ol class="breadcrumb" align="center">
+					<a href="../admin/login.php"><button class="btn btn-block btn-primary btn-sm" >Masuk</button></a>
+					</ol>
+				<br>
+			</section>
+			<div class="row" >
+				<div class="col-md-3 col-xs-3">
+					<!-- small box -->
+					<div class="small-box bg-ta">
+						<a href="../properti.php" title="properti di rumahidamanku.com" target="_blank"><img src="../image/Background main frame.JPG" alt="Properti di Rumah, Rumah Idaman, Rumah Idamanku" title="Properti di Rumah, Rumah Idaman, Rumah Idamanku" class="img-fluid" width="100%"></a>
+						<a href="../properti.php" title="properti di rumahidamanku.com" target="_blank" class="small-box-footer">Properti</a>
 					</div>
-					<!-- /.box-body -->
 				</div>
-			</div>
-			<div class= "col-md-6">
-				<!-- /.box -->
-				<div class="box box-solid">
-					<!-- /.box-header -->
-					<div class="box-body">
-						<blockquote>
-						<h6>Jangan pernah memastikan sesuatu hal jika sesuatu hal itu berada di luar kendalimu untuk bisa kamu jadikan sesuatu hal yang dapat kamu pastikan
-						</h6>
-						<small>Rumahidamanku.com</cite></small>
-						</blockquote>
+				<!-- ./col -->
+				<div class="col-md-3 col-xs-3">
+					<!-- small box -->
+					<div class="small-box bg-ta">
+						<a href="../mobil.php" title="mobil di rumahidamanku.com" target="_blank"><img src="../image/audi_locus_concept_car.jpg" alt="Mobil di Rumah, Rumah Idaman, Rumah Idamanku punya mobil" title="Mobil di Rumah, Rumah Idaman, Rumah Idamanku punya mobil" class="img-fluid" width="100%"></a>
+						<a href="../mobil.php" title="mobil di rumahidamanku.com" target="_blank" class="small-box-footer">Mobil</a>
 					</div>
-					<!-- /.box-body -->
+				</div>
+				<!-- ./col -->
+				<div class="col-md-3 col-xs-3">
+					<!-- small box -->
+					<div class="small-box bg-ta">
+						<a href="../motor.php" title="motor di rumahidamanku.com" target="_blank"><img src="../image/big_kawasaki_ninja_zx.jpg" alt="Motor di Rumah, Rumah Idaman, Rumah Idamanku punya motor" title="Motor di Rumah, Rumah Idaman, Rumah Idamanku punya motor" class="img-fluid" width="100%"></a>
+						<a href="../motor.php" title="motor di rumahidamanku.com" target="_blank" class="small-box-footer">Motor</a>
+					</div>
+				</div>
+				<!-- ./col -->
+				<div class="col-md-3 col-xs-3">
+					<!-- small box -->
+					<div class="small-box bg-ta">
+						<a href="../elektronika.php" title="Elektonik di rumahidamanku.com" target="_blank"><img src="../image/elektronika.JPG" alt="Elektronika di Rumah, Rumah Idaman, Rumah Idamanku punya elektronika" title="Elektronika di Rumah, Rumah Idaman, Rumah Idamanku punya elektronika" class="img-fluid" width="100%" ></a>
+						<a href="../elektronika.php" title="Elektonik di rumahidamanku.com" target="_blank" class="small-box-footer">Elektronika</a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<?php include ('../index/spaceiklan.php');?>
-		<div align="center" style="margin-top: 20px;">
-				<?php
-				//	  if (!$id_MySQL)die ("MySQL database cant open!");
-					  if (!$koneksi)die ("MySQL database cant open!");
-				//	  $hasil=MySQL_db_query($database,"LOCK TABLE counter WRITE", $id_MySQL);
-					  $hasil=MySQL_db_query($database_koneksi,"LOCK TABLE profilkabkod WRITE", $koneksi);
-				//	  if(!$hasil)die("Your request is Failed");
-					  if(!$hasil)die("Your request is Failed"); 
-				//	  $hasil=MySQL_db_query($database,"SELECT * FROM counter", $id_MySQL);
-					  $hasil=MySQL_db_query($database_koneksi,"SELECT * FROM profilkabkod WHERE provinsi = '$provinsi' and kodkab='none'", $koneksi);
-				//	  $data=MySQL_fetch_row($hasil);
-					  $data=MySQL_fetch_row($hasil);
-				//	  $pencacah=$data[0];
-					  $counter=$data[9];
-				//	  $pencacah++;
-					  $counter++;
-				//	  $perintah_update="UPDATE counter SET pencacah= $pencacah";
-					  $perintah_update="UPDATE profilkabkod SET counter= $counter WHERE provinsi = '$provinsi' and kodkab='none'";
-				//	  $hasil=MySQL_db_query($database,$perintah_update,$id_MySQL);
-					  $hasil=MySQL_db_query($database_koneksi,$perintah_update,$koneksi);
-				//	  $hasil=MySQL_db_query($database,"UNLOCK TABLES",$id_MySQL);
-					  $hasil=MySQL_db_query($database_koneksi,"UNLOCK TABLES",$koneksi);
-				//	  MySQL_close($id_MySQL);
-					  MySQL_close($koneksi);
-				//	  print("</font>Total :  $pencacah");
-			  print("</font>Pengunjung :  $counter");
-			  ?>
-		</div>
+			<div class="row">
+				<div class="col-md-3 col-xs-3">
+					<!-- small box -->
+					<div class="small-box bg-ta">
+						<a href="../komputer.php" title="komputer di rumahidamanku.com" target="_blank"><img src="../image/komputer.GIF" alt="Komputer di Rumah, Rumah Idaman, Rumah Idamanku punya komputer" title="Komputer di Rumah, Rumah Idaman, Rumah Idamanku punya komputer" class="img-fluid" width="100%" ></a>
+						<a href="../komputer.php" title="komputer di rumahidamanku.com" target="_blank" class="small-box-footer">Komputer</a>
+					</div>
+				</div>
+				<!-- ./col -->
+				<div class="col-md-3 col-xs-3">
+				<!-- small box -->
+					<div class="small-box bg-ta">
+						<a href="../industri.php" title="industri di rumahidamanku.com" target="_blank"><img src="../image/Telur Asin Bebek 5.JPG" alt="Industri di Rumah, Rumah Idaman, Rumah Idamanku" title="Industri di Rumah, Rumah Idaman, Rumah Idamanku" class="img-fluid" width="100%" ></a>
+						<a href="../industri.php" title="industri di rumahidamanku.com" target="_blank" class="small-box-footer">Industri </i></a>
+					</div>
+				</div>
+				<!-- ./col -->
+				<div class="col-md-3 col-xs-3">
+					<!-- small box -->
+					<div class="small-box bg-ta">
+						<a href="../wisata.php" title="wisata di rumahidamanku.com" target="_blank"><img src="../image/traveling.jpg" alt="Wisata di Rumah, Rumah Idaman, Rumah Idamanku" title="Wisata di Rumah, Rumah Idaman, Rumah Idamanku" class="img-fluid" width="100%" ></a>
+						<a href="../wisata.php" title="wisata di rumahidamanku.com" target="_blank" class="small-box-footer">Wisata </a>
+					</div>
+				</div>
+												
+			</div>
+				
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<div class="box box-solid">
+						<!-- /.box-header -->
+						<div class="box-body">
+							<blockquote>
+							<h6>Waktu berlalu dan tak akan pernah kembali, &quot;Do the Best What We Can Do"
+							<?php //echo date("D,d-F-Y"); ?>
+							</h6>
+							<br>
+							<small>Rumahidamanku.com</cite></small>
+							</blockquote>
+						</div>
+						<!-- /.box-body -->
+					</div>
+				</div>
+				<div class= "col-md-6">
+					<!-- /.box -->
+					<div class="box box-solid">
+						<!-- /.box-header -->
+						<div class="box-body">
+							<blockquote>
+							<h6>Jangan pernah memastikan sesuatu hal jika sesuatu hal itu berada di luar kendalimu untuk bisa kamu jadikan sesuatu hal yang dapat kamu pastikan
+							</h6>
+							<small>Rumahidamanku.com</cite></small>
+							</blockquote>
+						</div>
+						<!-- /.box-body -->
+					</div>
+				</div>
+			</div>
+			<?php include ('../index/spaceiklan.php');?>
+			<div align="center" style="margin-top: 20px;">
+					<?php
+					//	  if (!$id_MySQL)die ("MySQL database cant open!");
+						if (!$koneksi)die ("MySQL database cant open!");
+					//	  $hasil=MySQL_db_query($database,"LOCK TABLE counter WRITE", $id_MySQL);
+						$hasil=MySQL_db_query($database_koneksi,"LOCK TABLE profilkabkod WRITE", $koneksi);
+					//	  if(!$hasil)die("Your request is Failed");
+						if(!$hasil)die("Your request is Failed"); 
+					//	  $hasil=MySQL_db_query($database,"SELECT * FROM counter", $id_MySQL);
+						$hasil=MySQL_db_query($database_koneksi,"SELECT * FROM profilkabkod WHERE provinsi = '$provinsi' and kodkab='none'", $koneksi);
+					//	  $data=MySQL_fetch_row($hasil);
+						$data=MySQL_fetch_row($hasil);
+					//	  $pencacah=$data[0];
+						$counter=$data[9];
+					//	  $pencacah++;
+						$counter++;
+					//	  $perintah_update="UPDATE counter SET pencacah= $pencacah";
+						$perintah_update="UPDATE profilkabkod SET counter= $counter WHERE provinsi = '$provinsi' and kodkab='none'";
+					//	  $hasil=MySQL_db_query($database,$perintah_update,$id_MySQL);
+						$hasil=MySQL_db_query($database_koneksi,$perintah_update,$koneksi);
+					//	  $hasil=MySQL_db_query($database,"UNLOCK TABLES",$id_MySQL);
+						$hasil=MySQL_db_query($database_koneksi,"UNLOCK TABLES",$koneksi);
+					//	  MySQL_close($id_MySQL);
+						MySQL_close($koneksi);
+					//	  print("</font>Total :  $pencacah");
+				print("</font>Pengunjung :  $counter");
+				?>
+			</div>

@@ -148,7 +148,7 @@ $konekprofhome = mysql_query($query_konekprofhome, $koneksi) or die(mysql_error(
 $row_konekprofhome = mysql_fetch_assoc($konekprofhome);
 $totalRows_konekprofhome = mysql_num_rows($konekprofhome);
 
-$maxRows_konekinformasi = 3;
+$maxRows_konekinformasi = 10;
 $pageNum_konekinformasi = 0;
 if (isset($_GET['pageNum_konekinformasi'])) {
   $pageNum_konekinformasi = $_GET['pageNum_konekinformasi'];
@@ -156,7 +156,7 @@ if (isset($_GET['pageNum_konekinformasi'])) {
 $startRow_konekinformasi = $pageNum_konekinformasi * $maxRows_konekinformasi;
 
 mysql_select_db($database_koneksi, $koneksi);
-$query_konekinformasi = "SELECT * FROM info WHERE provinsi = '$provinsi' && jenis='photo' && status='$status' ORDER BY id_info DESC";
+$query_konekinformasi = "SELECT * FROM info WHERE provinsi = '$provinsi' && status='$status' ORDER BY id_info DESC";
 $query_limit_konekinformasi = sprintf("%s LIMIT %d, %d", $query_konekinformasi, $startRow_konekinformasi, $maxRows_konekinformasi);
 $konekinformasi = mysql_query($query_limit_konekinformasi, $koneksi) or die(mysql_error());
 $row_konekinformasi = mysql_fetch_assoc($konekinformasi);

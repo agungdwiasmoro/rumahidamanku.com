@@ -39,6 +39,9 @@ $row = mysql_fetch_assoc($konekinformasi);?>
             </p>
           </div> 
       </div>
+      
+      <!-- iklan -->
+      <?php include ('index/spaceiklan.php') ; ?>
   </div>
 
   <div class="col-md-4">

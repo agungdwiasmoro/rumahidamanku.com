@@ -3,7 +3,7 @@
         <!-- Property -->
         <?php if ($totalRows_konekproperti > 0) { // Show if recordset not empty ?>
         <div class="box">
-          <a href="../properti.php"><div class="box-header">
+          <a href="../<?= $provinsi;?>/Properti/index.php"><div class="box-header">
               <h3>Properti</h3><hr>
           </div></a>
           <div class="box-body">
@@ -12,11 +12,11 @@
               
             <?php do { ?>
             <div class="card">
-              <a href="<?= $row_konekproperti['provinsi'].'/'.$row_konekproperti['kodkab'].'/'.$row_konekproperti['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekproperti['namausaha'].', '.$row_konekproperti['kodkab'].', '. $row_konekproperti['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekproperti['namausaha'].', '. $row_konekproperti['kodkab'].', '.$row_konekproperti['provinsi']; ?>" target="_self"><h4 align="center"><?= $row_konekproperti['namausaha'] ;?></h4></a>
+              <a href="../<?= $row_konekproperti['provinsi'].'/'.$row_konekproperti['kodkab'].'/'.$row_konekproperti['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekproperti['namausaha'].', '.$row_konekproperti['kodkab'].', '. $row_konekproperti['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekproperti['namausaha'].', '. $row_konekproperti['kodkab'].', '.$row_konekproperti['provinsi']; ?>" target="_self"><h4 align="center"><?= $row_konekproperti['namausaha'] ;?></h4></a>
               <div class="row">
                 <div class="col-xs-12 col-md-6">
-                  <a href="<?= $row_konekproperti['provinsi'].'/'.$row_konekproperti['kodkab'].'/'.$row_konekproperti['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekproperti['namausaha'].', '.$row_konekproperti['kodkab'].', '. $row_konekproperti['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekproperti['namausaha'].', '. $row_konekproperti['kodkab'].', '.$row_konekproperti['provinsi']; ?>" target="_self">
-                  <img src="imageViewusaha.php?image_id=<?php echo $row_konekproperti['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekproperti['namausaha']; ?> , <?php echo $row_konekproperti['bidangusaha']; ?> , <?php echo $row_konekproperti['kodkab']; ?> , <?php echo $row_konekproperti['provinsi']; ?>" alt="<?php echo $row_konekproperti['namausaha']; ?> , <?php echo $row_konekproperti['bidangusaha']; ?> , <?php echo $row_konekproperti['kodkab']; ?> , <?php echo $row_konekproperti['provinsi']; ?>" width="100%" /></a>
+                  <a href="../<?= $row_konekproperti['provinsi'].'/'.$row_konekproperti['kodkab'].'/'.$row_konekproperti['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekproperti['namausaha'].', '.$row_konekproperti['kodkab'].', '. $row_konekproperti['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekproperti['namausaha'].', '. $row_konekproperti['kodkab'].', '.$row_konekproperti['provinsi']; ?>" target="_self">
+                  <img src="../imageViewusaha.php?image_id=<?php echo $row_konekproperti['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekproperti['namausaha']; ?> , <?php echo $row_konekproperti['bidangusaha']; ?> , <?php echo $row_konekproperti['kodkab']; ?> , <?php echo $row_konekproperti['provinsi']; ?>" alt="<?php echo $row_konekproperti['namausaha']; ?> , <?php echo $row_konekproperti['bidangusaha']; ?> , <?php echo $row_konekproperti['kodkab']; ?> , <?php echo $row_konekproperti['provinsi']; ?>" width="100%" /></a>
                 </div>
                 <?php if($row_konekproperti['goomapping'] != null) { ?>
                 <div class="col-xs-12 col-md-6">
@@ -53,7 +53,7 @@
 
         <?php if ($totalRows_konekindustri > 0) { // Show if recordset not empty ?>
         <div class="box">
-          <a href="industri.php"><div class="box-header">
+          <a href="../<?= $provinsi;?>/Industri/index.php"><div class="box-header">
             <h3>Industri</h3><hr>
           </div></a>
           <div class="box-body">
@@ -62,13 +62,13 @@
             
             <?php do { ?>
             <div class="card">
-              <a href="<?= $row_konekindustri['provinsi'].'/'.$row_konekindustri['kodkab'].'/'.$row_konekindustri['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekindustri['namausaha'].', '.$row_konekindustri['kodkab'].', '. $row_konekindustri['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekindustri['namausaha'].', '. $row_konekindustri['kodkab'].', '.$row_konekindustri['provinsi']; ?>" target="_self">
+              <a href="../<?= $row_konekindustri['provinsi'].'/'.$row_konekindustri['kodkab'].'/'.$row_konekindustri['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekindustri['namausaha'].', '.$row_konekindustri['kodkab'].', '. $row_konekindustri['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekindustri['namausaha'].', '. $row_konekindustri['kodkab'].', '.$row_konekindustri['provinsi']; ?>" target="_self">
               <h4 align="center"><?= $row_konekindustri['namausaha'] ;?></h4>
               </a>
               <div class="row">
                 <div class="col-xs-12 col-md-6">
-                  <a href="<?= $row_konekindustri['provinsi'].'/'.$row_konekindustri['kodkab'].'/'.$row_konekindustri['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekindustri['namausaha'].', '.$row_konekindustri['kodkab'].', '. $row_konekindustri['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekindustri['namausaha'].', '. $row_konekindustri['kodkab'].', '.$row_konekindustri['provinsi']; ?>" target="_self">
-                  <img src="imageViewusaha.php?image_id=<?php echo $row_konekindustri['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekindustri['namausaha']; ?> , <?php echo $row_konekindustri['bidangusaha']; ?> , <?php echo $row_konekindustri['kodkab']; ?> , <?php echo $row_konekindustri['provinsi']; ?>" alt="<?php echo $row_konekindustri['namausaha']; ?> , <?php echo $row_konekindustri['bidangusaha']; ?> , <?php echo $row_konekindustri['kodkab']; ?> , <?php echo $row_konekindustri['provinsi']; ?>" width="100%" /></a>
+                  <a href="../<?= $row_konekindustri['provinsi'].'/'.$row_konekindustri['kodkab'].'/'.$row_konekindustri['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekindustri['namausaha'].', '.$row_konekindustri['kodkab'].', '. $row_konekindustri['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekindustri['namausaha'].', '. $row_konekindustri['kodkab'].', '.$row_konekindustri['provinsi']; ?>" target="_self">
+                  <img src="../imageViewusaha.php?image_id=<?php echo $row_konekindustri['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekindustri['namausaha']; ?> , <?php echo $row_konekindustri['bidangusaha']; ?> , <?php echo $row_konekindustri['kodkab']; ?> , <?php echo $row_konekindustri['provinsi']; ?>" alt="<?php echo $row_konekindustri['namausaha']; ?> , <?php echo $row_konekindustri['bidangusaha']; ?> , <?php echo $row_konekindustri['kodkab']; ?> , <?php echo $row_konekindustri['provinsi']; ?>" width="100%" /></a>
                 </div>
                 <?php if ($row_konekindustri['goomapping'] != null) { ?>
                 <div class="col-xs-12 col-md-6">
@@ -104,7 +104,7 @@
         
         <?php if ($totalRows_konekkomputer > 0) { // Show if recordset not empty ?>
         <div class="box">
-          <a href="komputer.php"></a><div class="box-header">
+          <a href="../<?= $provinsi;?>/Komputer/index.php"></a><div class="box-header">
             <h3>Komputer</h3><hr>
           </div>
           <div class="box-body">
@@ -113,13 +113,13 @@
               
             <?php do { ?>
             <div class="card">
-              <a href="<?= $row_konekkomputer['provinsi'].'/'.$row_konekkomputer['kodkab'].'/'.$row_konekkomputer['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekkomputer['namausaha'].', '.$row_konekkomputer['kodkab'].', '. $row_konekkomputer['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekkomputer['namausaha'].', '. $row_konekkomputer['kodkab'].', '.$row_konekkomputer['provinsi']; ?>" target="_self">
+              <a href="../<?= $row_konekkomputer['provinsi'].'/'.$row_konekkomputer['kodkab'].'/'.$row_konekkomputer['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekkomputer['namausaha'].', '.$row_konekkomputer['kodkab'].', '. $row_konekkomputer['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekkomputer['namausaha'].', '. $row_konekkomputer['kodkab'].', '.$row_konekkomputer['provinsi']; ?>" target="_self">
               <h4 align="center"><?= $row_konekkomputer['namausaha'] ;?></h4>
               </a>
               <div class="row">
                 <div class="col-xs-12 col-md-6">
-                  <a href="<?= $row_konekkomputer['provinsi'].'/'.$row_konekkomputer['kodkab'].'/'.$row_konekkomputer['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekkomputer['namausaha'].', '.$row_konekkomputer['kodkab'].', '. $row_konekkomputer['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekkomputer['namausaha'].', '. $row_konekkomputer['kodkab'].', '.$row_konekkomputer['provinsi']; ?>" target="_self">
-                  <img src="imageViewusaha.php?image_id=<?php echo $row_konekkomputer['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekkomputer['namausaha']; ?> , <?php echo $row_konekkomputer['bidangusaha']; ?> , <?php echo $row_konekkomputer['kodkab']; ?> , <?php echo $row_konekkomputer['provinsi']; ?>" alt="<?php echo $row_konekkomputer['namausaha']; ?> , <?php echo $row_konekkomputer['bidangusaha']; ?> , <?php echo $row_konekkomputer['kodkab']; ?> , <?php echo $row_konekkomputer['provinsi']; ?>" width="100%" /></a>
+                  <a href="../<?= $row_konekkomputer['provinsi'].'/'.$row_konekkomputer['kodkab'].'/'.$row_konekkomputer['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekkomputer['namausaha'].', '.$row_konekkomputer['kodkab'].', '. $row_konekkomputer['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekkomputer['namausaha'].', '. $row_konekkomputer['kodkab'].', '.$row_konekkomputer['provinsi']; ?>" target="_self">
+                  <img src="../imageViewusaha.php?image_id=<?php echo $row_konekkomputer['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekkomputer['namausaha']; ?> , <?php echo $row_konekkomputer['bidangusaha']; ?> , <?php echo $row_konekkomputer['kodkab']; ?> , <?php echo $row_konekkomputer['provinsi']; ?>" alt="<?php echo $row_konekkomputer['namausaha']; ?> , <?php echo $row_konekkomputer['bidangusaha']; ?> , <?php echo $row_konekkomputer['kodkab']; ?> , <?php echo $row_konekkomputer['provinsi']; ?>" width="100%" /></a>
                 </div>
                 <?php if ($row_konekkomputer['goomapping'] != null) { ?>
                 <div class="col-xs-12 col-md-6">
@@ -155,7 +155,7 @@
         
         <?php if ($totalRows_konekelektronika > 0) { // Show if recordset not empty ?>
         <div class="box">
-          <a href="elektronika.php"><div class="box-header">
+          <a href="../<?= $provinsi;?>/Elektronika/index.php"><div class="box-header">
           <h3>Elektronika</h3><hr>
           </div></a>
           <div class="box-body">
@@ -164,12 +164,12 @@
             
             <?php do { ?>
             <div class="card">
-              <a href="<?= $row_konekelektronika['provinsi'].'/'.$row_konekelektronika['kodkab'].'/'.$row_konekelektronika['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekelektronika['namausaha'].', '.$row_konekelektronika['kodkab'].', '. $row_konekelektronika['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekelektronika['namausaha'].', '. $row_konekelektronika['kodkab'].', '.$row_konekelektronika['provinsi']; ?>" target="_self">
+              <a href="../<?= $row_konekelektronika['provinsi'].'/'.$row_konekelektronika['kodkab'].'/'.$row_konekelektronika['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekelektronika['namausaha'].', '.$row_konekelektronika['kodkab'].', '. $row_konekelektronika['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekelektronika['namausaha'].', '. $row_konekelektronika['kodkab'].', '.$row_konekelektronika['provinsi']; ?>" target="_self">
               <h4 align="center"><?= $row_konekelektronika['namausaha'] ;?></h4>
               </a>
               <div class="row">
                 <div class="col-xs-12 col-md-6">
-                  <a href="<?= $row_konekelektronika['provinsi'].'/'.$row_konekelektronika['kodkab'].'/'.$row_konekelektronika['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekelektronika['namausaha'].', '.$row_konekelektronika['kodkab'].', '. $row_konekelektronika['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekelektronika['namausaha'].', '. $row_konekelektronika['kodkab'].', '.$row_konekelektronika['provinsi']; ?>" target="_self"><img src="imageViewusaha.php?image_id=<?php echo $row_konekelektronika['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekelektronika['namausaha']; ?> , <?php echo $row_konekelektronika['bidangusaha']; ?> , <?php echo $row_konekelektronika['kodkab']; ?> , <?php echo $row_konekelektronika['provinsi']; ?>" alt="<?php echo $row_konekelektronika['namausaha']; ?> , <?php echo $row_konekelektronika['bidangusaha']; ?> , <?php echo $row_konekelektronika['kodkab']; ?> , <?php echo $row_konekelektronika['provinsi']; ?>" width="100%" /></a>
+                  <a href="../<?= $row_konekelektronika['provinsi'].'/'.$row_konekelektronika['kodkab'].'/'.$row_konekelektronika['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekelektronika['namausaha'].', '.$row_konekelektronika['kodkab'].', '. $row_konekelektronika['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekelektronika['namausaha'].', '. $row_konekelektronika['kodkab'].', '.$row_konekelektronika['provinsi']; ?>" target="_self"><img src="../imageViewusaha.php?image_id=<?php echo $row_konekelektronika['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekelektronika['namausaha']; ?> , <?php echo $row_konekelektronika['bidangusaha']; ?> , <?php echo $row_konekelektronika['kodkab']; ?> , <?php echo $row_konekelektronika['provinsi']; ?>" alt="<?php echo $row_konekelektronika['namausaha']; ?> , <?php echo $row_konekelektronika['bidangusaha']; ?> , <?php echo $row_konekelektronika['kodkab']; ?> , <?php echo $row_konekelektronika['provinsi']; ?>" width="100%" /></a>
                 </div>
                 <?php if ($row_konekelektronika['goomapping'] != null ) { ?>
                 <div class="col-xs-12 col-md-6">
@@ -204,11 +204,11 @@
         <?php } // Show if recordset not empty ?>
 
         
-        <?php include ('../index/spaceiklan2.php');?>
+        <?php include ('../index/spaceiklan.php');?>
         
         <?php if ($totalRows_konekmotor > 0) { // Show if recordset not empty ?>
         <div class="box">
-          <a href="motor.php"><div class="box-header">
+          <a href="../<?= $provinsi;?>/Motor/index.php"><div class="box-header">
           <h3>Motor</h3><hr>
           </div></a>
           <div class="box-body">
@@ -217,12 +217,12 @@
             
             <?php do { ?>
             <div class="card">
-              <a href="<?= $row_konekmotor['provinsi'].'/'.$row_konekmotor['kodkab'].'/'.$row_konekmotor['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekmotor['namausaha'].', '.$row_konekmotor['kodkab'].', '. $row_konekmotor['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekmotor['namausaha'].', '. $row_konekmotor['kodkab'].', '.$row_konekmotor['provinsi']; ?>" target="_self">
+              <a href="../<?= $row_konekmotor['provinsi'].'/'.$row_konekmotor['kodkab'].'/'.$row_konekmotor['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekmotor['namausaha'].', '.$row_konekmotor['kodkab'].', '. $row_konekmotor['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekmotor['namausaha'].', '. $row_konekmotor['kodkab'].', '.$row_konekmotor['provinsi']; ?>" target="_self">
               <h4 align="center"><?= $row_konekmotor['namausaha'] ;?></h4>
               </a>
               <div class="row">
                 <div class="col-xs-12 col-md-6">
-                  <a href="<?= $row_konekmotor['provinsi'].'/'.$row_konekmotor['kodkab'].'/'.$row_konekmotor['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekmotor['namausaha'].', '.$row_konekmotor['kodkab'].', '. $row_konekmotor['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekmotor['namausaha'].', '. $row_konekmotor['kodkab'].', '.$row_konekmotor['provinsi']; ?>" target="_self"><img src="imageViewusaha.php?image_id=<?php echo $row_konekmotor['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekmotor['namausaha']; ?> , <?php echo $row_konekmotor['bidangusaha']; ?> , <?php echo $row_konekmotor['kodkab']; ?> , <?php echo $row_konekmotor['provinsi']; ?>" alt="<?php echo $row_konekmotor['namausaha']; ?> , <?php echo $row_konekmotor['bidangusaha']; ?> , <?php echo $row_konekmotor['kodkab']; ?> , <?php echo $row_konekmotor['provinsi']; ?>" width="100%" /></a>
+                  <a href="../<?= $row_konekmotor['provinsi'].'/'.$row_konekmotor['kodkab'].'/'.$row_konekmotor['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekmotor['namausaha'].', '.$row_konekmotor['kodkab'].', '. $row_konekmotor['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekmotor['namausaha'].', '. $row_konekmotor['kodkab'].', '.$row_konekmotor['provinsi']; ?>" target="_self"><img src="../imageViewusaha.php?image_id=<?php echo $row_konekmotor['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekmotor['namausaha']; ?> , <?php echo $row_konekmotor['bidangusaha']; ?> , <?php echo $row_konekmotor['kodkab']; ?> , <?php echo $row_konekmotor['provinsi']; ?>" alt="<?php echo $row_konekmotor['namausaha']; ?> , <?php echo $row_konekmotor['bidangusaha']; ?> , <?php echo $row_konekmotor['kodkab']; ?> , <?php echo $row_konekmotor['provinsi']; ?>" width="100%" /></a>
                 </div>
                 <?php if ($row_konekmotor['goomapping'] != null) { ?>
                 <div class="col-xs-12 col-md-6">
@@ -258,7 +258,7 @@
         
         <?php if ($totalRows_konekmobil > 0) { // Show if recordset not empty ?>
         <div class="box">
-          <a href="mobil.php"><div class="box-header">
+          <a href="../<?= $provinsi;?>/Properti/index.php"><div class="box-header">
           <h3>Mobil</h3><hr>
           </div></a>
           <div class="box-body">
@@ -267,12 +267,12 @@
             
             <?php do { ?>
             <div class="card">
-              <a href="<?= $row_konekmobil['provinsi'].'/'.$row_konekmobil['kodkab'].'/'.$row_konekmobil['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekmobil['namausaha'].', '.$row_konekmobil['kodkab'].', '. $row_konekmobil['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekmobil['namausaha'].', '. $row_konekmobil['kodkab'].', '.$row_konekmobil['provinsi']; ?>" target="_self">
+              <a href="../<?= $row_konekmobil['provinsi'].'/'.$row_konekmobil['kodkab'].'/'.$row_konekmobil['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekmobil['namausaha'].', '.$row_konekmobil['kodkab'].', '. $row_konekmobil['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekmobil['namausaha'].', '. $row_konekmobil['kodkab'].', '.$row_konekmobil['provinsi']; ?>" target="_self">
               <h4 align="center"><?= $row_konekmobil['namausaha'] ;?></h4>
               </a>
               <div class="row">
                 <div class="col-xs-12 col-md-6">
-                  <a href="<?= $row_konekmobil['provinsi'].'/'.$row_konekmobil['kodkab'].'/'.$row_konekmobil['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekmobil['namausaha'].', '.$row_konekmobil['kodkab'].', '. $row_konekmobil['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekmobil['namausaha'].', '. $row_konekmobil['kodkab'].', '.$row_konekmobil['provinsi']; ?>" target="_self"><img src="imageViewusaha.php?image_id=<?php echo $row_konekmobil['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekmobil['namausaha']; ?> , <?php echo $row_konekmobil['bidangusaha']; ?> , <?php echo $row_konekmobil['kodkab']; ?> , <?php echo $row_konekmobil['provinsi']; ?>" alt="<?php echo $row_konekmobil['namausaha']; ?> , <?php echo $row_konekmobil['bidangusaha']; ?> , <?php echo $row_konekmobil['kodkab']; ?> , <?php echo $row_konekmobil['provinsi']; ?>" width="100%" /></a>
+                  <a href="../<?= $row_konekmobil['provinsi'].'/'.$row_konekmobil['kodkab'].'/'.$row_konekmobil['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekmobil['namausaha'].', '.$row_konekmobil['kodkab'].', '. $row_konekmobil['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekmobil['namausaha'].', '. $row_konekmobil['kodkab'].', '.$row_konekmobil['provinsi']; ?>" target="_self"><img src="../imageViewusaha.php?image_id=<?php echo $row_konekmobil['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekmobil['namausaha']; ?> , <?php echo $row_konekmobil['bidangusaha']; ?> , <?php echo $row_konekmobil['kodkab']; ?> , <?php echo $row_konekmobil['provinsi']; ?>" alt="<?php echo $row_konekmobil['namausaha']; ?> , <?php echo $row_konekmobil['bidangusaha']; ?> , <?php echo $row_konekmobil['kodkab']; ?> , <?php echo $row_konekmobil['provinsi']; ?>" width="100%" /></a>
                 </div>
                 <?php if ($row_konekmobil['goomapping'] != null) { ?>
                 <div class="col-xs-12 col-md-6">
@@ -308,7 +308,7 @@
         
         <?php if ($totalRows_konekwisata > 0) { // Show if recordset not empty ?>
         <div class="box">
-          <a href="wisata.php"><div class="box-header">
+          <a href="../<?= $provinsi;?>/Wisata/index.php"><div class="box-header">
           <h3>Wisata</h3><hr>
           </div></a>
           <div class="box-body">
@@ -317,13 +317,13 @@
             
             <?php do { ?>
             <div class="card">
-              <a href="<?= $row_konekwisata['provinsi'].'/'.$row_konekwisata['kodkab'].'/'.$row_konekwisata['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekwisata['namausaha'].', '.$row_konekwisata['kodkab'].', '. $row_konekwisata['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekwisata['namausaha'].', '. $row_konekwisata['kodkab'].', '.$row_konekwisata['provinsi']; ?>" target="_self">
+              <a href="../<?= $row_konekwisata['provinsi'].'/'.$row_konekwisata['kodkab'].'/'.$row_konekwisata['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekwisata['namausaha'].', '.$row_konekwisata['kodkab'].', '. $row_konekwisata['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekwisata['namausaha'].', '. $row_konekwisata['kodkab'].', '.$row_konekwisata['provinsi']; ?>" target="_self">
               <h4 align="center"><?= $row_konekwisata['namausaha'] ;?></h4>
               </a>
               <div class="row">
                 <div class="col-xs-12 col-md-6">
-                  <a href="<?= $row_konekwisata['provinsi'].'/'.$row_konekwisata['kodkab'].'/'.$row_konekwisata['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekwisata['namausaha'].', '.$row_konekwisata['kodkab'].', '. $row_konekwisata['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekwisata['namausaha'].', '. $row_konekwisata['kodkab'].', '.$row_konekwisata['provinsi']; ?>" target="_self">
-                  <img src="imageViewusaha.php?image_id=<?php echo $row_konekwisata['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekwisata['namausaha']; ?> , <?php echo $row_konekwisata['bidangusaha']; ?> , <?php echo $row_konekwisata['kodkab']; ?> , <?php echo $row_konekwisata['provinsi']; ?>" alt="<?php echo $row_konekwisata['namausaha']; ?> , <?php echo $row_konekwisata['bidangusaha']; ?> , <?php echo $row_konekwisata['kodkab']; ?> , <?php echo $row_konekwisata['provinsi']; ?>" width="100%" /></a>
+                  <a href="../<?= $row_konekwisata['provinsi'].'/'.$row_konekwisata['kodkab'].'/'.$row_konekwisata['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekwisata['namausaha'].', '.$row_konekwisata['kodkab'].', '. $row_konekwisata['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekwisata['namausaha'].', '. $row_konekwisata['kodkab'].', '.$row_konekwisata['provinsi']; ?>" target="_self">
+                  <img src="../imageViewusaha.php?image_id=<?php echo $row_konekwisata['id_profilpromo']; ?> " class="img-fluid" loading="lazy" title="<?php echo $row_konekwisata['namausaha']; ?> , <?php echo $row_konekwisata['bidangusaha']; ?> , <?php echo $row_konekwisata['kodkab']; ?> , <?php echo $row_konekwisata['provinsi']; ?>" alt="<?php echo $row_konekwisata['namausaha']; ?> , <?php echo $row_konekwisata['bidangusaha']; ?> , <?php echo $row_konekwisata['kodkab']; ?> , <?php echo $row_konekwisata['provinsi']; ?>" width="100%" /></a>
                 </div>
                 <?php if($row_konekwisata['goomapping'] != null) { ?>
                 <div class="col-xs-12 col-md-6">
@@ -366,29 +366,31 @@
           <div class="box-body">
           <?php if ($totalRows_konekwis > 0) { // Show if recordset not empty ?>
 						<?php do { ?>
-            <div class="card">
-                <div class="col-md-6">
-                  <?php if ($row_konekwis['jenis'] === 'photo' ) { ?>
-                  <img src="imageViewwis.php?image_id=<?php echo $row_konekwis['id_wisatadiy']; ?>" class="img-fluid" loading="lazy" title="<?php echo $row_konekwis['infogambar']; ?> , <?php echo $row_konekwis['kabkota']; ?>" , <?php echo $row_konekwis['provinsi']; ?> alt="gambar <?php echo $row_konekwis['infogambar']; ?>" />
-                  <?php } else { ?>
-                  <video id='video2' class='video-js vjs-default-skin' style="width: 90%;" controls="controls" preload= "auto" loading="lazy">
-								  <source src="./imageViewwisvideo.php?image_id=<?php echo $row_konekwis['id_wisatadiy']; ?>" title="<?php echo $row_konekwis['infogambar']; ?> , <?php echo $row_konekwis['kabkota']; ?> , <?php echo $row_konekwis['provinsi']; ?>" alt="<?php echo $row_konekwis['infogambar']; ?> , <?php echo $row_konekwis['kabkota']; ?> , <?php echo $row_konekwis['provinsi']; ?>" type="video/mp4" /></video>
-                <?php } ; ?>
-                </div>
-                <div class="col-md-6">
-                  <iframe src="<?php echo $row_konekwis['goomapping']; ?>" loading="lazy" width="100%" frameborder="0" style="border:0"  allowfullscreen="allowfullscreen"></iframe>
-                </div>
-                <h4>
-                  <?php echo $row_konekwis['judul']; ?>
-                </h4>
-                <small>
-                  <?php echo $row_konekwis['kabkota'].', '.date('d F Y', strtotime($row_konekwis['tanggal'])); ?>
-                </small>
-                <p>
-                  <strong><?php echo $row_konekwis['tempatwisata']; ?></strong>, <?php echo substr($row_konekwis['artikel'],0,50); ?>... <a href="wisatadetail.php?id_wisatadiy=<?=$row_konekwis['id_wisatadiy'];?>">selengkapnya</a><br>
-                  <a href="<?php echo $row_konekwis['gooyou']; ?>" title="klik disini untuk video <?php echo $row_konekwis['judul']; ?>" alt="klik disini untuk video <?php echo $row_konekwis['judul']; ?>" target="_self"><?php echo $row_konekwis['gooyou']; ?></a>
-                </p>
-            </div>
+            <a href="../wisatadetail.php?id_wisatadiy=<?=$row_konekwisjateng['id_wisatadiy'];?>">
+              <div class="card">
+                  <div class="col-md-6">
+                    <?php if ($row_konekwis['jenis'] === 'photo' ) { ?>
+                    <img src="../imageViewwis.php?image_id=<?php echo $row_konekwis['id_wisatadiy']; ?>" class="img-fluid" loading="lazy" title="<?php echo $row_konekwis['infogambar']; ?> , <?php echo $row_konekwis['kabkota']; ?>" , <?php echo $row_konekwis['provinsi']; ?> alt="gambar <?php echo $row_konekwis['infogambar']; ?>" />
+                    <?php } else { ?>
+                    <video id='video2' class='video-js vjs-default-skin' style="width: 90%;" controls="controls" preload= "auto" loading="lazy">
+                    <source src="../imageViewwisvideo.php?image_id=<?php echo $row_konekwis['id_wisatadiy']; ?>" title="<?php echo $row_konekwis['infogambar']; ?> , <?php echo $row_konekwis['kabkota']; ?> , <?php echo $row_konekwis['provinsi']; ?>" alt="<?php echo $row_konekwis['infogambar']; ?> , <?php echo $row_konekwis['kabkota']; ?> , <?php echo $row_konekwis['provinsi']; ?>" type="video/mp4" /></video>
+                  <?php } ; ?>
+                  </div>
+                  <div class="col-md-6">
+                    <iframe src="<?php echo $row_konekwis['goomapping']; ?>" loading="lazy" width="100%" frameborder="0" style="border:0"  allowfullscreen="allowfullscreen"></iframe>
+                  </div>
+                  <h4>
+                    <?php echo $row_konekwis['judul']; ?>
+                  </h4>
+                  <small>
+                    <?php echo $row_konekwis['kabkota'].', '.date('d F Y', strtotime($row_konekwis['tanggal'])); ?>
+                  </small>
+                  <p>
+                    <strong><?php echo $row_konekwis['tempatwisata']; ?></strong>, <?php echo substr($row_konekwis['artikel'],0,50); ?>... <a href="wisatadetail.php?id_wisatadiy=<?=$row_konekwis['id_wisatadiy'];?>">selengkapnya</a><br>
+                    <a href="<?php echo $row_konekwis['gooyou']; ?>" title="klik disini untuk video <?php echo $row_konekwis['judul']; ?>" alt="klik disini untuk video <?php echo $row_konekwis['judul']; ?>" target="_self"><?php echo $row_konekwis['gooyou']; ?></a>
+                  </p>
+              </div>
+            </a>
             <?php } while ($row_konekwis = mysql_fetch_assoc($konekwis)); ?>
             <?php } ?>
           </div>
@@ -406,9 +408,9 @@
             <div class="box-body">
             <?php if ($totalRows_konekprofhome > 0) { // Show if recordset not empty ?>
 			      <?php do { ?>
-              <a href="<?= $row_konekprofhome['provinsi'].'/'.$row_konekprofhome['kodkab'].'/'.$row_konekprofhome['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekprofhome['namausaha'].', '.$row_konekprofhome['kodkab'].', '. $row_konekprofhome['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekprofhome['namausaha'].', '. $row_konekprofhome['kodkab'].', '.$row_konekprofhome['provinsi']; ?>" target="_self">
+              <a href="../<?= $row_konekprofhome['provinsi'].'/'.$row_konekprofhome['kodkab'].'/'.$row_konekprofhome['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row_konekprofhome['namausaha'].', '.$row_konekprofhome['kodkab'].', '. $row_konekprofhome['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row_konekprofhome['namausaha'].', '. $row_konekprofhome['kodkab'].', '.$row_konekprofhome['provinsi']; ?>" target="_self">
               <div class="card2">
-                <img src="imageViewusaha.php?image_id=<?php echo $row_konekprofhome['id_profilpromo']; ?> " class="pull-left" loading="lazy" title="<?php echo $row_konekprofhome['namausaha']; ?> , <?php echo $row_konekprofhome['bidangusaha']; ?> , <?php echo $row_konekprofhome['kodkab']; ?> , <?php echo $row_konekprofhome['provinsi']; ?>" alt="<?php echo $row_konekprofhome['namausaha']; ?> , <?php echo $row_konekprofhome['bidangusaha']; ?> , <?php echo $row_konekprofhome['kodkab']; ?> , <?php echo $row_konekprofhome['provinsi']; ?>" />
+                <img src="../imageViewusaha.php?image_id=<?php echo $row_konekprofhome['id_profilpromo']; ?> " class="pull-left" loading="lazy" title="<?php echo $row_konekprofhome['namausaha']; ?> , <?php echo $row_konekprofhome['bidangusaha']; ?> , <?php echo $row_konekprofhome['kodkab']; ?> , <?php echo $row_konekprofhome['provinsi']; ?>" alt="<?php echo $row_konekprofhome['namausaha']; ?> , <?php echo $row_konekprofhome['bidangusaha']; ?> , <?php echo $row_konekprofhome['kodkab']; ?> , <?php echo $row_konekprofhome['provinsi']; ?>" />
                 <h4><?php echo $row_konekprofhome['namausaha']; ?></h4>
                 <p class="small"><?php echo $row_konekprofhome['provinsi']; ?>, <?php echo $row_konekprofhome['kodkab']; ?></p>
               </div>
@@ -429,7 +431,7 @@
           <div class="box-body">
             <?php if ($totalRows_konekinformasi > 0) { // Show if recordset not empty ?>
             <?php do { ?>
-            <a href="newsdetail.php?id_info=<?=$row_konekinformasi['id_info']; ?>">
+            <a href="../newsdetail.php?id_info=<?=$row_konekinformasi['id_info']; ?>">
               <div class="card2">
                 <?php if ($row_konekinformasi['jenis'] !== 'photo') { ?>
                   <video id='video1' class='video-js vjs-default-skin pull-left' controls="controls" style="width: 80px; height: 80px;" preload= "auto" loading="lazy">
@@ -457,13 +459,13 @@
           </div>
           <div class="box-body">
             <?php do { ?>
-            <a href="wisatadetail.php?id_wisatadiy=<?=$row_konekwisjateng['id_wisatadiy'];?>"><div class="card2">
+            <a href="../wisatadetail.php?id_wisatadiy=<?=$row_konekwisjateng['id_wisatadiy'];?>"><div class="card2">
             <?php if ($row_konekwisjateng['jenis'] !== 'photo') { ?>
               <video id='video2' class='video-js vjs-default-skin pull-left' style="width: 80px; height: 80px;" controls="controls" preload= "auto" loading="lazy">
 									<source src="imageViewwisvideo.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" type="video/mp4" />
 								</video>
               <?php } else { ?>
-              <img src="imageViewwis.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" class="pull-left" loading="lazy" title="<?php echo $row_konekwisjateng['infogambar']; ?> , <?php echo $row_konekwisjateng['kabkota']; ?>" , <?php echo $row_konekwisjateng['provinsi']; ?> alt="gambar <?php echo $row_konekwisjateng['infogambar']; ?>"/>
+              <img src="../imageViewwis.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" class="pull-left" loading="lazy" title="<?php echo $row_konekwisjateng['infogambar']; ?> , <?php echo $row_konekwisjateng['kabkota']; ?>" , <?php echo $row_konekwisjateng['provinsi']; ?> alt="gambar <?php echo $row_konekwisjateng['infogambar']; ?>"/>
               <?php };?>
               <div class="">
                 <h4><strong><?php echo $row_konekwisjateng['judul']; ?></strong></h4>
