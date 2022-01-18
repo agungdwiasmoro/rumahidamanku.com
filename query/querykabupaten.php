@@ -588,4 +588,41 @@ $query_konekwisataindonesia = "SELECT * FROM wisatadiy where provinsi = '$provin
 $konekwisataindonesia = mysql_query($query_konekwisataindonesia, $koneksi) or die(mysql_error());
 $row_konekwisataindonesia = mysql_fetch_assoc($konekwisataindonesia);
 $totalRows_konekwisataindonesia = mysql_num_rows($konekwisataindonesia);
+
+// Query Usaha Berbayar
+$query_konekproperti = "SELECT * FROM profilpromo WHERE provinsi = '$provinsi' and kodkab = '$kodkab' and status= 'on' and bidangusaha= 'properti' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekproperti = mysql_query($query_konekproperti, $koneksi) or die(mysql_error());
+$row_konekproperti = mysql_fetch_assoc($konekproperti);
+$totalRows_konekproperti = mysql_num_rows($konekproperti);
+
+$query_konekwisata = "SELECT * FROM profilpromo WHERE provinsi = '$provinsi' and kodkab = '$kodkab' and status= 'on' and bidangusaha= 'wisata' and bayar= 'berbayar'  ORDER BY id_profilpromo DESC";
+$konekwisata = mysql_query($query_konekwisata, $koneksi) or die(mysql_error());
+$row_konekwisata = mysql_fetch_assoc($konekwisata);
+$totalRows_konekwisata = mysql_num_rows($konekwisata);
+
+
+$query_konekkomputer = "SELECT * FROM profilpromo WHERE provinsi = '$provinsi' and kodkab = '$kodkab' and status= 'on' and bidangusaha= 'komputer' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekkomputer = mysql_query($query_konekkomputer, $koneksi) or die(mysql_error());
+$row_konekkomputer = mysql_fetch_assoc($konekkomputer);
+$totalRows_konekkomputer = mysql_num_rows($konekkomputer);
+
+$query_konekindustri = "SELECT * FROM profilpromo WHERE provinsi = '$provinsi' and kodkab = '$kodkab' and status= 'on' and bidangusaha= 'industri' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekindustri = mysql_query($query_konekindustri, $koneksi) or die(mysql_error());
+$row_konekindustri = mysql_fetch_assoc($konekindustri);
+$totalRows_konekindustri = mysql_num_rows($konekindustri);
+
+$query_konekmotor = "SELECT * FROM profilpromo WHERE provinsi = '$provinsi' and kodkab = '$kodkab' and status= 'on' and bidangusaha= 'motor' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekmotor = mysql_query($query_konekmotor, $koneksi) or die(mysql_error());
+$row_konekmotor = mysql_fetch_assoc($konekmotor);
+$totalRows_konekmotor = mysql_num_rows($konekmotor);
+
+$query_konekmobil = "SELECT * FROM profilpromo WHERE provinsi = '$provinsi' and kodkab = '$kodkab' and status= 'on' and bidangusaha= 'mobil' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekmobil = mysql_query($query_konekmobil, $koneksi) or die(mysql_error());
+$row_konekmobil = mysql_fetch_assoc($konekmobil);
+$totalRows_konekmobil = mysql_num_rows($konekmobil);
+
+$query_konekelektronika = "SELECT * FROM profilpromo WHERE provinsi = '$provinsi' and kodkab = '$kodkab' and status= 'on' and bidangusaha= 'elektronika' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekelektronika = mysql_query($query_konekelektronika, $koneksi) or die(mysql_error());
+$row_konekelektronika = mysql_fetch_assoc($konekelektronika);
+$totalRows_konekelektronika = mysql_num_rows($konekelektronika);
 ?>

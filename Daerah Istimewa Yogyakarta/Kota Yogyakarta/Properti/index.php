@@ -17,7 +17,7 @@
 <?php //require_once('../../../Connections/konekdprri.php'); ?>
 <?php //require_once('../../../Connections/konekdprdkodkab.php'); ?>
 <?php include ('../../../query/querydiy.php'); ?>
-<?php include ('../../../template/templatebidangusahakabupaten.php'); ?>
+<?php include ('../../../template/templatebidangusahakabupatendiy.php'); ?>
  
 		
 	

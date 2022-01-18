@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="../../assets/bower_components/font-awesome/css/font-awesome.min.css">
 	<!-- Theme style -->
 	<link rel="stylesheet" href="../../assets/dist/css/AdminLTE.css">
+	<link rel="stylesheet" href="../../mycss.css">
 	<script data-ad-client="ca-pub-3274780598043223" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- jQuery 3 -->
 	<script src="../../assets/bower_components/jquery/dist/jquery.min.js"></script>
@@ -266,7 +267,7 @@
 			</div>
 		</div>
 		<?php include ('../../index/spaceiklan.php');?>
-		<div align="center" style="margin-top: 20px; margin-bottom: -30px;">
+		<div align="center" style="margin-top: 20px;">
 		 <?php
 				//	  $pemakai = "ruh5758";
 				//	  $password = "ruh065758idaman";

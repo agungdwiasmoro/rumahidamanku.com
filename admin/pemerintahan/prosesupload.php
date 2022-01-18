@@ -122,8 +122,8 @@ $jam = mysql_real_escape_string($_POST['jam']);
 $status = mysql_real_escape_string($_POST['status']);
 $jenis = mysql_real_escape_string($_POST['jenis']);
 $counter = mysql_real_escape_string($_POST['counter']);
-//$goomapping = mysql_real_escape_string($_POST['goomapping']);
-//$gooyou = mysql_real_escape_string($_POST['gooyou']);
+$goomapping = mysql_real_escape_string($_POST['goomapping']);
+$gooyou = mysql_real_escape_string($_POST['gooyou']);
 $kategori = mysql_real_escape_string($_POST['kategori']);
 $username = mysql_real_escape_string($_POST['usernama']);
 // membaca username yang disimpan dalam session

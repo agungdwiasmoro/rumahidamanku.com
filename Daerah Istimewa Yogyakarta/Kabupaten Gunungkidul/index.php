@@ -17,7 +17,7 @@
 <?php //require_once('../../Connections/konekdprri.php'); ?>
 <?php //require_once('../../Connections/konekdprdkodkab.php'); ?>
 <?php include ('../../query/querydiy.php'); ?>
-<?php include ('../../template/templatekabupaten.php'); ?>
+<?php include ('../../template/templatekabupatendiy.php'); ?>
 <?php include ('../daftarkabupaten.php'); ?>
-<?php include ('../../index/indexkabupaten.php'); ?>
+<?php include ('../../index/indexkabupatendiy.php'); ?>
 	  

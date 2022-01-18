@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="../../assets/bower_components/font-awesome/css/font-awesome.min.css">
 	<!-- Theme style -->
 	<link rel="stylesheet" href="../../assets/dist/css/AdminLTE.css">
+	<link rel="stylesheet" href="../../mycss.css">
 	<script data-ad-client="ca-pub-3274780598043223" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- jQuery 3 -->
 	<script src="../../assets/bower_components/jquery/dist/jquery.min.js"></script>
@@ -266,8 +267,8 @@
 			</div>
 		</div>
 		<?php include ('../../index/spaceiklan.php');?>
-		<div align="center">
-			  <?php
+		<div align="center" style="margin-top: 20px;">
+		 <?php
 				//	  $pemakai = "ruh5758";
 				//	  $password = "ruh065758idaman";
 				//	  $database = "rumah06_rumah065758";
@@ -280,22 +281,11 @@
 				//	  if(!$hasil)die("Your request is Failed");
 					  if(!$hasil)die("Your request is Failed"); 
 				//	  $hasil=MySQL_db_query($database,"SELECT * FROM counter", $id_MySQL);
-					  $hasil=MySQL_db_query($database_koneksi,"SELECT * FROM profilkabkoddiy WHERE provinsi = '$provinsi' and kodkab='$kodkab'", $koneksi);
+					  $hasil=MySQL_db_query($database_koneksi,"SELECT * FROM profilkabkoddiy WHERE provinsi = '$provinsi' and kodkab='none'", $koneksi);
 				//	  $data=MySQL_fetch_row($hasil);
 					  $data=MySQL_fetch_row($hasil);
 				//	  $pencacah=$data[0];
 					  $counter=$data[9];
-				//	  $pencacah++;
-					  $counter++;
-				//	  $perintah_update="UPDATE counter SET pencacah= $pencacah";
-					  $perintah_update="UPDATE profilkabkoddiy SET counter= $counter WHERE provinsi = '$provinsi' and kodkab='$kodkab'";
-				//	  $hasil=MySQL_db_query($database,$perintah_update,$id_MySQL);
-					  $hasil=MySQL_db_query($database_koneksi,$perintah_update,$koneksi);
-				//	  $hasil=MySQL_db_query($database,"UNLOCK TABLES",$id_MySQL);
-					  $hasil=MySQL_db_query($database_koneksi,"UNLOCK TABLES",$koneksi);
-				//	  MySQL_close($id_MySQL);
-					  MySQL_close($koneksi);
-				//	  print("</font>Total :  $pencacah");
 			  print("</font>Pengunjung :  $counter");
 			  ?>
 		</div>

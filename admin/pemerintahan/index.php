@@ -50,9 +50,16 @@ $totalRows_konekwisjateng = mysql_num_rows($konekwisjateng);
 		<div class="box-header">
 			<h3 class="box-title">Data Wisata</h3>
 			<div class="pull-right">
-				<a href =" add.php" class ="btn btn-primary btn-flat">
-					<i class="fa fa-user-plus"></i> Add
-				</a>
+			<div class="btn-group">
+					<button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-plus"></i>Tambah Wisata
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" style="min-width: 10px;">
+						<li><a href="add.php" class="btn-xs"><i class="fa fa-circle-o"></i>Add Image</a></li>
+						<li><a href="addvidio.php" class="btn-xs"><i class="fa fa-circle-o"></i>Add Video</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="box-body">
@@ -77,7 +84,15 @@ $totalRows_konekwisjateng = mysql_num_rows($konekwisjateng);
 					<?php do { ?>
 					<tr>
 						<td><?=$no++?>.</td>
-						<td><img src="../../imageViewwis.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" class="img-fluid" style="width: 90%; " /></td>
+						<td align="center">
+							<?php if ($row_konekwisjateng['jenis'] ==='video') { ?>
+								<video id='video2' class='video-js vjs-default-skin' style="width: 200px; height: auto;" controls="controls" preload= "auto" loading="lazy">
+									<source src="../../imageViewwisvideo.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" type="video/mp4" />
+								</video>
+							<?php } else { ?>
+								<img src="../../imageViewwis.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" loading="lazy" class="img-fluid" style="width: 150px; height: 150px; " />
+							<?php } ; ?>
+						</td>
 						<td><?php echo $row_konekwisjateng['tempatwisata']; ?></td>
 						<td><?php echo $row_konekwisjateng['jeniswisata']; ?></td>
 						<td><?php echo $row_konekwisjateng['kategori']; ?></td>

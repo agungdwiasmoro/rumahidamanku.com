@@ -100,7 +100,7 @@ $totalRows_konekwisjateng = mysql_num_rows($konekwisjateng);
 						</div>
 						<div class="form-group">
 							<label>Tanggal wisata</label>
-							<input name="tanggaltul" type="text" id="tanggaltul" value="" placeholder="DD-MM-YYYY" class="form-control">
+							<input name="tanggaltul" type="date" id="tanggaltul" value="" placeholder="DD-MM-YYYY" class="form-control">
 						</div>
 						<div class="form-group">
 							<label>Judul Kegiatan</label>
@@ -115,18 +115,25 @@ $totalRows_konekwisjateng = mysql_num_rows($konekwisjateng);
 							<input type="text" name="penulis" id="penulis" value="<?=$row_konekuser['nama']; ?> " readonly="readonly" placeholder="Nama Penulis" class="form-control">
 						</div>
 						<div class="form-group">
-							<label>Gambar Utama</label>
-							<input type="hidden" name="MAX_FILE_SIZE" value="40000000" >
-							<img id="uploadPreview" style="width: 360px; ">
-							<input name="userfile0" type="file" id="userfile0" title="masukkan file gambar/profil informasi sebagai gambar tampilan profil berita di halaman utama dengan maksimal ukuran 2mb" onchange="PreviewImage();" />
-							<input name="infogambar0" type="text" id="infogambar0" class="form-control" placeholder="Info Gambar">
-						</div>
-						<div class="form-group">
-							<label>goomaping</label>
-							<input type="text" name="goomapping" id="goomapping" value="" class="form-control">
-						</div>
-						
-						<input type="hidden" name="jenis" id="jenis" value="photo">
+								<label>File Utama</label>
+								<input type="hidden" name="MAX_FILE_SIZE" value="100000000" >
+								<input name="userfile0" type="file" accept="video/*" id="input-tag"/>
+								<hr>
+								<video controls id="video-tag" style="width: 250px; height: 150px;">
+								  <source id="video-source" src="splashVideo">
+								  Your browser does not support the video tag.
+								</video>
+								<input name="infogambar0" type="text" id="infogambar0" class="form-control" placeholder="Info Gambar">
+							</div>
+							<div class="form-group">
+								<label>gooyou</label>
+								<input type="text" name="gooyou" id="gooyou" value="" class="form-control">
+							</div>
+							<div class="form-group">
+								<label>goomaping</label>
+								<input type="text" name="goomapping" id="goomapping" value="" class="form-control">
+							</div>
+						<input type="hidden" name="jenis" id="jenis" value="video">
 						<input type="hidden" id="usernama" name="usernama" value="<?php echo $row_konekuser['username']; ?>">
 						<input type="hidden" name="kategori" id="kategori" value="wisata indonesia">
 						<input type="hidden" name="file" id="file" value="index.php">
@@ -185,6 +192,29 @@ oFReader.onload = function (oFREvent)
     document.getElementById("uploadPreview").src = oFREvent.target.result;
 };
 };
+</script>
+<script type="text/javascript">
+const videoSrc = document.querySelector("#video-source");
+const videoTag = document.querySelector("#video-tag");
+const inputTag = document.querySelector("#input-tag");
+
+inputTag.addEventListener('change',  readVideo)
+
+function readVideo(event) {
+  console.log(event.target.files)
+  if (event.target.files && event.target.files[0]) {
+    var reader = new FileReader();
+    
+    reader.onload = function(e) {
+      console.log('loaded')
+      videoSrc.src = e.target.result
+      videoTag.load()
+    }.bind(this)
+
+    reader.readAsDataURL(event.target.files[0]);
+  };
+};
+
 </script>
 </body>
 </html>

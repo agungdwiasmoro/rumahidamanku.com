@@ -31,15 +31,15 @@ if($_SESSION['level'] != "1"){
 			<h3 class="box-title">Data Wisata</h3>
 			<div class="pull-right">
 				<div class="btn-group">
-						<button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-plus"></i> Tambah Wisata
-						  <span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" style="min-width: 10px;">
-							<li><a href="add.php" class="btn-xs"><i class="fa fa-circle-o"></i>Add Image</a></li>
-							<li><a href="addvidio.php" class="btn-xs"><i class="fa fa-circle-o"></i>Add Video</a>
-							</li>
-						</ul>
-					</div>
+					<button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-plus"></i> Tambah Wisata
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" style="min-width: 10px;">
+						<li><a href="add.php" class="btn-xs"><i class="fa fa-circle-o"></i>Add Image</a></li>
+						<li><a href="addvidio.php" class="btn-xs"><i class="fa fa-circle-o"></i>Add Video</a>
+						</li>
+					</ul>
+				</div>
 				
 			</div>
 		</div>

@@ -58,7 +58,7 @@
             <div class="box-body">
 				<div class="col-md-10 col-md-offset-1 col-xs-12">
 					  <?php if ($totalRows_konekprofkabkodjateng > 0) { // Show if recordset not empty ?>
-					  <div align="center"><a href="../index.php"><img src="../imageViewprovdiy.php?image_id=<?php echo $row_konekprofkabkodjateng['id_profildiy']; ?>" title="<?php echo $row_konekprofkabkodjateng['provinsi']; ?>" alt="gambar <?php echo $row_konekprofkabkodjateng['provinsi']; ?>" style="width: 135px; " /></a></div>
+					  <div align="center"><a href="../index.php"><img src="../imageViewprofdiy.php?image_id=<?php echo $row_konekprofkabkodjateng['id_profildiy']; ?>" title="<?php echo $row_konekprofkabkodjateng['provinsi']; ?>" alt="gambar <?php echo $row_konekprofkabkodjateng['provinsi']; ?>" style="width: 135px; " /></a></div>
 					  <?php } // Show if recordset not empty ?>
 					  <p align="justify"><span><?php echo $row_konekjawatengah['artikel']; ?></span></p>
 				</div>

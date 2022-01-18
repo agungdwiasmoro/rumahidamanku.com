@@ -54,8 +54,14 @@
 					<!-- /.col -->
 				  
 				</form>
-				<div class="col-xs-6 pull-left">
-					<a href="register/index.php"><button class="btn btn-success btn-block btn-flat">Daftar Usaha</button></a>			
+				<div class="col-xs-6 pull-left btn-group">
+					<button type="button" class="btn btn-success btn-block dropdown-toggle" data-toggle="dropdown">Register
+					<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu success">
+						<li><a href="register/index.php">Daftar Usaha</li>
+						<li><a href="register/adminwisata.php">Daftar Pokdarwis</a></li>
+					</ul>		
 				</div>
 			</div>
 			

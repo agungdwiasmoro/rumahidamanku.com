@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Rumah, Rumah Idaman, Rumah Idamanku, One Stop Service for Living</title>
+  <title>Pendaftaran Kelompok Sadar Wisata</title>
   <link rel="shortcut icon" href="../../image/rumahidamanku.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -26,8 +26,6 @@
 <script src="../../assets/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- SlimScroll -->
-<script src="../../assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- Site wrapper -->
 	<div class="wrapper">
 
@@ -85,11 +83,6 @@
 					<div class="col-md-12 col-xs-12">
 						<div class="col-md-4 col-xs-12">
 							<div class="box">
-								<center><h4>Daftarkan Usaha Anda dan dapatkan</h4>
-								<h3>Freemium <strong>Gratis</strong><br>
-								Premium Free Trial 20 Hari <strong>Gratis</strong></h3></center>
-							</div>
-							<div class="box">
 								<img src="../../image/onestop.jpg" class="img-fluid" style="width: 100%">
 							</div>
 							<div class="box">
@@ -127,13 +120,6 @@
 										<td>8.</td> 
 										<td>Data yang dimasukkan pada laman usaha(laman usaha.php) menjadi konsumsi publik dan merupakan data yang bersifat umum, bukan data rahasia usaha.</td>
 									</tr>
-									<tr>
-										<td>9.</td>	
-										<td>Masa berlaku laman Promosi Usaha :
-											<li>Freemium, Iklan Gratis.</li>
-											<li>Preemium Gratis 20 Hari Masa Percobaan.</li>
-										</td>
-									</tr>
 								</table>
 							</div>
 						</div>
@@ -141,10 +127,10 @@
 						<div class="col-md-8 col-xs-12">
 							<div class="box">
 								<div class="box-header with-border">
-									<h4 class="box-tittle"><center>Pendaftaran Akun Usaha</center></h4>
+									<h4 class="box-tittle"><center>Pendaftaran Akun Pokdarwis <br><strong>( Kelompok Sadar Wisata )</strong></center></h4>
 								</div>
 								<div class="box-body">
-									<form action="prosesupload.php" method="post" enctype="multipart/form-data" target="_self">
+									<form action="uploadpokdarwis.php" method="post" enctype="multipart/form-data" target="_self">
 										<div class="col-md-8 col-md-offset-2 col-xs-12">
 											<div class="form-group">
 												<label>Nama *</label>
@@ -162,7 +148,7 @@
 											<div class="form-group">
 												<label>Provinsi **</label>
 												<select id="provinsi" name="provinsi" title="pilih provinsi sesuai profil" class="form-control">
-													<option value="" selected="selected">pilih provinsi</option>
+													<option value="" selected="selected">Pilih Provinsi</option>
 													<option value="Nanggroe Aceh Darussalam">Nanggroe Aceh Darussalam</option>
 													<option value="Sumatera Utara">Sumatera Utara</option>
 													<option value="Riau">Riau</option>
@@ -204,69 +190,8 @@
 												<input type="text" name="kodkab" id="kodkab" value="" placeholder="contoh: Kabupaten Purworejo, Kota Magelang"class="form-control" required>
 											</div>
 											<div class="form-group">
-												<label>Nama Usaha **</label>
-												<input type="text" name="namausaha" id="namausaha" value="" placeholder="Tuliskan Nama Usaha Anda" class="form-control" required>
-											</div>
-											<div class="form-group">
-												<label>Jam Kerja *</label>
-												<input type="text" name="jamkerja" id="jamkerja" value="" placeholder="Jam Kerja Usaha Anda" class="form-control">
-											</div>
-											<div class="form-group">
-												<label>Alamat Usaha **</label>
+												<label>Alamat **</label>
 												<input type="text" name="alamatuser" id="alamat" value="" placeholder="Masukan Alamat Usaha Anda" class="form-control" required>
-											</div>
-											<div class="form-group">
-												<label>Gambar Utama **</label>
-												<input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
-												<br><small>Ukuran Gambar maksimal 3MB , photo produk atau tempat usaha.</small><br>
-												<img id="uploadPreview" style="width: 150px; "/><br />
-												<input name="userfile0" type="file" accept="image/*" id="userfile0" onchange="PreviewImage();" title="klik di sini untuk memilih gambar profil usaha" />
-												<input name="namephoto0" type="text" value="" id="namephoto0" class="form-control" placeholder="Keterangan Foto" title="klik disini, tuliskan nama photo" alt="klik disini, tuliskan nama photo" />
-											</div>
-											<div class="form-group">
-												<label>Bidang Usaha *<a href="#daftar" class="btn" data-toggle="collapse"><i class="fa fa-angle-down"></i></a></label>
-													<div id="daftar" class="collapse">
-														<table class="table">
-															<tr>
-																<td>Industri</td>
-																<td>UD produksi meubel, warnet, koperasi simpan pinjam, bank, toko sembako, toko kelontong, CV, usaha kecil, PT, optik lensa, usaha pakan ternak/ternak</td>
-															</tr>
-															<tr>
-																<td>Properti</td>
-																<td>toko meubel, toko besi bangunan, toko gordyn, pengembang properti</td>
-															</tr>
-															<tr>
-																<td>Mobil</td>
-																<td>dealer mobil baru, dealer mobil bekas, bengkel mobil, toko spare part mobil</td>
-															</tr>
-															<tr>
-																<td>Motor</td> 
-																<td>dealer motor baru, dealer motor bekas, bengkel motor, toko spare part motor</td>
-															</tr>
-															<tr>
-																<td>Elektronika</td> 
-																<td>toko elektronika,toko listrik, toko service dan spare part listrik elektronika</td>
-															</tr>
-															<tr>
-																<td>Komputer</td> 
-																<td>toko komputer, service dan spare part handphone/komputer</td>
-															</tr>
-															<tr>
-																<td>Wisata</td> 
-																<td>hotel, warung makan, rumah makan, kedai kopi, restoran, toko roti, bakery and cake, salon kecantikan, wisata desa, kios buah, toko oleh oleh, toko busana sepatu</td>
-															</tr>
-														</table>
-													</div>
-												<select name="bidangusaha" value="" id="bidangusaha" class="form-control" selected="selected" title="pilih bidang usaha yang sesuai dengan profil usaha, bidang usaha yang tidak sesuai akan muncul pada kelompok laman bidang usaha yang tidak sesuai, sekali pilih dan tidak dapat diubah, klik anak panah ke bawah di samping*">
-													<option value="" selected="selected">pilih bidang usaha</option>
-													<option value="industri">Industri</option>
-													<option value="properti">Properti</option>
-													<option value="mobil">Mobil</option>
-													<option value="motor">Motor</option>
-													<option value="elektronika">Elektronika</option>
-													<option value="komputer">Komputer</option>
-													<option value="wisata">Wisata</option>
-												</select>
 											</div>
 											<div class="form-group">
 												<label>Telepon **</label>
@@ -275,11 +200,6 @@
 											<div class="form-group">
 												<label>E-mail *</label>
 												<input type="email" name="email" id="email" value="" placeholder="Masukan email anda" class="form-control">
-											</div>
-											<div class="form-group">
-												<label>Informasi Usaha *</label>
-												<textarea name="spec" id="spec" class="form-control" placeholder="Tuliskan Informasi tentang Usaha Anda" title="klik disini, masukkan informasi usaha di sini"></textarea>
-												
 											</div>
 											
 											<input type="hidden" name="website" id="website" value="">
