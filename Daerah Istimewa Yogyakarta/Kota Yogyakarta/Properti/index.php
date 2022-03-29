@@ -53,7 +53,7 @@
                 <?php if ($totalRows_konekprofkabkodjateng > 0) { // Show if recordset not empty ?>
                 <?php } // Show if recordset not empty ?>
                 
-                <p align="center"><strong><img src="../../../imageViewprovdiy.php?image_id=<?php echo $row_konekprofkabkodjateng['id_profildiy']; ?>" title="Lambang <?php echo $row_konekjawatengah['kodkab']; ?> , <?php echo $row_konekjawatengah['provinsi']; ?>" alt="Lambang <?php echo $row_konekjawatengah['kodkab']; ?> , <?php echo $row_konekjawatengah['provinsi']; ?>" style="width: 135px; "/></strong></p>
+                <p align="center"><strong><img src="../../../imageViewprofdiy.php?image_id=<?php echo $row_konekprofkabkodjateng['id_profildiy']; ?>" title="Lambang <?php echo $row_konekjawatengah['kodkab']; ?> , <?php echo $row_konekjawatengah['provinsi']; ?>" alt="Lambang <?php echo $row_konekjawatengah['kodkab']; ?> , <?php echo $row_konekjawatengah['provinsi']; ?>" style="width: 135px; "/></strong></p>
                 <p align="justify"><span><?php echo $row_konekjawatengah['artikel']; ?></span></p>
 				</div>
 			</div>
@@ -62,4 +62,4 @@
           </div>
         </div>
       </div>
-      <?php include ('../../../index/indexbidangusahakabupaten.php'); ?>
+      <?php include ('../../../index/indexbidangusahakabupatendiy.php'); ?>

@@ -528,4 +528,9 @@ $query_konekwisataindonesia = "SELECT * FROM wisatadiy where provinsi = '$provin
 $konekwisataindonesia = mysql_query($query_konekwisataindonesia, $koneksi) or die(mysql_error());
 $row_konekwisataindonesia = mysql_fetch_assoc($konekwisataindonesia);
 $totalRows_konekwisataindonesia = mysql_num_rows($konekwisataindonesia);
+
+$query_konekproperti = "SELECT * FROM profilpromo WHERE status= 'on' and bidangusaha= '$bidangusaha' and bayar= 'berbayar' and provinsi= '$provinsi' ORDER BY id_profilpromo DESC";
+$konekproperti = mysql_query($query_konekproperti, $koneksi) or die(mysql_error());
+$row_konekproperti = mysql_fetch_assoc($konekproperti);
+$totalRows_konekproperti = mysql_num_rows($konekproperti);
 ?>

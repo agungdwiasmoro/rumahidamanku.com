@@ -8,11 +8,11 @@
 			//	  if (!$id_MySQL)die ("MySQL database cant open!");
 				  if (!$koneksi)die ("MySQL database cant open!");
 			//	  $hasil=MySQL_db_query($database,"LOCK TABLE counter WRITE", $id_MySQL);
-				  $hasil=MySQL_db_query($database_koneksi,"LOCK TABLE profilkabkod WRITE", $koneksi);
+				  $hasil=MySQL_db_query($database_koneksi,"LOCK TABLE profilkabkoddiy WRITE", $koneksi);
 			//	  if(!$hasil)die("Your request is Failed");
 				  if(!$hasil)die("Your request is Failed"); 
 			//	  $hasil=MySQL_db_query($database,"SELECT * FROM counter", $id_MySQL);
-				  $hasil=MySQL_db_query($database_koneksi,"SELECT * FROM profilkabkod WHERE provinsi = '$provinsi' and kodkab='$kodkab'", $koneksi);
+				  $hasil=MySQL_db_query($database_koneksi,"SELECT * FROM profilkabkoddiy WHERE provinsi = '$provinsi' and kodkab='$kodkab'", $koneksi);
 			//	  $data=MySQL_fetch_row($hasil);
 				  $data=MySQL_fetch_row($hasil);
 			//	  $pencacah=$data[0];
@@ -20,7 +20,7 @@
 			//	  $pencacah++;
 				  $counter++;
 			//	  $perintah_update="UPDATE counter SET pencacah= $pencacah";
-				  $perintah_update="UPDATE profilkabkod SET counter= $counter WHERE provinsi = '$provinsi' and kodkab='$kodkab'";
+				  $perintah_update="UPDATE profilkabkoddiy SET counter= $counter WHERE provinsi = '$provinsi' and kodkab='$kodkab'";
 			//	  $hasil=MySQL_db_query($database,$perintah_update,$id_MySQL);
 				  $hasil=MySQL_db_query($database_koneksi,$perintah_update,$koneksi);
 			//	  $hasil=MySQL_db_query($database,"UNLOCK TABLES",$id_MySQL);

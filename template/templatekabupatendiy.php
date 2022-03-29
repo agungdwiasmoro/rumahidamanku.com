@@ -275,7 +275,7 @@
 				//	  $id_MySQL=MySQL_connect("localhost",$pemakai,$password);
 					   
 				//	  if (!$id_MySQL)die ("MySQL database cant open!");
-					  if (!$koneksi)die ("MySQL database cant open!");
+				if (!$koneksi)die ("MySQL database cant open!");
 				//	  $hasil=MySQL_db_query($database,"LOCK TABLE counter WRITE", $id_MySQL);
 					  $hasil=MySQL_db_query($database_koneksi,"LOCK TABLE profilkabkoddiy WRITE", $koneksi);
 				//	  if(!$hasil)die("Your request is Failed");

@@ -207,7 +207,7 @@ $queryString_konekinformasivid = sprintf("&totalRows_konekinformasivid=%d%s", $t
 
 require_once('masterweb/koneksi.php');
 mysql_select_db($database_koneksi, $koneksi);
-$query_konekprofhome = "SELECT * FROM profilpromo WHERE status= 'on' and bidangusaha = '$bidangusaha' ORDER BY id_profilpromo ASC";
+$query_konekprofhome = "SELECT * FROM profilpromo WHERE status= 'on' and bidangusaha='$bidangusaha' ORDER BY id_profilpromo DESC";
 $konekprofhome = mysql_query($query_konekprofhome, $koneksi) or die(mysql_error());
 $row_konekprofhome = mysql_fetch_assoc($konekprofhome);
 $totalRows_konekprofhome = mysql_num_rows($konekprofhome);
@@ -403,4 +403,9 @@ if (!empty($_SERVER['QUERY_STRING'])) {
   }
 }
 $queryString_konektipsmotor = sprintf("&totalRows_konektipsmotor=%d%s", $totalRows_konektipsmotor, $queryString_konektipsmotor);
+
+$query_konekproperti = "SELECT * FROM profilpromo WHERE status= 'on' and bidangusaha= '$bidangusaha' and bayar= 'berbayar' ORDER BY id_profilpromo DESC";
+$konekproperti = mysql_query($query_konekproperti, $koneksi) or die(mysql_error());
+$row_konekproperti = mysql_fetch_assoc($konekproperti);
+$totalRows_konekproperti = mysql_num_rows($konekproperti);
 ?>

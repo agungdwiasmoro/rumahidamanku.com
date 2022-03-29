@@ -1,3 +1,7 @@
+.content {
+    padding: 0 !important;
+}
+
 .box-header h3 {
     padding-left: 5px !important;
     margin: 0;
@@ -15,7 +19,7 @@
     background: rgb(246, 252, 253);
 }
 .detail{
-    
+    max-width: 300px;
     max-height: 400px;
     margin: 5px auto;
     display: flex;
@@ -133,6 +137,8 @@ hr {
     .sponsor {
         width: 31.48% !important;
     }
+
+   
 }
 
 @media (max-width: 767px) {

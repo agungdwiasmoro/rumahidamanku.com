@@ -157,7 +157,7 @@ $konekprofkabkoddiy = mysql_query($query_konekprofkabkoddiy, $koneksi) or die(my
 $row_konekprofkabkoddiy = mysql_fetch_assoc($konekprofkabkoddiy);
 $totalRows_konekprofkabkoddiy = mysql_num_rows($konekprofkabkoddiy);
 
-$maxRows_konekiventprodiy = 1;
+$maxRows_konekiventprodiy = 3;
 $pageNum_konekiventprodiy = 0;
 if (isset($_GET['pageNum_konekiventprodiy'])) {
   $pageNum_konekiventprodiy = $_GET['pageNum_konekiventprodiy'];
@@ -166,7 +166,7 @@ $startRow_konekiventprodiy = $pageNum_konekiventprodiy * $maxRows_konekiventprod
 
 mysql_select_db($database_koneksi, $koneksi);
 //mysql_select_db($database_konekivent, $konekivent);
-$query_konekiventprodiy = "SELECT * FROM iventpromo WHERE namausaha = '$namausaha' AND status = 'on' AND provinsi = '$provinsi' AND kodkab = '$kodkab' AND jenis = 'foto' ORDER BY id_iventpromo DESC";
+$query_konekiventprodiy = "SELECT * FROM iventpromo WHERE namausaha = '$namausaha' AND status = 'on' AND provinsi = '$provinsi' AND kodkab = '$kodkab' ORDER BY id_iventpromo DESC";
 $query_limit_konekiventprodiy = sprintf("%s LIMIT %d, %d", $query_konekiventprodiy, $startRow_konekiventprodiy, $maxRows_konekiventprodiy);
 $konekiventprodiy = mysql_query($query_limit_konekiventprodiy, $koneksi) or die(mysql_error());
 //$konekiventprodiy = mysql_query($query_limit_konekiventprodiy, $konekivent) or die(mysql_error());

@@ -32,7 +32,7 @@ $row = mysql_fetch_assoc($konekwisata);?>
                         <video id='video2' class='video-js vjs-default-skin' style="width: 100%; height: auto;" controls="controls" preload= "auto" loading="lazy">
                         <source src="imageViewwisvideo.php?image_id=<?php echo $row['id_wisatadiy']; ?>" type="video/mp4" /></video>
                     <?php }; ?>
-                    <p>
+                    <p style="text-align: justify;">
                         <strong><?php echo $row['judul']; ?></strong>, <?php echo $row['artikel'].', '. $row['penulis'];?>
                     </p>
                     <hr>
@@ -85,7 +85,7 @@ $row = mysql_fetch_assoc($konekwisata);?>
                 <?php do { ?>
                 <a href="wisatadetail.php?id_wisatadiy=<?=$row_konekwis['id_wisatadiy'];?>"><div class="card2">
                 <?php if ($row_konekwis['jenis'] !== 'photo') { ?>
-                    <video id='video2' class='video-js vjs-default-skin pull-left' style="width: 60px; height: 60px;" controls="controls" preload= "auto" loading="lazy">
+                    <video id='video2' class='video-js vjs-default-skin pull-left' controls="controls" preload= "auto" loading="lazy">
                     <source src="imageViewwisvideo.php?image_id=<?php echo $row_konekwis['id_wisatadiy']; ?>" type="video/mp4" />
                     </video>
                     <?php } else { ?>
@@ -117,7 +117,7 @@ $row = mysql_fetch_assoc($konekwisata);?>
                 <?php do { ?>
                 <a href="wisatadetail.php?id_wisatadiy=<?=$row_konekwisjateng['id_wisatadiy'];?>"><div class="card2">
                 <?php if ($row_konekwisjateng['jenis'] !== 'photo') { ?>
-                    <video id='video2' class='video-js vjs-default-skin pull-left' style="width: 60px; height: 60px;" controls="controls" preload= "auto" loading="lazy">
+                    <video id='video2' class='video-js vjs-default-skin pull-left' controls="controls" preload= "auto" loading="lazy">
                         <source src="imageViewwisvideo.php?image_id=<?php echo $row_konekwisjateng['id_wisatadiy']; ?>" type="video/mp4" />
                     </video>
                     <?php } else { ?>

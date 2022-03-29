@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 	<!-- Theme style -->
 	<link rel="stylesheet" href="../../../assets/dist/css/AdminLTE.css">
+	<link rel="stylesheet" href="../../../mycss.css">
 	<script data-ad-client="ca-pub-3274780598043223" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- jQuery 3 -->
 	<script src="../../../assets/bower_components/jquery/dist/jquery.min.js"></script>

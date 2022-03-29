@@ -121,6 +121,7 @@
 								<ul class="treeview-menu">
 									<li><a href="user/useradmin.php"><i class="fa fa-circle-o"></i>Administrator</a></li>
 									<li><a href="user/usersales.php"><i class="fa fa-circle-o"></i>Sales Freelancer</a></li>
+									<li><a href="user/userpokdarwis.php"><i class="fa fa-circle-o"></i>Pokdarwis</a></li>
 									<li><a href="user/index.php"><i class="fa fa-circle-o"></i>User Usaha</a></li>
 									<li><a href="user/add.php"><i class="fa fa-plus"></i>Tambah User</a></li>
 								</ul>

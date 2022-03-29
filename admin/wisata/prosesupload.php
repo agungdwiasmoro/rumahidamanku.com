@@ -88,36 +88,49 @@ $rand = rand();
 $sponsor1 =mysql_real_escape_string($_POST['sponsor1']);
 // // membaca nama file yang diupload
 $fileName6 = addslashes($_FILES['filesponsor1']['name']);  
-$namasponsor1 = $rand.'_'.$fileName6;   
+if ($fileName6 == ''){
+$namasponsor1 = $fileName6;
+$fileSize6 = $_FILES['filesponsor1']['size'];
+} else {
+$namasponsor1 = $rand.'_'.$fileName6;  
 // // nama file temporary yang akan disimpan di server
 // $tmpName6 = addslashes(file_get_contents($_FILES['filesponsor1']['tmp_name']));
 // // membaca ukuran file yang diupload
 $fileSize6 = $_FILES['filesponsor1']['size'];
-move_uploaded_file($_FILES['filesponsor1']['tmp_name'], "../../sponsor/".$rand.'_'.$fileName6);
+move_uploaded_file($_FILES['filesponsor1']['tmp_name'], "../../sponsor/".$rand.'_'.$fileName6); };
 // // membaca jenis file yang diupload
 // $fileType6 = $_FILES['filesponsor1']['type'];
 // //sponsor kedua
 $sponsor2 =mysql_real_escape_string($_POST['sponsor2']);
 // // membaca nama file yang diupload
+
 $fileName7 = addslashes($_FILES['filesponsor2']['name']); 
+if ($fileName7 == ''){
+$namasponsor2 = $fileName7;
+$fileSize7 = $_FILES['filesponsor2']['size'];
+} else {
 $namasponsor2 = $rand.'_'.$fileName7;    
 // // nama file temporary yang akan disimpan di server
 // $tmpName7 = addslashes(file_get_contents($_FILES['filesponsor2']['tmp_name']));
 // // membaca ukuran file yang diupload
 $fileSize7 = $_FILES['filesponsor2']['size'];
-move_uploaded_file($_FILES['filesponsor2']['tmp_name'], "../../sponsor/".$rand.'_'.$fileName7);
+move_uploaded_file($_FILES['filesponsor2']['tmp_name'], "../../sponsor/".$rand.'_'.$fileName7);};
 // // membaca jenis file yang diupload
 // $fileType7 = $_FILES['filesponsor2']['type'];
 // //sponsor ketiga
 $sponsor3 =mysql_real_escape_string($_POST['sponsor3']);
 // // membaca nama file yang diupload
 $fileName8 = addslashes($_FILES['filesponsor3']['name']); 
+if ($fileName8 == ''){
+$namasponsor3 = $fileName8;
+$fileSize8 = $_FILES['filesponsor3']['size'];
+} else {
 $namasponsor3 = $rand.'_'.$fileName8;        
 // // nama file temporary yang akan disimpan di server
 // $tmpName8 = addslashes(file_get_contents($_FILES['filesponsor3']['tmp_name']));
 // // membaca ukuran file yang diupload
 $fileSize8 = $_FILES['filesponsor3']['size'];
-move_uploaded_file($_FILES['filesponsor3']['tmp_name'], "../../sponsor/".$rand.'_'.$fileName8);
+move_uploaded_file($_FILES['filesponsor3']['tmp_name'], "../../sponsor/".$rand.'_'.$fileName8);};
 // // membaca jenis file yang diupload
 // $fileType8 = $_FILES['filesponsor3']['type'];
 //membaca data spesifikasi ip user yang diupload
