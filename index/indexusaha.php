@@ -170,7 +170,7 @@
                 ?>
                     <img src="../../../imageViewivent.php?image_id=<?php echo $row_konekiventprodiy['id_iventpromo']; ?>" loading="lazy" alt="<?php echo $row_konekiventprodiy['namaivent0']; ?> <?php echo $row_konekiventprodiy['namausaha']; ?> <?php echo $row_konekiventprodiy['bidangusaha']; ?> <?php echo $row_konekiventprodiy['kodkab']; ?> <?php echo $row_konekiventprodiy['provinsi']; ?> " title="<?php echo $row_konekiventprodiy['namaivent0']; ?> <?php echo $row_konekiventprodiy['namausaha']; ?> <?php echo $row_konekiventprodiy['bidangusaha']; ?> <?php echo $row_konekiventprodiy['kodkab']; ?> <?php echo $row_konekiventprodiy['provinsi']; ?> " class="img-fluid detail" width="auto" style="max-height:250px !important;" longdesc="<?php echo $row_konekiventprodiy['name']; ?>" />
                 <?php } else { ?>
-                    <video id='video2' class='video-js vjs-default-skin' style="max-height: 300px; max-width: 100%; padding-top: 10px;" controls="controls" preload= "auto" loading="lazy">
+                    <video id='video2' class='video-js vjs-default-skin detail' style="max-height: 300px; max-width: 100%; padding-top: 10px;" controls="controls" preload= "auto" loading="lazy">
                         <source src="../../../imageViewiventvid.php?image_id=<?php echo $row_konekiventvid['id_iventpromo']; ?>" title="<?php echo $row_konekiventvid['namaivent0']; ?>" alt="<?php echo $row_konekiventvid['namaivent0']; ?>" type="video/mp4" />
                     </video>
                 <?php } ?>

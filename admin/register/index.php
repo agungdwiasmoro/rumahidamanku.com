@@ -281,9 +281,15 @@
 												<textarea name="spec" id="spec" class="form-control" placeholder="Tuliskan Informasi tentang Usaha Anda" title="klik disini, masukkan informasi usaha di sini"></textarea>
 												
 											</div>
+											<div class="form-group">
+												<label>Tipe Pendaftaran</label>
+												<select name="bayar" id="bayar" class="form-control" selected="selected">
+													<option value="gratis" selected="selected">Gratis</option>
+													<option value="berbayar">Premium</option>
+												</select>
+											</div>
 											
 											<input type="hidden" name="website" id="website" value="">
-											<input name="bayar" type="hidden" value="gratis" id="bayar" />
 											<input name="tanggalaktivasi" type="hidden" value="<?php date_default_timezone_set('Asia/Jakarta'); echo date('Y-m-d G,i'); ?>"/>
 											<input name="masaberlak" type="hidden" id="masaberlak" value="20" />
 											<input name="file" type="hidden" id="file" value="index.php" />

@@ -17,7 +17,7 @@
 <?php //require_once('../../../Connections/konekdprri.php'); ?>
 <?php //require_once('../../../Connections/konekdprdkodkab.php'); ?>
 <?php include ('../../../query/querydiy.php'); ?>
-<?php include ('../../../template/templatebidangusahakabupatdiy.php'); ?>
+<?php include ('../../../template/templatebidangusahakabupatendiy.php'); ?>
  
 		
 	
@@ -50,17 +50,17 @@
             <?php do { ?>
 
             <div class="box-body">
-				<div class="col-md-10 col-md-offset-1 col-xs-12">
-                <?php if ($totalRows_konekprofkabkodjateng > 0) { // Show if recordset not empty ?>
-                <?php } // Show if recordset not empty ?>
-                
-                <p align="center"><strong><img src="../../../imageViewprofdiy.php?image_id=<?php echo $row_konekprofkabkodjateng['id_profildiy']; ?>" title="Lambang <?php echo $row_konekjawatengah['kodkab']; ?> , <?php echo $row_konekjawatengah['provinsi']; ?>" alt="Lambang <?php echo $row_konekjawatengah['kodkab']; ?> , <?php echo $row_konekjawatengah['provinsi']; ?>" style="width: 135px; "/></strong></p>
-                <p align="justify"><span><?php echo $row_konekjawatengah['artikel']; ?></span></p>
-				</div>
-			</div>
-            <?php } while ($row_konekjawatengah = mysql_fetch_assoc($konekjawatengah)); ?>
-            <?php } // Show if recordset not empty ?>
-          </div>
-        </div>
-      </div>
-      <?php include ('../../../index/indexwisatakabupatendiy.php'); ?>
+              <div class="col-md-10 col-md-offset-1 col-xs-12">
+                      <?php if ($totalRows_konekprofkabkodjateng > 0) { // Show if recordset not empty ?>
+                      <?php } // Show if recordset not empty ?>
+                      
+                      <p align="center"><strong><img src="../../../imageViewprofdiy.php?image_id=<?php echo $row_konekprofkabkodjateng['id_profildiy']; ?>" title="Lambang <?php echo $row_konekjawatengah['kodkab']; ?> , <?php echo $row_konekjawatengah['provinsi']; ?>" alt="Lambang <?php echo $row_konekjawatengah['kodkab']; ?> , <?php echo $row_konekjawatengah['provinsi']; ?>" style="width: 135px; "/></strong></p>
+                      <p align="justify"><span><?php echo $row_konekjawatengah['artikel']; ?></span></p>
+              </div>
+            </div>
+                  <?php } while ($row_konekjawatengah = mysql_fetch_assoc($konekjawatengah)); ?>
+                  <?php } // Show if recordset not empty ?>
+                </div>
+              </div>
+            </div>
+            <?php include ('../../../index/indexwisatakabupatendiy.php'); ?>

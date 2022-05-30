@@ -30,10 +30,17 @@ if($_SESSION['level'] != "1"){
 		<div class="box-header">
 			<h3 class="box-title">Data News</h3>
 			<div class="pull-right">
-				<a href =" add.php" class ="btn btn-primary btn-flat">
-					<i class="fa fa-user-plus"></i> Add
-				</a>
-			</div>
+			`	<div class="btn-group">
+					<button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-plus"></i> Tambah Berita
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" style="min-width: 10px;">
+						<li><a href="add.php" class="btn-xs"><i class="fa fa-circle-o"></i>Add Image</a></li>
+						<li><a href="addvidio.php" class="btn-xs"><i class="fa fa-circle-o"></i>Add Video</a>
+						</li>
+					</ul>
+				</div>
+			</div>`
 		</div>
 		<div class="box-body">
 		<div class="table-responsive">
@@ -41,6 +48,7 @@ if($_SESSION['level'] != "1"){
 				<thead>
 					<tr>
 						<th>No</th>
+						<th>Media</th>
 						<th>Judul</th>
 						<th>Penulis</th>
 						<th>Bidang Usaha</th>
@@ -57,6 +65,16 @@ if($_SESSION['level'] != "1"){
 					<?php do { ?>
 					<tr>
 						<td><?=$no++?>.</td>
+						<td>
+							<?php if($row_konekinformasi['jenis'] === 'photo') { ?>
+								<img src="../../imageViewinfo.php?image_id=<?php echo $row_konekinformasi['id_info']; ?>" loading="lazy" style="width: 90%; max-height: 150px;" align="center" class="img-fluid"/>
+								
+								<?php }else{ ?>
+								<video id='video1' class='video-js vjs-default-skin' style="width: 90%; max-height: 150px;" controls="controls" preload= "auto" loading="lazy">
+									<source src="../../imageViewvideoinfo.php?image_id=<?php echo $row_konekinformasi['id_info']; ?>" />
+								</video>
+							<?php }; ?>
+						</td>
 						<td><?php echo $row_konekinformasi['judul']; ?></td>
 						<td><?php echo $row_konekinformasi['sumber']; ?></td>
 						<td><?php echo $row_konekinformasi['bidangusaha']; ?></td>

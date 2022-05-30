@@ -29,7 +29,7 @@ $row = mysql_fetch_assoc($konekinformasi);?>
               <img src="../imageViewinfo.php?image_id=<?php echo $row['id_info']; ?>" loading="lazy" align="center" class="img-fluid detail" title="<?php echo $row['infogambar']; ?> , <?php echo $row['kodkab']; ?> , <?php echo $row['provinsi']; ?>" alt="gambar <?php echo $row['infogambar']; ?> , <?php echo $row['kodkab']; ?> , <?php echo $row['provinsi']; ?>"/>
               <figcaption align="center"><?php echo $row['infogambar']; ?></figcaption>
             <?php }else{ ?>
-              <video id='video1' class='video-js vjs-default-skin' style="width: 90%; max-height: 250px;" controls="controls" preload= "auto" loading="lazy">
+              <video id='video1' class='video-js vjs-default-skin detail' style="width: 90%; max-height: 250px;" controls="controls" preload= "auto" loading="lazy">
                 <source src="imageViewvideoinfo.php?image_id=<?php echo $row['id_info']; ?>" title="<?php echo $row['namephoto0']; ?> , <?php echo $row['infogambar']; ?> , <?php echo $row['kodkab']; ?> , <?php echo $row['provinsi']; ?>" alt="<?php echo $row['infogambar']; ?> , <?php echo $row['kodkab']; ?> , <?php echo $row['provinsi']; ?>" />
               </video>
             <?php }; ?>

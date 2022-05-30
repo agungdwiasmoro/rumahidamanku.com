@@ -85,9 +85,9 @@ if($_SESSION['level'] != "1"){
 								<input type="text" name="kodkab" id="kodkab" placeholder="Nama Kabupaten/Kota" value="" class="form-control">
 							</div>
 							<div class="form-group">
-								<label>Bidang Usaha</label>
+								<label>News Kategori</label>
 								<select name="bidangusaha" value="" id="bidangusaha" class="form-control" selected="selected" title="pilih bidang usaha yang sesuai dengan profil usaha, bidang usaha yang tidak sesuai akan muncul pada kelompok laman bidang usaha yang tidak sesuai, sekali pilih dan tidak dapat diubah, klik anak panah ke bawah di samping*">
-									<option value="" selected="selected">pilih bidang usaha</option>
+									<option value="" selected="selected">pilih kategori berita</option>
 									<option value="industri">Industri</option>
 									<option value="properti">Properti</option>
 									<option value="mobil">Mobil</option>
@@ -95,6 +95,7 @@ if($_SESSION['level'] != "1"){
 									<option value="elektronika">Elektronika</option>
 									<option value="komputer">Komputer</option>
 									<option value="wisata">Wisata</option>
+									<option value="umum">Umum</option>
 								</select>
 							</div>
 							<div class="File Utama">
@@ -112,13 +113,14 @@ if($_SESSION['level'] != "1"){
 								<textarea name="artikel" id="artikel" class="form-control" placeholder="Tuliskan Artikel Anda Disini"></textarea>
 							</div>
 							<input type="hidden" name="jam" id="jam" value="<?= date('G : i');?>">
+							<input type="hidden" name="jenis" id="jenis" value="photo">
 							<input type="hidden" name="file" id="file" value="index.php">
 							<input type="hidden" name="status" id="status" value="off">
 							<input type="hidden" name="ip" id="ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
 							<input type="hidden" name="username" id="username" value="admin">
 							<div class="form-group" align="right">
 								<button name="upload" type="submit" class="btn btn-primary btn-flat">
-									<i class="fa fa-paper-plane"></i> Kirim Gambar dan Data
+									<i class="fa fa-paper-plane"></i> Kirim Data
 								</button>
 								<button type="Reset" class="btn btn-flat">Reset
 								</button>
@@ -150,8 +152,9 @@ if($_SESSION['level'] != "1"){
 						$ip = $_POST['ip'];
 						$tanggal = $_POST['tanggal'];
 						$jam = $_POST['jam'];
+						$jenis = $_POST['jenis'];
 
-						$query = "INSERT INTO info (id_info, judul, sumber, name, size, type, template, namephoto0, infogambar, provinsi, kodkab, bidangusaha, artikel, file, ip, tanggal, jam, username, status) VALUES ('', '$judul', '$sumber', '$fileName', '$fileSize', '$fileType', '$tmpName', '$namephoto', '$namephoto', '$provinsi', '$kodkab', '$bidangusaha', '$artikel', '$file', '$ip', '$tanggal', '$jam', '$username', '$status')";
+						$query = "INSERT INTO info (id_info, judul, sumber, name, size, type, template, namephoto0, infogambar, provinsi, kodkab, bidangusaha, artikel, file, ip, tanggal, jam, username, jenis, status) VALUES ('', '$judul', '$sumber', '$fileName', '$fileSize', '$fileType', '$tmpName', '$namephoto', '$namephoto', '$provinsi', '$kodkab', '$bidangusaha', '$artikel', '$file', '$ip', '$tanggal', '$jam', '$username', '$jenis', '$status')";
 
 
 						if(mysql_query($query) === TRUE) {
