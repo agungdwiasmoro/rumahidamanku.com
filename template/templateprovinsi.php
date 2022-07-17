@@ -147,6 +147,9 @@
 							<li><a href="../Maluku Utara/index.php"><i class="fa fa-circle-o"></i> Maluku Utara</a></li>
 							<li><a href="../Papua/index.php"><i class="fa fa-circle-o"></i> Papua</a></li>
 							<li><a href="../Papua Barat/index.php"><i class="fa fa-circle-o"></i> Papua Barat</a></li>
+							<li><a href="../Papua Selatan/index.php"><i class="fa fa-circle-o"></i> Papua Selatan</a></li>
+							<li><a href="../Papua Tengah/index.php"><i class="fa fa-circle-o"></i> Papua Tengah</a></li>
+							<li><a href="../Papua Pegunungan/index.php"><i class="fa fa-circle-o"></i> Papua Pegunungan</a></li>
 						</ul>
 					</li>
 				</ul>

@@ -74,6 +74,9 @@ if($_SESSION['level'] != "1"){
 									<option value="Maluku">Maluku</option>
 									<option value="Papua">Papua</option>
 									<option value="Papua Barat">Papua Barat</option>
+									<option value="Papua Selatan">Papua Selatan</option>
+									<option value="Papua Tengah">Papua Tengah</option>
+									<option value="Papua Pegunungan">Papua Pegunungan</option>
 								</select>
 							</div>
 							<div class="form-group">

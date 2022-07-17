@@ -28,7 +28,7 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a href="Kabupaten Faktak/index.php"> Kab. Faktak</a></li>
+                  <li><a href="Kabupaten Faktak/index.php"> Kab. Fakfak</a></li>
                   <li><a href="Kabupaten Kaimana/index.php"> Kab. Kaimana</a></li>
                   <li><a href="Kabupaten Manokwari/index.php"> Kab. Manokwari</a></li>
                   <li><a href="Kabupaten Manokwari Selatan/index.php"> Kab. Manokwari Selatan</a></li>

@@ -39,7 +39,15 @@ if($cek > 0){
 		$_SESSION['level'] = "4";
 		echo "<script>alert ('Selamat, Login Berhasil'); document.location='pemerintahan/index.php'</script>";
 		
-		
+	}else if ($data['level']=="5"){
+		session_start();
+		$_SESSION['username'] = $username;
+		$_SESSION['nama'] = $data['nama'];
+		$_SESSION['provinsi'] = $data['provinsi'];
+		$_SESSION['kodkab'] = $data['kodkab'];
+		$_SESSION['level'] = "4";
+		echo "<script>alert ('Selamat, Login Berhasil'); document.location='caleg/index.php'</script>";
+			
 	}else{
 	echo "<script>alert ('Login Gagal'); document.location='login.php'</script>";
 	}

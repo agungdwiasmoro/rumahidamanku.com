@@ -40,7 +40,7 @@
                   <tr>
                     <td valign="baseline">Alamat</td>
                     <td valign="baseline">:</td>
-                    <td valign="baseline"><?=$row_konekproperti['alamatuser']; ?></td>
+                    <td valign="baseline"><?=$row_konekproperti['alamatuser']; ?> <a href="<?= $row_konekproperti['provinsi'].'/'.$row_konekproperti['kodkab'] ?>" target="_self"><?= $row_konekproperti['kodkab'].', '.$row_konekproperti['provinsi'] ?></a></td>
                   </tr>
                   <tr>
                     <td valign="baseline">Telepon</td>
@@ -92,7 +92,7 @@
                   <tr>
                     <td valign="baseline">Alamat</td>
                     <td valign="baseline">:</td>
-                    <td valign="baseline"><?=$row_konekindustri['alamatuser']; ?></td>
+                    <td valign="baseline"><?=$row_konekindustri['alamatuser']; ?> <a href="<?= $row_konekindustri['provinsi'].'/'.$row_konekindustri['kodkab'] ?>" target="_self"><?= $row_konekindustri['kodkab'].', '.$row_konekindustri['provinsi'] ?></a></td>
                   </tr>
                   <tr>
                     <td valign="baseline">Telepon</td>
@@ -143,7 +143,7 @@
                   <tr>
                     <td valign="baseline">Alamat</td>
                     <td valign="baseline">:</td>
-                    <td valign="baseline"><?=$row_konekkomputer['alamatuser']; ?></td>
+                    <td valign="baseline"><?=$row_konekkomputer['alamatuser']; ?> <a href="<?= $row_konekkomputer['provinsi'].'/'.$row_konekkomputer['kodkab'] ?>" target="_self"><?= $row_konekkomputer['kodkab'].', '.$row_konekkomputer['provinsi'] ?></a></td>
                   </tr>
                   <tr>
                     <td valign="baseline">Telepon</td>
@@ -193,7 +193,7 @@
                   <tr>
                     <td valign="baseline">Alamat</td>
                     <td valign="baseline">:</td>
-                    <td valign="baseline"><?=$row_konekelektronika['alamatuser']; ?></td>
+                    <td valign="baseline"><?=$row_konekelektronika['alamatuser']; ?> <a href="<?= $row_konekelektronika['provinsi'].'/'.$row_konekelektronika['kodkab'] ?>" target="_self"><?= $row_konekelektronika['kodkab'].', '.$row_konekelektronika['provinsi'] ?></a></td>
                   </tr>
                   <tr>
                     <td valign="baseline">Telepon</td>
@@ -246,7 +246,7 @@
                   <tr>
                     <td valign="baseline">Alamat</td>
                     <td valign="baseline">:</td>
-                    <td valign="baseline"><?=$row_konekmotor['alamatuser']; ?></td>
+                    <td valign="baseline"><?=$row_konekmotor['alamatuser']; ?> <a href="<?= $row_konekmotor['provinsi'].'/'.$row_konekmotor['kodkab'] ?>" target="_self"><?= $row_konekmotor['kodkab'].', '.$row_konekmotor['provinsi'] ?></a></td>
                   </tr>
                   <tr>
                     <td valign="baseline">Telepon</td>
@@ -296,7 +296,7 @@
                   <tr>
                     <td valign="baseline">Alamat</td>
                     <td valign="baseline">:</td>
-                    <td valign="baseline"><?=$row_konekmobil['alamatuser']; ?></td>
+                    <td valign="baseline"><?=$row_konekmobil['alamatuser']; ?> <a href="<?= $row_konekmobil['provinsi'].'/'.$row_konekmobil['kodkab'] ?>" target="_self"><?= $row_konekmobil['kodkab'].', '.$row_konekmobil['provinsi'] ?></a></td>
                   </tr>
                   <tr>
                     <td valign="baseline">Telepon</td>
@@ -347,7 +347,7 @@
                   <tr>
                     <td>Alamat</td>
                     <td>:</td>
-                    <td><?=$row_konekwisata['alamatuser']; ?></td>
+                    <td><?=$row_konekwisata['alamatuser']; ?> <a href="<?= $row_konekwisata['provinsi'].'/'.$row_konekwisata['kodkab'] ?>" target="_self"><?= $row_konekwisata['kodkab'].', '.$row_konekwisata['provinsi'] ?></a></td>
                   </tr>
                   <tr>
                     <td>Telepon</td>
