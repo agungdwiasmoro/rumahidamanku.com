@@ -118,7 +118,7 @@ if($_SESSION['level'] != "1"){
 							
 						</td>
 						<td><?php echo $row_konekprofhome['keterangan']; ?></td>
-						<td><?php echo $row_konekprofhome['handphone1']; ?></td>
+						<td><?php echo $row_konekprofhome['handphone0']; ?></td>
 						<td><?php echo $row_konekprofhome['tanggalaktivasi']; ?></td>
 						<td><?php 
 							date_default_timezone_set("Asia/Jakarta");

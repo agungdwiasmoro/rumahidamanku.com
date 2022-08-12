@@ -413,17 +413,17 @@
               <div class="postList">
                 <!-- loadmore -->
                 <?php
-                include ('koneksi.php');
+                include ('masterweb/koneksi.php');
                 $count_query = "SELECT count(*) as allcount FROM profilpromo";
-                $count_result = mysqli_query($con,$count_query);
-                $count_fetch = mysqli_fetch_array($count_result);
+                $count_result = mysql_query($count_query);
+                $count_fetch = mysql_fetch_array($count_result);
                 $postCount = $count_fetch['allcount'];
                 $limit = 4;
 
                 $query = "SELECT * FROM profilpromo WHERE status= 'on' ORDER BY id_profilpromo desc LIMIT 0,".$limit;	
-                $result = mysqli_query($con,$query);
-                if ($result->num_rows > 0) {
-                  while($row = mysqli_fetch_assoc($result)){ 
+                $result = mysql_query($query);
+                if (mysql_num_rows($result) > 0) {
+                  while($row = mysql_fetch_assoc($result)){ 
                     ?>
                     <div class="col-xs-6">
                       <a href="<?= $row['provinsi'].'/'.$row['kodkab'].'/'.$row['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row['namausaha'].', '.$row['kodkab'].', '. $row['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row['namausaha'].', '. $row['kodkab'].', '.$row['provinsi']; ?>" target="_self">

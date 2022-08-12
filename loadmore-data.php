@@ -1,12 +1,12 @@
 <?php
-include ('koneksi.php');
+include ('masterweb/koneksi.php');
 if (isset($_POST['row'])) {
   $start = $_POST['row'];
   $limit = 4;
   $query = "SELECT * FROM profilpromo WHERE status= 'on' ORDER BY id_profilpromo desc LIMIT ".$start.",".$limit;	
-  $result = mysqli_query($con,$query);
-  if ($result->num_rows > 0) {
-    while ($row = mysqli_fetch_assoc($result)) {
+  $result = mysql_query($query);
+  if (mysql_num_rows($result) > 0) {
+    while ($row = mysql_fetch_assoc($result)) {
       ?>
       <div class="col-xs-6">
         <a href="<?= $row['provinsi'].'/'.$row['kodkab'].'/'.$row['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row['namausaha'].', '.$row['kodkab'].', '. $row['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row['namausaha'].', '. $row['kodkab'].', '.$row['provinsi']; ?>" target="_self">
