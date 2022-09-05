@@ -13,7 +13,7 @@ if (isset($_POST['row'])) {
         <div class="card3" id="usaha">
             <img src="imageViewusaha.php?image_id=<?php echo $row['id_profilpromo']; ?> " class="" loading="lazy" title="<?php echo $row['namausaha']; ?> , <?php echo $row['bidangusaha']; ?> , <?php echo $row['kodkab']; ?> , <?php echo $row['provinsi']; ?>" alt="<?php echo $row['namausaha']; ?> , <?php echo $row['bidangusaha']; ?> , <?php echo $row['kodkab']; ?> , <?php echo $row['provinsi']; ?>" />
             <div class="title">
-            <h4><?php echo $row['namausaha']; ?></h4>
+            <h4><?php echo $row['namausaha']; ?></h4><hr>
             <p class="small"><?php echo $row['provinsi']; ?>, <?php echo $row['kodkab']; ?></p>
             </div>
         </div>
@@ -21,7 +21,7 @@ if (isset($_POST['row'])) {
       </div>
       <div class="col-md-12">
         <a href="<?= $row['provinsi'].'/'.$row['kodkab'].'/'.$row['namausaha']; ?>/index.php" title="klik disini untuk laman usaha <?=$row['namausaha'].', '.$row['kodkab'].', '. $row['provinsi']; ?>" alt="klik disini untuk laman usaha <?=$row['namausaha'].', '. $row['kodkab'].', '.$row['provinsi']; ?>" target="_self">
-        <div class="card2" id="usaha">
+        <div class="card4" id="usaha">
             <img src="imageViewusaha.php?image_id=<?php echo $row['id_profilpromo']; ?> " class="pull-left" loading="lazy" title="<?php echo $row['namausaha']; ?> , <?php echo $row['bidangusaha']; ?> , <?php echo $row['kodkab']; ?> , <?php echo $row['provinsi']; ?>" alt="<?php echo $row['namausaha']; ?> , <?php echo $row['bidangusaha']; ?> , <?php echo $row['kodkab']; ?> , <?php echo $row['provinsi']; ?>" />
             <h4><?php echo $row['namausaha']; ?></h4>
             <p class="small"><?php echo $row['provinsi']; ?>, <?php echo $row['kodkab']; ?></p>

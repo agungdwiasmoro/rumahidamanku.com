@@ -45,8 +45,8 @@ if($cek > 0){
 		$_SESSION['nama'] = $data['nama'];
 		$_SESSION['provinsi'] = $data['provinsi'];
 		$_SESSION['kodkab'] = $data['kodkab'];
-		$_SESSION['level'] = "4";
-		echo "<script>alert ('Selamat, Login Berhasil'); document.location='caleg/index.php'</script>";
+		$_SESSION['level'] = "5";
+		echo "<script>alert ('Selamat, Login Berhasil'); document.location='user/usercaleg/index.php'</script>";
 			
 	}else{
 	echo "<script>alert ('Login Gagal'); document.location='login.php'</script>";

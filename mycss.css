@@ -87,6 +87,36 @@ video {
     display: flex;
     align-items: center;
 }
+.card4 {
+    background: #ffff;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    min-height: 90px;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.card4:hover {
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.card4 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card4 video {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
 h4 {
     text-transform: capitalize;
 }
@@ -167,7 +197,7 @@ hr {
     .box-body {
         padding: 5px;
     }
-    .card2 {
+    .card4 {
         display: none;
     }
     .card3 {
@@ -202,7 +232,6 @@ hr {
     .title {
         position: absolute;
         bottom: 10px;
-        text-align: center;
     }
     
   

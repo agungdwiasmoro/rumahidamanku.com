@@ -1,5 +1,5 @@
 <?php
-    if(isset($_GET['id_info'])) {
+if(isset($_GET['id_info'])) {
         $id =  abs((int) $_GET['id_info']);
 	} else {
     die ("Error. Data Tidak Ditemukan"); 
